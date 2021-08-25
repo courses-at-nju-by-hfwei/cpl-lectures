@@ -1,0 +1,57 @@
+{
+  "name": "gulp-gh-pages",
+  "version": "0.5.4",
+  "description": "gulp plugin to publish contents to Github pages",
+  "repository": "shinnn/gulp-gh-pages",
+  "license": "MIT",
+  "author": "Micheal Benedict <micheal@visionmasterdesigns.com> (https://github.com/rowoot)",
+  "contributors": [
+    "Shinnosuke Watanabe (https://github.com/shinnn)"
+  ],
+  "keywords": [
+    "git",
+    "push",
+    "commit",
+    "branch",
+    "deploy",
+    "deployment",
+    "publish",
+    "site",
+    "website",
+    "gulp",
+    "gulpplugin",
+    "gh-pages",
+    "dist",
+    "github"
+  ],
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "scripts": {
+    "pretest": "eslint --config @shinnn/node-legacy --env mocha --rule 'no-underscore-dangle: 0' --rule 'camelcase: 0' index.js test.js lib",
+    "test": "mocha test.js --timeout 50000 --full-trace",
+    "test-only": "mocha test.js --timeout 50000 --full-trace",
+    "coverage": "istanbul cover _mocha test.js -x=test.js -- --timeout 50000"
+  },
+  "dependencies": {
+    "gift": "^0.6.1",
+    "gulp-util": "^3.0.7",
+    "readable-stream": "^2.0.2",
+    "rimraf": "^2.4.3",
+    "vinyl-fs": "^2.2.1",
+    "wrap-promise": "^1.0.1"
+  },
+  "devDependencies": {
+    "@shinnn/eslint-config-node-legacy": "^1.0.0",
+    "eslint": "^1.7.2",
+    "graceful-fs": "^4.1.2",
+    "istanbul": "^0.4.0",
+    "log-symbols": "^1.0.2",
+    "mocha": "^2.3.3",
+    "node-uuid": "^1.4.3",
+    "octonode": "^0.7.4",
+    "read-remove-file": "^3.0.0",
+    "vinyl": "^1.0.0"
+  }
+}
