@@ -1,0 +1,3 @@
+[submodule "examples/examples/talk-token-swapping-in-trees"]
+	path = examples/examples/talk-token-swapping-in-trees
+	url = https://github.com/edemaine/talk-token-swapping-in-trees.git
