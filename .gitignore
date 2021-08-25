@@ -3,3 +3,5 @@ dist
 .publish
 node_modules
 package-lock.json
+
+.history/

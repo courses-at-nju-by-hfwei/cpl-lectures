@@ -8,6 +8,10 @@ html(nighteye="disabled")
     script(src="node_modules/@svgdotjs/svg.js/dist/svg.min.js")
     script(src="node_modules/katex/dist/katex.min.js")
     script(src="node_modules/katex/dist/contrib/auto-render.min.js")
+    //- added by hengxin (20210825) for code highlight
+    script(src="node_modules/reveal.js/plugin/highlight/highlight.js")
+    //- added by hengxin (20210825) for code highlight
+    link(rel="stylesheet", href="node_modules/reveal.js/plugin/highlight/monokai.css")
     link(rel="stylesheet", href="node_modules/reveal.js/dist/reveal.css")
     link(rel="stylesheet", href="node_modules/reveal.js/dist/theme/black.css")
     link(rel="stylesheet", href="node_modules/reveal.js-plugins/chalkboard/style.css")
@@ -37,7 +41,7 @@ html(nighteye="disabled")
           height: 768
           minScale: 0.1
           maxScale: 10
-          plugins: [RevealChalkboard]
+          plugins: [RevealChalkboard, RevealHighlight]
           chalkboard:
             background: ['none', 'node_modules/reveal.js-plugins/chalkboard/img/blackboard.png']
             boardmarkerWidth: 7
