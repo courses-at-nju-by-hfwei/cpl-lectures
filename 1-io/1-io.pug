@@ -1,0 +1,133 @@
+section
+  h1(style="font-variant: small-caps") Types, Variables, IO
+  hr
+
+  br
+  h4 Hengfeng Wei
+  h4 <u>hfwei@nju.edu.cn</u>
+
+  //- br
+  img(src = "./1-io/figs/C.png", alt = "The C Programming Language",
+      width = 200, height = auto)
+  p Sep. 21, 2021
+
+section
+  h2 Data Types
+  hr
+
+  br
+  p <code>int</code> &emsp; <code>float</code>
+  br
+  p.fragment <code>int</code> $\approx \mathbb{Z}$ &emsp; <code>float</code> $\approx \mathbb{R}$
+  br
+  p.fragment $3 \in $ <code>int</code> &emsp; $-3 \in $ <code>int</code>
+
+section
+  h2 Data Types
+  hr
+
+  br
+  p $a \in $ <code>int</code> &emsp; $b \in $ <code>int</code>
+  br
+  p $a + b \in $ <code>int</code>
+  p $a - b \in $ <code>int</code>
+  p $a \times b \in $ <code>int</code>
+  p <span class = hl>$a \;/\; b \in $ <code>int</code></span>
+
+section
+  h2 Data Types
+  hr
+
+  br
+  h4(class = "r-fit-text") Data Type = Data Set + Operations
+
+section
+  h2 Variables
+  hr
+
+  br
+  p <code>int number;</code>
+
+  ul
+    li.fragment <span class = "hl">Define</span> a <em>variable</em> with name called <code>number</code>.
+    li.fragment The type of <code>number</code> is <code>int</code>.
+    li.fragment <code>number</code> refers to a <em>location</em> (<em>object</em>) in memory.
+    li.fragment <code>number</code> has <em>not</em> been <u>initialized</u>;
+    li.fragment You can assign values to <code>number</code> later, like <code> number = 100;</code>.
+  br
+  p.fragment <code>int number = 100;</code>
+
+section
+  h2 <code>int</code>
+  hr
+
+  br
+  p <code>INT_MAX</code>
+
+section
+  h2 Output <code>int</code>
+  hr
+
+  br
+  p.fragment <code>printf("Number is %d.\n", number)</code>
+  br
+  p.fragment <code>printf("Number is %d, and Counter is %d.\n", number, counter)</code>
+  br
+  p.fragment <code>printf</code>
+
+section
+  h2 Input <code>int</code>
+  hr
+
+  br
+  p <code>scanf("%d", &number)</code>
+  br
+  p.fragment <code>scanf("%d%d", &number, &counter)</code>
+  br
+  p.fragment <code>scanf</code>
+
+section
+  br
+  br
+  img(src = "./0-intro/figs/lets-code.jpeg",
+      alt = "Let's Code",
+      width = 600, height = auto)
+
+section
+  h2 (1) Max: Taking the maximum of two ints
+  hr
+
+section
+  h2 (2) Max: Taking the maximum of three ints
+  hr
+
+section
+  h2 (3) Number of Digits
+  hr
+
+section
+  h2 float???
+
+section
+  h2 Hello World
+  pre
+    code(class="lang-c")
+      script(type="text/template").
+        #include <stdio.h>
+
+        int main() {
+          printf("Hello World");
+          return 0;
+        }
+
+section
+  h2 Game: Guessing the Number
+  hr
+
+section
+  h2
+
+  br
+  img(src = "./0-intro/figs/see-you.jpeg",
+      alt = "See you Next Week",
+      width = 400, height = auto)
