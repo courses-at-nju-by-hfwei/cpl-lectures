@@ -16,9 +16,9 @@ section
   hr
 
   br
-  p <code>int</code> &emsp; <code>float</code>
+  p <code>int</code> &emsp; <code>double</code>
   br
-  p.fragment <code>int</code> $\approx \mathbb{Z}$ &emsp; <code>float</code> $\approx \mathbb{R}$
+  p.fragment <code>int</code> $\approx \mathbb{Z}$ &emsp; <code>double</code> $\approx \mathbb{R}$
   br
   p.fragment $3 \in $ <code>int</code> &emsp; $-3 \in $ <code>int</code>
 
@@ -48,21 +48,51 @@ section
   br
   p <code>int number;</code>
 
+  br
   ul
-    li.fragment <span class = "hl">Define</span> a <em>variable</em> with name called <code>number</code>.
+    li.fragment <span class = "hl">Declare</span> a <em>variable</em> with name called <code>number</code>.
     li.fragment The type of <code>number</code> is <code>int</code>.
     li.fragment <code>number</code> refers to a <em>location</em> (<em>object</em>) in memory.
-    li.fragment <code>number</code> has <em>not</em> been <u>initialized</u>;
-    li.fragment You can assign values to <code>number</code> later, like <code> number = 100;</code>.
+    li.fragment <code>number</code> is <em>uninitialized</em>.
+    li.fragment You can <span class = "hl">assign</span> values to <code>number</code> later.
+
+section
+  h2(style="font-variant: small-caps") Recommend
+  img(src = "./1-io/figs/5-stars.png" alt = "Recommend"
+      width = 300, height = auto)
+  hr
+
   br
-  p.fragment <code>int number = 100;</code>
+  p <code>int number = 100;</code>
+  br
+  p <code>number</code> has also been <em>initialized</em>.
+
+section
+  h2 Declare vs. Define
+  hr
+
+  br
+  p <code>int number = 100;</code> is also a <em>definition</em>.
+
+  br
+  p.fragment Any definitions are declarations.
+  br
+  p.fragment But not all declarations are definitions.
 
 section
   h2 <code>int</code>
   hr
 
   br
-  p <code>INT_MAX</code>
+  p <code>INT_MAX</code> &emsp; <code>INT_MIN</code>
+
+  br
+  pre
+    code(class="lang-c")
+      script(type="text/template").
+        printf("INT_MAX = %d \t INT_MIN = %d\n", INT_MAX, INT_MIN);
+  br
+  p <code>INT_MAX = 2147483647 INT_MIN = -2147483648</code>
 
 section
   h2 Output <code>int</code>
@@ -106,28 +136,88 @@ section
   hr
 
 section
-  h2 float???
-
-section
-  h2 Hello World
-  pre
-    code(class="lang-c")
-      script(type="text/template").
-        #include <stdio.h>
-
-        int main() {
-          printf("Hello World");
-          return 0;
-        }
-
-section
-  h2 Game: Guessing the Number
+  h2 <code>double</code>
   hr
 
-section
-  h2
+  br
+  p <code>double pi = 3.14159f</code>
 
   br
-  img(src = "./0-intro/figs/see-you.jpeg",
-      alt = "See you Next Week",
-      width = 400, height = auto)
+  p Recommend!!! f???
+
+section
+  h2 Output and Input <code>double</code>
+  hr
+
+  br
+  p <code>printf()</code>
+  p <code>scanf()</code>
+
+section
+  h2 Floating-point Arithmetic
+  img(src = "./1-io/figs/bad-news.png", alt = "Bad News"
+      width = 150, height = auto)
+  hr
+
+  br
+  h4.fragment(class = "r-fit-text") "Floating-point arithmetic is complicated."
+  br
+  br
+  h4.fragment(class = "r-fit-text") "Writing portable code is much more challenging."
+  br
+  br
+  h4.fragment(class = "r-fit-text") "Writing good math functions is hard."
+
+section
+  h2 Floating-point Arithmetic
+  img(src = "./1-io/figs/bad-news.png", alt = "Bad News"
+      width = 150, height = auto)
+  hr
+
+  br
+  h4(class = "r-fit-text") Overflow
+
+section
+  h2 Floating-point Arithmetic
+  img(src = "./1-io/figs/bad-news.png", alt = "Bad News"
+      width = 150, height = auto)
+  hr
+
+  br
+  h4(class = "r-fit-text") Underflow
+
+section
+  h2 Floating-point Arithmetic
+  img(src = "./1-io/figs/bad-news.png", alt = "Bad News"
+      width = 150, height = auto)
+  hr
+
+  br
+  h4(class = "r-fit-text") Significance Loss
+
+section
+  h2 Floating-point Arithmetic (Good News)
+  hr
+
+  br
+  h3.fragment "Many applications don't need floating-point arithmetic at all."
+  br
+  br
+  h2.fragment Use <mark>math.h</mark>
+
+section
+  h2 double??? circle??? pi??? 周长;面积;体积
+
+section
+  h2 solving equations (root)
+
+section
+  h2 log, pow, floor, ceil
+
+section
+  h2 Books
+  hr
+
+  br
+  p TAOCP
+  p CSAPP

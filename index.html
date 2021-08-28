@@ -99,7 +99,7 @@ li + li {
           <h2>What is C?</h2>
           <hr><br>
           <p class="fragment">C is a computer programming language.</p><br>
-          <p class="fragment">You communicate with computers via PLs.</p>
+          <p class="fragment">You communicate with computers via programming languages.</p>
         </section>
         <section>
           <h2>What is C?</h2>
@@ -123,10 +123,7 @@ li + li {
         </section>
         <section>
           <h2>Why C?</h2>
-          <hr>
-          <ul>
-            <li>Popular</li>
-          </ul><img src="./0-intro/figs/PL-IEEE.png" alt="PL IEEE" width="500">
+          <hr><img src="./0-intro/figs/PL-IEEE.png" alt="PL IEEE" width="500">
         </section>
         <section>
           <h2>Why C?</h2>
@@ -139,23 +136,34 @@ li + li {
           <h2>Why C?</h2>
           <hr>
           <ul>
-            <li> </li>
+            <li>relatively low-level</li>
+            <li>portable</li>
           </ul>
         </section>
         <section>
-          <h2>C Primer Plus</h2>
-          <hr>
-          <p></p><img src="./0-intro/figs/c-primer-plus.jpeg" alt="The C Programming Language" width="400">
+          <h2>C Programming: <br> A Modern Approach</h2>
+          <hr><img src="./0-intro/figs/modern-c.jpg" alt="The C Programming Language" width="400">
         </section>
         <section>
-          <h2>C Programming: <br> A Modern Approach</h2>
+          <h2>C Primer Plus</h2>
+          <hr><img src="./0-intro/figs/c-primer-plus.jpeg" alt="The C Programming Language" width="400">
+        </section>
+        <section>
+          <h2>Cert C</h2>
           <hr>
-          <p></p><img src="./0-intro/figs/modern-c.jpg" alt="The C Programming Language" width="400">
+        </section>
+        <section>
+          <h2>Cert C</h2>
+          <hr>
+          <p>Google vs. HuaWei</p>
         </section>
         <section>
           <h2>考核方式</h2>
           <hr><br>
           <ul>
+            <li class="fragment">
+              <del>考勤</del>
+            </li>
             <li class="fragment">
               <del>期中测试</del>
             </li>
@@ -164,16 +172,36 @@ li + li {
             </li>
             <li class="fragment"><ins>期末机试 (30 分)</ins></li>
             <li class="fragment"><ins>编程练习 (70 分)</ins></li>
+            <li class="fragment"><ins>奖励分数 (10 分)</ins></li>
           </ul><br><br>
-          <p class="fragment">编程练习: 每周基础训练 + 学期项目训练</p>
+          <p class="fragment">编程练习: 每周基础训练 (50 分) + 学期项目训练 (20 分)</p>
         </section>
+        <section>
+          <h2>How to Learn C?</h2>
+          <hr><br>
+          <p>螺旋式、循序渐进 (不要指望一下子理解一个完整的概念)</p>
+        </section>
+        <section>
+          <h2>How to Learn C?</h2>
+          <hr><br><img src="./0-intro/figs/theory-practice.jpeg" alt="Theory vs. Practice" width="600">
+        </section>
+        <section>
+          <h2>How to Learn C?</h2>
+          <hr>
+          <p>QQ群、助教、潜水员; 教学立方</p>
+          <p>problemoverflow.cn</p>
+        </section>
+        <section>
+          <h2>GitHub Classroom</h2>
+        </section>
+        <section><br><br><img src="./0-intro/figs/lets-code.jpeg" alt="Let's Code" width="600"></section>
         <section>
           <h2>CLion</h2>
           <hr>
           <p>A cross-platform IDE for C and C++</p><img src="./0-intro/figs/CLion2021.png" alt="The C Programming Language" width="800">
           <ul>
-            <li><a class="button" href="https://www.bilibili.com/video/BV1GP4y1x7EH?share_source=copy_web">Wins-CLion-助教-熊丘桓 @ bilibili</a></li>
-            <li><a class="button" href="https://www.bilibili.com/video/BV1o44y117Zt">macOS-CLion-助教-肖江@bilibili</a></li>
+            <li><a class="button" href="https://www.bilibili.com/video/BV1GP4y1x7EH?share_source=copy_web"><small>Wins-CLion-助教-熊丘桓 @ bilibili</small></a></li>
+            <li><a class="button" href="https://www.bilibili.com/video/BV1o44y117Zt"><small>macOS-CLion-助教-肖江@bilibili</small></a></li>
           </ul>
         </section>
         <section>
@@ -184,7 +212,6 @@ li + li {
             <li></li>
           </ul>
         </section>
-        <section><br><br><img src="./0-intro/figs/lets-code.jpeg" alt="Let's Code" width="600"></section>
         <section>
           <h2>Hello World</h2>
           <pre><code class="lang-c">
@@ -215,8 +242,8 @@ int main() {
         <section>
           <h2>Data Types</h2>
           <hr><br>
-          <p><code>int</code> &emsp; <code>float</code></p><br>
-          <p class="fragment"><code>int</code> $\approx \mathbb{Z}$ &emsp; <code>float</code> $\approx \mathbb{R}$</p><br>
+          <p><code>int</code> &emsp; <code>double</code></p><br>
+          <p class="fragment"><code>int</code> $\approx \mathbb{Z}$ &emsp; <code>double</code> $\approx \mathbb{R}$</p><br>
           <p class="fragment">$3 \in $ <code>int</code> &emsp; $-3 \in $ <code>int</code></p>
         </section>
         <section>
@@ -236,20 +263,35 @@ int main() {
         <section>
           <h2>Variables</h2>
           <hr><br>
-          <p><code>int number;</code></p>
+          <p><code>int number;</code></p><br>
           <ul>
-            <li class="fragment"><span class = "hl">Define</span> a <em>variable</em> with name called <code>number</code>.</li>
+            <li class="fragment"><span class = "hl">Declare</span> a <em>variable</em> with name called <code>number</code>.</li>
             <li class="fragment">The type of <code>number</code> is <code>int</code>.</li>
             <li class="fragment"><code>number</code> refers to a <em>location</em> (<em>object</em>) in memory.</li>
-            <li class="fragment"><code>number</code> has <em>not</em> been <u>initialized</u>;</li>
-            <li class="fragment">You can assign values to <code>number</code> later, like <code> number = 100;</code>.</li>
-          </ul><br>
-          <p class="fragment"><code>int number = 100;</code></p>
+            <li class="fragment"><code>number</code> is <em>uninitialized</em>.</li>
+            <li class="fragment">You can <span class = "hl">assign</span> values to <code>number</code> later.</li>
+          </ul>
+        </section>
+        <section>
+          <h2 style="font-variant: small-caps">Recommend</h2><img src="./1-io/figs/5-stars.png" alt="Recommend" width="300">
+          <hr><br>
+          <p><code>int number = 100;</code></p><br>
+          <p><code>number</code> has also been <em>initialized</em>.</p>
+        </section>
+        <section>
+          <h2>Declare vs. Define</h2>
+          <hr><br>
+          <p><code>int number = 100;</code> is also a <em>definition</em>.</p><br>
+          <p class="fragment">Any definitions are declarations.</p><br>
+          <p class="fragment">But not all declarations are definitions.</p>
         </section>
         <section>
           <h2><code>int</code></h2>
           <hr><br>
-          <p><code>INT_MAX</code></p>
+          <p><code>INT_MAX</code> &emsp; <code>INT_MIN</code></p><br>
+          <pre><code class="lang-c">
+              <script type="text/template">printf("INT_MAX = %d \t INT_MIN = %d\n", INT_MAX, INT_MIN);</script></code></pre><br>
+          <p><code>INT_MAX = 2147483647 INT_MIN = -2147483648</code></p>
         </section>
         <section>
           <h2>Output <code>int</code></h2>
@@ -279,26 +321,59 @@ int main() {
           <hr>
         </section>
         <section>
-          <h2>float???</h2>
+          <h2><code>double</code></h2>
+          <hr><br>
+          <p><code>double pi = 3.14159f</code></p><br>
+          <p>Recommend!!! f???</p>
         </section>
         <section>
-          <h2>Hello World</h2>
-          <pre><code class="lang-c">
-              <script type="text/template">#include <stdio.h>
-
-int main() {
-  printf("Hello World");
-  return 0;
-}
-
-              </script></code></pre>
+          <h2>Output and Input <code>double</code></h2>
+          <hr><br>
+          <p><code>printf()</code></p>
+          <p><code>scanf()</code></p>
         </section>
         <section>
-          <h2>Game: Guessing the Number</h2>
-          <hr>
+          <h2>Floating-point Arithmetic</h2><img src="./1-io/figs/bad-news.png" alt="Bad News" width="150">
+          <hr><br>
+          <h4 class="fragment r-fit-text">"Floating-point arithmetic is complicated."</h4><br><br>
+          <h4 class="fragment r-fit-text">"Writing portable code is much more challenging."</h4><br><br>
+          <h4 class="fragment r-fit-text">"Writing good math functions is hard."</h4>
         </section>
         <section>
-          <h2></h2><br><img src="./0-intro/figs/see-you.jpeg" alt="See you Next Week" width="400">
+          <h2>Floating-point Arithmetic</h2><img src="./1-io/figs/bad-news.png" alt="Bad News" width="150">
+          <hr><br>
+          <h4 class="r-fit-text">Overflow</h4>
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic</h2><img src="./1-io/figs/bad-news.png" alt="Bad News" width="150">
+          <hr><br>
+          <h4 class="r-fit-text">Underflow</h4>
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic</h2><img src="./1-io/figs/bad-news.png" alt="Bad News" width="150">
+          <hr><br>
+          <h4 class="r-fit-text">Significance Loss</h4>
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic (Good News)</h2>
+          <hr><br>
+          <h3 class="fragment">"Many applications don't need floating-point arithmetic at all."</h3><br><br>
+          <h2 class="fragment">Use <mark>math.h</mark></h2>
+        </section>
+        <section>
+          <h2>double??? circle??? pi??? 周长;面积;体积</h2>
+        </section>
+        <section>
+          <h2>solving equations (root)</h2>
+        </section>
+        <section>
+          <h2>log, pow, floor, ceil</h2>
+        </section>
+        <section>
+          <h2>Books</h2>
+          <hr><br>
+          <p>TAOCP</p>
+          <p>CSAPP</p>
         </section>
       </div>
     </div>
