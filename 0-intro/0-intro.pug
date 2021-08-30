@@ -6,151 +6,195 @@ section
   h4 Hengfeng Wei
   h4 <u>hfwei@nju.edu.cn</u>
 
-  //- br
   img(src = "./0-intro/figs/C.png", alt = "The C Programming Language",
       width = 200, height = auto)
   p Sep. 21, 2021
 
+//- What is C?
 section
   h2 What is C?
   hr
 
   br
-  p.fragment C is a computer programming language.
+  p.fragment C is a <em>computer</em> programming <mark>language</mark>.
   br
-  p.fragment You communicate with computers via programming languages.
+  p.fragment You communicate your ideas <em>to</em> computers via programming languages.
 
 section
   h2 What is C?
   hr
 
   br
-  p Programming is <em>NOT</em> about languages.
+  p Programming is <em>NOT</em> (only) about languages.
   br
   p.fragment So programming is not about C.
   br
-  p.fragment You learn C to express YOUR IDEAS.
+  p.fragment You learn C to express <mark>YOUR IDEAS</mark>.
 
 section
   h2 What is C?
   hr
 
   br
-  img(src = "./0-intro/figs/gates-programming.jpeg",
-      alt = "Bill Gates on Programming",
-      width = 700, height = auto)
+  img(src = "./0-intro/figs/code-think.png" alt = "Code vs. Think"
+      width = 500 height = auto)
 
 section
   h2 What is C?
   hr
 
   br
-  p C is much <em>easier</em> to learn than any human languages.
-  img(src = "./0-intro/figs/easy.png",
-      alt = "Logo: easy",
-      width = 500, height = auto)
+  img(src = "./0-intro/figs/gates-programming.jpeg" alt = "Bill Gates on Programming",
+      width = 800 height = auto)
 
-//- section
-//-   h2 How to Learn Programming?
-//-   hr
-
-//-   img(src = "./0-intro/figs/code-think.png",
-//-       alt = "Code vs. Think",
-//-       width = 400, height = auto)
-
-//- section
-//-   h1 What is "Program"?
-//-   hr
-
-//-   br
-//-   p.fragment A program is an <em>abstract</em> <u>state machine</u>.
-//-   br
-//-   p.fragment A <u>behavior</u> of a state machine is a sequence of states.
-//-   br
-//-   p.fragment A <u>state</u> is an assignment of all variables.
-//-   br
-//-   p.fragment A <u>variable</u> is an <u>object</u> in computer memory.
-
-//- section
-//-   h1 State Machines
-//-   hr
-
-//-   br
-//-   img(src = "./0-intro/figs/button-state-machine.jpg",
-//-       alt = "State Machine for Buttons",
-//-       width = 400, height = auto)
-
-//- section
-//-   h1 State Machines
-//-   hr
-
-//-   br
-//-   img(src = "./0-intro/figs/vending-state-machine.png",
-//-       alt = "State Machine for Beverage Vending Machine",
-//-       width = 500, height = auto)
-
+//- Why C?
 section
   h2 Why C?
   hr
 
   br
-  img(src = "./0-intro/figs/pl.jpg",
-      alt = "PL",
-      width = 700, height = auto)
+  img(src = "./0-intro/figs/pl.jpg" alt = "PL"
+      width = 700 height = auto)
+  p Hundreds of programming languages
 
 section
-  h2 Why C?
+  h2 C is General-Purpose
   hr
 
-  img(src = "./0-intro/figs/PL-IEEE.png",
-      alt = "PL IEEE",
-      width = 500, height = auto)
+  br
+  <div class="row">
+    <div class="column">
+      img(src = "./0-intro/figs/linux-c.png" alt = "Linux in C"
+        width = 600 height = auto)
+    </div>
+    <div class="column">
+      img(src = "./0-intro/figs/honor-of-kings.jpg", alt = "Honor of Kings",
+          width = 600, height = auto)
+    </div>
+  </div>
+
+  p In principle, you can do whatever you want using C.
 
 section
-  h2 Why C?
+  h2 C is (still) Popular
   hr
 
-  ul
-    li Simple
+  img(src = "./0-intro/figs/PL-IEEE.png" alt = "PL IEEE"
+      width = 500 height = auto)
 
 section
-  h2 Why C?
+  h2 "Spirit of C"
   hr
 
-  ul
-    li relatively low-level
-    li portable
+  br
+  p(class = "r-fit-text") "Keep the language small and simple."
 
-//- section
-//-   p C is a <span class="hl">imperative</span> programming language.
-//-   p (Imperative: 命令式的)
+  br
+  br
+  p.fragment What you see <em>is</em> what you get. &emsp; (<code>a + b</code>)
 
+section
+  h2 "Spirit of C"
+  hr
+
+  br
+  p "Don't prevent the programmer from doing what needs to be done."
+
+  br
+  br
+  p.fragment ???
+
+section
+  h2 "Spirit of C"
+  hr
+
+  br
+  p "Make it <mark>fast</mark>, even if it is not guaranteed to be <mark>portable</mark>."
+
+//- Books
 section
   h2 C Programming: <br> A Modern Approach
   hr
 
-  img(src = "./0-intro/figs/modern-c.jpg", alt = "The C Programming Language",
-      width = 400, height = auto)
+  <div class="row">
+    <div class="column">
+      img(src = "./0-intro/figs/modern-c-ch.png" alt = "C Modern Approach Chinese",
+        width = 350 height = auto)
+    </div>
+    <div class="column">
+      img(src = "./0-intro/figs/modern-c-en.jpg" alt = "C Modern Approach English",
+        width = 400, height = auto)
+    </div>
+  </div>
 
 section
   h2 C Primer Plus
   hr
 
-  img(src = "./0-intro/figs/c-primer-plus.jpeg", alt = "The C Programming Language",
-      width = 400, height = auto)
+  <div class="row">
+    <div class="column">
+      img(src = "./0-intro/figs/c-primer-plus-ch.jpg" alt = "C Primer Plus Chinese",
+        width = 400, height = auto)
+    </div>
+    <div class="column">
+      img(src = "./0-intro/figs/c-primer-plus-en.jpg" alt = "C Primer Plus English",
+        width = 400, height = auto)
+    </div>
+  </div>
 
 section
-  h2 Cert C
+  h2 C Primer Plus
   hr
 
+  <div class="row">
+    <div class="column">
+      img(src = "./0-intro/figs/KR.jpg" alt = "The C Programming Language K&R",
+        width = 360, height = auto)
+    </div>
+    <div class="column">
+      br
+      br
+      img(src = "./0-intro/figs/KandR.jpg" alt = "Brian Kernighan and Dennis Ritchie",
+        width = 500, height = auto)
+    </div>
+  </div>
+  p.fragment Classic and elegant. Somewhat out-dated.
+
 section
-  h2 Cert C
+  h2 Secure C
   hr
 
-  p Google vs. HuaWei
+  p <mark>"Trust the programmer."</mark>
+  <div class="row">
+    <div class="column">
+      img(src = "./0-intro/figs/cert-c.jpeg" alt = "Cert C"
+        width = 400 height = auto)
+    </div>
+    <div class="column">
+      img(src = "./0-intro/figs/c-pitfalls.jpg", alt = "C Traps and Pitfalls",
+          width = 350, height = auto)
+    </div>
+  </div>
 
 section
-  h2 考核方式
+  h2 Programming Style Guide
+  hr
+
+  br
+  <div class="row">
+    <div class="column">
+      img(src = "./0-intro/figs/google-styleguide.png" alt = "Google C++ Style Guide"
+        width = 700 height = auto)
+    </div>
+    <div class="column">
+      img(src = "./0-intro/figs/huawei-c.png" alt = "HuaWei C Programming Style"
+        width = 400 height = auto)
+    </div>
+  </div>
+
+//- Scores
+section
+  h2 Examination and Scores
   hr
 
   br
@@ -162,76 +206,158 @@ section
     li.fragment
       del 期末笔试
     li.fragment
-      ins 期末机试 (30 分)
+      ins 期末机试 (20 分)
     li.fragment
-      ins 编程练习 (70 分)
+      ins 编程练习 (80 分)
     li.fragment
-      ins 奖励分数 (10 分)
+      ins 奖励
 
   br
-  br
-  p.fragment 编程练习: 每周基础训练 (50 分) + 学期项目训练 (20 分)
+  p.fragment 编程练习: 每周基础训练 (60 分) + 学期项目训练 (20 分)
 
 section
-  h2 How to Learn C?
+  h2 Examination and Scores
   hr
 
   br
-  p 螺旋式、循序渐进 (不要指望一下子理解一个完整的概念)
+  img(src = "./0-intro/figs/GitHub-Classroom.png" alt = "GitHub Classroom"
+    width = 600 height = auto)
+
+  p TODO: +link to video
+    //- a(class = "button" href = "")
 
 section
-  h2 How to Learn C?
+  h2 Examination and Scores
   hr
 
   br
+  img(src = "./0-intro/figs/plagiarism.jpg" alt = "Plagiarism"
+    width = 700 height = auto)
+  p 前两次各扣 10 分, 第三次总分降为 60 分
+
+//- How to learn?
+section
+  h2 How to Learn?
+  hr
+
+  img(src = "./0-intro/figs/keep-calm-dont-panic.jpg" alt = "Keep Calm and Don't Panic"
+    width = 400 height = auto)
+
+  p Beginners are welcome!
+
+section
+  h2 How to Learn?
+  hr
+
+  br
+  p 20% theory + 80% coding
   img(src = "./0-intro/figs/theory-practice.jpeg" alt = "Theory vs. Practice"
-      width = 600, height = auto)
+      width = 500, height = auto)
+  p(class = "r-fit-text") I can teach you theory; but I cannot write code for you.
 
 section
-  h2 How to Learn C?
+  h2 How to Learn?
   hr
 
-  p QQ群、助教、潜水员; 教学立方
-  p problemoverflow.cn
+  br
+  img(src = "./0-intro/figs/step-by-step.jpg" alt = "Step by Step"
+    width = 500 height = auto)
+
+  p Don't expect to learn everything at once.
+  p (<code>pointers: *</code>)
 
 section
-  h2 GitHub Classroom
+  h2 How to Learn?
+  hr
 
+  br
+  <div class="row">
+    <div class="column">
+      img(src = "./0-intro/figs/more-practice.jpg" alt = "More Practice"
+          width = 400 height = auto)
+    </div>
+    <div class="column">
+      img(src = "./0-intro/figs/fail-early-fail-often.png" alt = "Fail Early Fail Often"
+          width = 500 height = auto)
+    </div>
+  </div>
+  p How many <em>bugs</em> have you ever produced?
+
+//- Resources
+section
+  h2 Resources
+  hr
+
+  <div class="row">
+    <div class="column">
+      img(src = "./0-intro/figs/QQ-2021-C-PL-qrcode.png" alt = "QQ Group"
+          width = 350 height = auto)
+      p 6735 99232 &emsp; 2021-C-PL
+    </div>
+    <div class="column">
+      p 助教/潜水员;
+    </div>
+  </div>
+
+section
+  h2 Resources
+  hr
+
+  br
+  <div class="row">
+    <div class="column">
+      br
+      img(src = "./0-intro/figs/teaching-square-logo.png" alt = "Logo for Teaching Square"
+          width = 400 height = auto)
+    </div>
+    <div class="column">
+      img(src = "./0-intro/figs/qrcode-teachingsquare-c-pl.jpg" alt = "Teaching Square for C Class"
+        width = 350 height = auto)
+    </div>
+  </div>
+  p 发布课件、资料、调查问卷等
+
+section
+  h2 Resources
+  hr
+
+  //- a(class = "button" href = "") problemoverflow.cn
+
+//- let's code
 section
   br
   br
-  img(src = "./0-intro/figs/lets-code.jpeg",
-      alt = "Let's Code",
-      width = 600, height = auto)
+  img(src = "./0-intro/figs/lets-code.jpeg" alt = "Let's Code"
+    width = 600 height = auto)
 
 section
   h2 CLion
   hr
 
   p A cross-platform IDE for C and C++
-  img(src = "./0-intro/figs/CLion2021.png", alt = "The C Programming Language",
-      width = 800, height = auto)
+  img(src = "./0-intro/figs/CLion2021.png" alt = "The C Programming Language"
+      width = 800 height = auto)
 
-  ul
-    li
-      a(class='button' href='https://www.bilibili.com/video/BV1GP4y1x7EH?share_source=copy_web') <small>Wins-CLion-助教-熊丘桓 @ bilibili</small>
-    li
-      a(class="button" href="https://www.bilibili.com/video/BV1o44y117Zt") <small>macOS-CLion-助教-肖江@bilibili</small>
+  p
+    a(class='button' href='https://www.bilibili.com/video/BV1GP4y1x7EH?share_source=copy_web') <small>Wins-CLion @ bilibili</small>
+  p
+    a(class="button" href="https://www.bilibili.com/video/BV1o44y117Zt") <small>macOS-CLion @ bilibili</small>
 
 section
   h2 Dev-C++
   hr
 
   p Open Source C/C++ IDE for Windows
-  img(src = "./0-intro/figs/DevC++.jpg",
-      alt = "The C Programming Language",
-      width = 600, height = auto)
+  img(src = "./0-intro/figs/DevC++.jpg" alt = "The C Programming Language"
+      width = 600 height = auto)
 
-  ul
-    li
+  p
+    a(class='button' href='https://www.bilibili.com/video/BV1sP4y1p7n5') <small>Wins-DevC++ @ bilibili</small>
 
 section
   h2 Hello World
+  hr
+
   pre
     code(class="lang-c")
       script(type="text/template").
@@ -241,6 +367,26 @@ section
           printf("Hello World");
           return 0;
         }
+
+section
+  h2 Brief History of C
+  hr
+
+  br
+  img(src = "./0-intro/figs/c-history.jpg" alt = "History of C"
+    width = 900 height = auto)
+
+  p You do not have to become a <em>language lawyer</em>.
+
+
+section
+  h2 Comments
+  hr
+
+  img(src = "./0-intro/figs/less-comments.jpeg" alt = "Less Comments"
+    width = 400 height = auto)
+
+  p Replace verbose comments with clear code.
 
 section
   h2 Game: Guessing the Number
@@ -254,9 +400,17 @@ section
     a(class = "button" href = "https://www.abcya.com/games/guess_the_number") Guess the Number
 
 section
+  h2 Game: Guessing the Number
+  hr
+
+  img(src = "./0-intro/figs/programming-is-thinking.jpg" alt = "Quote: Programming is Thinking, not Typing",
+      width = 500 height = auto)
+
+  p You think. I will type it for you.
+
+section
   h2
 
   br
-  img(src = "./0-intro/figs/see-you.jpeg",
-      alt = "See you Next Week",
-      width = 400, height = auto)
+  img(src = "./0-intro/figs/see-you.jpeg" alt = "See you Next Week",
+      width = 400 height = auto)
