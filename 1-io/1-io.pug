@@ -1,5 +1,5 @@
 section
-  h1(style="font-variant: small-caps") Types, Variables, IO
+  h1(style="font-variant: small-caps") Variables, Types, IO
   hr
 
   br
@@ -9,7 +9,166 @@ section
   //- br
   img(src = "./1-io/figs/C.png", alt = "The C Programming Language",
       width = 200, height = auto)
-  p Sep. 27, 2021
+  p Oct. 11, 2021
+
+section
+  h2 Hello World (Standard C)
+  hr
+
+  br
+  pre
+    code(class="lang-c")
+      script(type="text/template").
+        #include <stdio.h>
+
+        int main() {
+          printf("Hello World\n");
+          return 0;
+        }
+  br
+  p <code>main</code> (主) 函数是程序的入口
+
+section
+  h2 Game: Guess the Number
+  hr
+
+  img(src = "./0-intro/figs/guess-the-number.png",
+      alt = "Guess the Number",
+      width = 500, height = auto)
+
+  p
+    a(class = "button" href = "https://www.abcya.com/games/guess_the_number") Guess the Number
+
+section
+  h2 Overview
+  hr
+
+  br
+  p Variables (变量) &emsp; Constants (常量)
+  p Data Types (数据类型)
+  br
+  p Operators (运算符) &emsp; Expressions (表达式)
+  p Assignment Statements (赋值语句)
+  br
+  p I/O (Input/Output; 输入输出)
+
+section
+  h2 Program
+  hr
+
+  br
+  <div class="row">
+    <div class="column">
+      img(src = "./1-io/figs/program-wirth.png" alt = "Book by Wirth"
+        width = 400 height = auto)
+      p 程序 = 数据 + 操作
+    </div>
+    <div class="column">
+      img(src = "./1-io/figs/Wirth.jpg" alt = "Wirth"
+        width = 450 height = auto)
+      p Niklaus Wirth ($1934 \sim$)
+      p <small> Turing Award ($1984$) for developing a sequence of innovative computer languages</small>
+    </div>
+  </div>
+
+section
+  br
+  br
+  img(src = "./0-intro/figs/lets-code.jpeg" alt = "Let's Code"
+    width = 600 height = auto)
+
+section
+  h2 A (Naive) Administration System
+  hr
+
+  br
+  <div class="row">
+    <div class="column">
+      ul
+        li Name (CH)
+        li Name (EN)
+        li Gender (F/M)
+        li Birthday (mm-dd-yyyy)
+        li Weekday (Xyz.)
+        li MAC Address (HEX)
+    </div>
+    <div class="column">
+      ul
+        li C
+        li C++
+        li Java
+        li Mean (.d)
+        li Standard Deviation (.dd)
+        li Ranking ($\%$)
+    </div>
+  </div>
+
+section
+  h2 Linus Torvalds
+  hr
+
+  img(src = "./1-io/figs/Linus.jpg" alt = "Linus Torvalds"
+    width = 350 height = auto)
+  p Linus Torvalds ($12\text{-}28\text{-}1969$)
+
+section
+  h2 Declaration (声明)
+  hr
+
+  p <code><mark>char gender = 'M';</mark></code>
+
+  br
+  ul
+    li.fragment Introduce a <em>variable</em> called <code>gender</code> into your program.
+    li.fragment You can use <code>gender</code> later in your program.
+    li.fragment The type of <code>gender</code> is <code>char</code> (character).
+    li.fragment <code>gender</code> is <em>initialized</em> (初始化) to the character <code>M</code>.
+    li.fragment You can <em>assign</em> (赋值) other values to <code>gender</code>.
+    li.fragment <code>gender</code> refers to a <em>location</em> (<em>object</em>) in memory.
+
+section
+  h2 Definition (定义)
+  hr
+
+  br
+  p <code><mark>char gender = 'M';</mark></code> is also a <em>definition</em>.
+
+  br
+  p.fragment Any definitions are declarations.
+  p.fragment <del>All declarations are definitions</del> (at least for now).
+
+section
+  h2 Identifiers (标识符)
+  hr
+
+  br
+  p <code><mark>char gender = 'M';</mark></code>
+
+  br
+  p the name <code>gender</code> is an <em>identifier</em>.
+
+  br
+  ul
+    li made up of letters, numbers, and underscores
+    li do <em>not</em> start with a number
+
+section
+  h2 Identifiers (标识符)
+  hr
+
+  p 命名规范 (google; huawei)
+
+section
+  h2 Data Types
+  hr
+
+  br
+  br
+  ul
+    li <code>int</code>
+    li <code>double</code>
+    li <code>char</code>
+    li <code>C string</code> (char array; 字符数组)
 
 section
   h2 Data Types
@@ -20,204 +179,313 @@ section
   br
   p.fragment <code>int</code> $\approx \mathbb{Z}$ &emsp; <code>double</code> $\approx \mathbb{R}$
   br
-  p.fragment $3 \in $ <code>int</code> &emsp; $-3 \in $ <code>int</code>
+  p.fragment $100 \in $ <code>int</code> &emsp; $-100 \in $ <code>int</code>
+  br
+  p.fragment $3.14159 \in $ <code>double</code> &emsp; $6.022e23 \in $ <code>double</code>
+
+section
+  h2 Data Types: <code>int</code>
+  hr
+
+  br
+  p <code>INT_MIN</code> &emsp; <code>INT_MAX</code>
+
+  br
+  pre
+    code(class="lang-c")
+      script(type="text/template").
+        #include <limits.h>
+
+        printf("INT_MIN = %d \t INT_MAX = %d\n", INT_MIN, INT_MAX);
+  br
+  p <code>INT_MIN = -2147483647 INT_MAX = 2147483648</code>
+
+section
+  h2 Data Types: <code>double</code>
+  hr
+
+  br
+  p <code>DOUBLE_MIN</code> &emsp; <code>DOUBLE_MAX</code>
+
+  br
+  pre
+    code(class="lang-c")
+      script(type="text/template").
+        #include <float.h>
+
+        printf("DBL_MIN = %f \t DBL_MAX = %f\n", DBL_MIN, DBL_MAX);
+  br
+  p <code>DBL_MIN = - DBL_MAX = </code>
 
 section
   h2 Data Types
   hr
 
-  br
   p $a \in $ <code>int</code> &emsp; $b \in $ <code>int</code>
   br
   p $a + b \in $ <code>int</code>
   p $a - b \in $ <code>int</code>
   p $a \times b \in $ <code>int</code>
   p <span class = hl>$a \;/\; b \in $ <code>int</code></span>
+  p $a \;\%\; b \in $ <code>int</code> (取余)
 
 section
   h2 Data Types
   hr
 
   br
-  h4(class = "r-fit-text") Data Type = Data Set + Operations
+  br
+  p The <mark>type</mark> of a variable determines
+  ul
+    li the set of <em>values</em> it can have and
+    li what <em>operations</em> can be performed on it.
 
 section
-  h2 Variables
+  h2 Data Types: <code>char</code>
   hr
 
   br
-  p <code>int number;</code>
 
+section
+  h2 <code>printf</code>
+  hr
+
+  br
+  code <mark>int printf(const char *format, ...);</mark>
+
+  br
   br
   ul
-    li.fragment <span class = "hl">Declare</span> a <em>variable</em> with name called <code>number</code>.
-    li.fragment The type of <code>number</code> is <code>int</code>.
-    li.fragment <code>number</code> refers to a <em>location</em> (<em>object</em>) in memory.
-    li.fragment <code>number</code> is <em>uninitialized</em>.
-    li.fragment You can <span class = "hl">assign</span> values to <code>number</code> later.
-
-section
-  h2(style="font-variant: small-caps") Recommend
-  img(src = "./1-io/figs/5-stars.png" alt = "Recommend"
-      width = 300, height = auto)
-  hr
+    li <code>format</code>: format string (格式串)
+    li <code>...</code>: 可变长参数列表
 
   br
-  p <code>int number = 100;</code>
-  br
-  p <code>number</code> has also been <em>initialized</em>.
-
-section
-  h2 Declare vs. Define
-  hr
-
-  br
-  p <code>int number = 100;</code> is also a <em>definition</em>.
-
-  br
-  p.fragment Any definitions are declarations.
-  br
-  p.fragment But not all declarations are definitions.
-
-section
-  h2 <code>int</code>
-  hr
-
-  br
-  p <code>INT_MAX</code> &emsp; <code>INT_MIN</code>
-
   br
   pre
     code(class="lang-c")
       script(type="text/template").
-        printf("INT_MAX = %d \t INT_MIN = %d\n", INT_MAX, INT_MIN);
-  br
-  p <code>INT_MAX = 2147483647 INT_MIN = -2147483648</code>
+        printf("INT_MIN = %d \t INT_MAX = %d\n", INT_MIN, INT_MAX);
 
 section
-  h2 Output <code>int</code>
+  h2 <code>printf</code>
   hr
 
   br
-  p.fragment <code>printf("Number is %d.\n", number)</code>
+  code <mark>int printf(const char *format, ...);</mark>
+
   br
-  p.fragment <code>printf("Number is %d, and Counter is %d.\n", number, counter)</code>
   br
-  p.fragment <code>printf</code>
+  p The <code>format</code> string consists of
+  ul
+    li $\ge 0$ ordinary characters (not $\%$)
+    li $\ge 0$ conversion specifications (转换说明), each of which is introduced by $\%$
 
 section
-  h2 Input <code>int</code>
+  h2 <code>printf</code>
+  hr
+
+  code <mark>int printf(const char *format, ...);</mark>
+  p Escape sequence (转义序列)
+  ul
+    li.fragment <code>\n</code>: Newline
+    li.fragment <code>\t</code>: Horizontal Tab
+    li.fragment <code>\"</code>: Double quotation mark
+    li.fragment <code>\'</code>: Single quotation mark
+    li.fragment <code>\\</code>:	Backslash
+    li.fragment <code>\b</code>: Backspace
+    li.fragment <code>\a</code>: Alert
+
+section
+  h2 <code>printf</code>
   hr
 
   br
-  p <code>scanf("%d", &number)</code>
-  br
-  p.fragment <code>scanf("%d%d", &number, &counter)</code>
-  br
-  p.fragment <code>scanf</code>
-
-section
-  br
-  br
-  img(src = "./0-intro/figs/lets-code.jpeg",
-      alt = "Let's Code",
-      width = 600, height = auto)
-
-section
-  h2 (1) Max: Taking the maximum of two ints
-  hr
-
-section
-  h2 (2) Max: Taking the maximum of three ints
-  hr
-
-section
-  h2 (3) Number of Digits
-  hr
-
-section
-  h2 <code>double</code>
-  hr
+  code <mark>int printf(const char *format, ...);</mark>
 
   br
-  p <code>double pi = 3.14159f</code>
-
   br
-  p Recommend!!! f???
+  table
+    thead
+      tr
+        th %specifier
+        th Argument
+        th Output
+    tbody
+      tr
+        td %d (%i)
+        td int
+        td decimal([-]dddd)
+      tr
+        td %f
+        td double
+        td decimal ([-]ddd.ddd)
+      tr
+        td %e (%E)
+        td double
+        td decimal ([-]d.ddde[+-]dd)
+      tr
+        td %g (%G)
+        td double
+        td %f or %e
 
 section
-  h2 Output and Input <code>double</code>
+  h2 <code>printf</code>
   hr
 
   br
-  p <code>printf()</code>
-  p <code>scanf()</code>
+  code <mark>int printf(const char *format, ...);</mark>
+
+  br
+  br
+  table
+    thead
+      tr
+        th %specifier
+        th Argument
+        th Output
+    tbody
+      tr
+        td %c
+        td int
+        td character
+      tr
+        td %s
+        td pointer to a char array
+        td string
+      tr
+        td %p
+        td pointer to <code>void</code> (address)
+        td address
+      tr
+        td %%
+        td
+        td %
 
 section
-  h2 Floating-point Arithmetic
-  img(src = "./1-io/figs/bad-news.png", alt = "Bad News"
-      width = 150, height = auto)
+  h2 <code>printf</code>
+  hr
+
+  img(src = "./1-io/figs/c-std-book.jpg" alt = "The Standard C Library"
+    width = 350 height = auto)
+  p "It is <mark>up to you</mark> to ensure that the type of the actual argument <em>matches</em> the type expected by CS."
+
+section
+  h2 <code>printf</code>
   hr
 
   br
-  h4.fragment(class = "r-fit-text") "Floating-point arithmetic is complicated."
-  br
-  br
-  h4.fragment(class = "r-fit-text") "Writing portable code is much more challenging."
-  br
-  br
-  h4.fragment(class = "r-fit-text") "Writing good math functions is hard."
+  code <mark>int printf(const char *format, ...);</mark>
+  p <code>%[flags][width][.precision]specifier</code>
 
-section
-  h2 Floating-point Arithmetic
-  img(src = "./1-io/figs/bad-news.png", alt = "Bad News"
-      width = 150, height = auto)
-  hr
+  ul
+    li.fragment <code>width</code>
+    li.fragment <code>flags</code>
+    li.fragment <code>.precision</code>
 
-  br
-  h4(class = "r-fit-text") Overflow
 
-section
-  h2 Floating-point Arithmetic
-  img(src = "./1-io/figs/bad-news.png", alt = "Bad News"
-      width = 150, height = auto)
-  hr
 
-  br
-  h4(class = "r-fit-text") Underflow
+//- section
+//-   br
+//-   br
+//-   img(src = "./0-intro/figs/lets-code.jpeg",
+//-       alt = "Let's Code",
+//-       width = 600, height = auto)
 
-section
-  h2 Floating-point Arithmetic
-  img(src = "./1-io/figs/bad-news.png", alt = "Bad News"
-      width = 150, height = auto)
-  hr
+//- section
+//-   h2 (1) Max: Taking the maximum of two ints
+//-   hr
 
-  br
-  h4(class = "r-fit-text") Significance Loss
+//- section
+//-   h2 (2) Max: Taking the maximum of three ints
+//-   hr
 
-section
-  h2 Floating-point Arithmetic (Good News)
-  hr
+//- section
+//-   h2 (3) Number of Digits
+//-   hr
 
-  br
-  h3.fragment "Many applications don't need floating-point arithmetic at all."
-  br
-  br
-  h2.fragment Use <mark>math.h</mark>
+//- section
+//-   h2 <code>double</code>
+//-   hr
 
-section
-  h2 double??? circle??? pi??? 周长;面积;体积
+//-   br
+//-   p <code>double pi = 3.14159f</code>
 
-section
-  h2 solving equations (root)
+//-   br
+//-   p Recommend!!! f???
 
-section
-  h2 log, pow, floor, ceil
+//- section
+//-   h2 Output and Input <code>double</code>
+//-   hr
 
-section
-  h2 Books
-  hr
+//-   br
+//-   p <code>printf()</code>
+//-   p <code>scanf()</code>
 
-  br
-  p TAOCP
-  p CSAPP
+//- section
+//-   h2 Floating-point Arithmetic
+//-   img(src = "./1-io/figs/bad-news.png", alt = "Bad News"
+//-       width = 150, height = auto)
+//-   hr
+
+//-   br
+//-   h4.fragment(class = "r-fit-text") "Floating-point arithmetic is complicated."
+//-   br
+//-   br
+//-   h4.fragment(class = "r-fit-text") "Writing portable code is much more challenging."
+//-   br
+//-   br
+//-   h4.fragment(class = "r-fit-text") "Writing good math functions is hard."
+
+//- section
+//-   h2 Floating-point Arithmetic
+//-   img(src = "./1-io/figs/bad-news.png", alt = "Bad News"
+//-       width = 150, height = auto)
+//-   hr
+
+//-   br
+//-   h4(class = "r-fit-text") Overflow
+
+//- section
+//-   h2 Floating-point Arithmetic
+//-   img(src = "./1-io/figs/bad-news.png", alt = "Bad News"
+//-       width = 150, height = auto)
+//-   hr
+
+//-   br
+//-   h4(class = "r-fit-text") Underflow
+
+//- section
+//-   h2 Floating-point Arithmetic
+//-   img(src = "./1-io/figs/bad-news.png", alt = "Bad News"
+//-       width = 150, height = auto)
+//-   hr
+
+//-   br
+//-   h4(class = "r-fit-text") Significance Loss
+
+//- section
+//-   h2 Floating-point Arithmetic (Good News)
+//-   hr
+
+//-   br
+//-   h3.fragment "Many applications don't need floating-point arithmetic at all."
+//-   br
+//-   br
+//-   h2.fragment Use <mark>math.h</mark>
+
+//- section
+//-   h2 double??? circle??? pi??? 周长;面积;体积
+
+//- section
+//-   h2 solving equations (root)
+
+//- section
+//-   h2 log, pow, floor, ceil
+
+//- section
+//-   h2 Books
+//-   hr
+
+//-   br
+//-   p TAOCP
+//-   p CSAPP

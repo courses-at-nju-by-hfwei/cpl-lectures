@@ -89,113 +89,11 @@ li + li {
     <div class="reveal">
       <div class="slides">
         <section>
-          <h1 style="font-variant: small-caps">Introducing C</h1>
+          <h1 style="font-variant: small-caps">Variables, Types, IO</h1>
           <hr><br>
-          <h4>Hengfeng Wei &thinsp; (魏恒峰)</h4>
-          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./0-intro/figs/C.png" alt="The C Programming Language" width="200">
-          <p>Sep. 27, 2021</p>
-        </section>
-        <section>
-          <h2>Questionnaire</h2>
-          <hr><br><img src="./0-intro/figs/25-75.jpg" alt="25% vs. 75%" width="450"><br>
-          <p>$75\%$ of students are new to programming.</p>
-        </section>
-        <section>
-          <h2>To C Beginners</h2>
-          <hr><br><img src="./0-intro/figs/donot-panic.jpg" alt="Do not Panic" width="500">
-        </section>
-        <section>
-          <h2>From Beginners to Masters</h2>
-          <hr><br><br>
-          <h2 style="font-variant: small-caps">Programming</h2><br>
-          <h2 style="font-variant: small-caps">De-programming</h2>
-        </section>
-        <section>
-          <h2>What is C?</h2>
-          <hr><br><br>
-          <p>C is a <em>computer</em> programming language (PL).</p><br>
-          <p>You communicate your <mark>ideas</mark> to computers via PLs.</p>
-        </section>
-        <section>
-          <h2>What is C?</h2>
-          <hr><br>
-          <p>Programming is <em>NOT</em> (only) about languages.</p><br>
-          <p class="fragment">Programming is not about C.</p><br>
-          <p class="fragment">You learn C to express <mark>YOUR IDEAS</mark>.</p>
-        </section>
-        <section>
-          <h2>How to Learn (1)?</h2>
-          <hr><br><img src="./0-intro/figs/code-think.png" alt="Code vs. Think" width="500">
-        </section>
-        <section>
-          <h2>How to Learn (2)?</h2>
-          <hr><br><img src="./0-intro/figs/maiyouweng.jpeg" alt="MaiYouWeng" width="600">
-          <p>"无他, 但手熟尔"</p>
-        </section>
-        <section>
-          <h2>How to Learn (3)?</h2>
-          <hr><br><img src="./0-intro/figs/fail-early-fail-often.png" alt="Fail Early Fail Often" width="700">
-          <p>How many <mark><em>bugs</em></mark> have you ever produced?</p>
-        </section>
-        <section>
-          <h2>C Programming: <br> A Modern Approach</h2>
-          <hr><div class="row">
-<div class="column"><img src="./0-intro/figs/modern-c-ch.png" alt="C Modern Approach Chinese" width="350"></div>
-<div class="column"><img src="./0-intro/figs/modern-c-en.jpg" alt="C Modern Approach English" width="400"></div>
-</div>
-        </section>
-        <section>
-          <h2>C Primer Plus</h2>
-          <hr><div class="row">
-<div class="column"><img src="./0-intro/figs/c-primer-plus-ch.jpg" alt="C Primer Plus Chinese" width="400"></div>
-<div class="column"><img src="./0-intro/figs/c-primer-plus-en.jpg" alt="C Primer Plus English" width="400"></div>
-</div>
-        </section>
-        <section>
-          <h2>K&R C Bible</h2>
-          <hr><br><div class="row">
-<div class="column"><img src="./0-intro/figs/KR.jpg" alt="The C Programming Language K&amp;R" width="360"></div>
-<div class="column"><img src="./0-intro/figs/KandR-answer.jpg" alt="The C Answer Book" width="320"></div>
-</div>
-        </section>
-        <section>
-          <h2>K&R</h2>
-          <hr><br>
-          <p>Brian W. Kernighan (1942 ~)</p><img src="./0-intro/figs/KandR.jpg" alt="KandR" width="600">
-          <p>Dennis M. Ritchie (1941 ~ 2011)</p>
-        </section>
-        <section>
-          <h2>Examination and Scores</h2>
-          <hr><br>
-          <ul>
-            <li class="fragment">
-              <del>考勤</del>
-            </li>
-            <li class="fragment">
-              <del>期中测试</del>
-            </li>
-            <li class="fragment">
-              <del>期末笔试</del>
-            </li>
-            <li class="fragment"><ins>期末机试 (30 分)</ins></li>
-            <li class="fragment"><ins>编程练习 (70 分)</ins></li>
-            <li class="fragment"><ins>奖励</ins></li>
-          </ul><br>
-          <p class="fragment">编程练习: 每周基础训练 (40 分) + 学期项目 (30 分; 2 个)</p>
-        </section>
-        <section>
-          <h2>Q&A</h2>
-          <hr><br><img src="./0-intro/figs/ask-me-anything.png" alt="Ask Me Anything" width="600">
-        </section>
-        <section><br><br><img src="./0-intro/figs/lets-code.jpeg" alt="Let's Code" width="600"></section>
-        <section>
-          <h2>CLion</h2>
-          <hr><br><img src="./0-intro/figs/CLion2021.png" alt="CLion" width="800">
-          <p>"你有你的选择, 而我选择 CLion"</p>
-        </section>
-        <section>
-          <h2>Hello World (K&R C)</h2>
-          <hr><img src="./0-intro/figs/hello-world-kandr.jpg" alt="Hello World in KandR C" width="500">
+          <h4>Hengfeng Wei</h4>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./1-io/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Oct. 11, 2021</p>
         </section>
         <section>
           <h2>Hello World (Standard C)</h2>
@@ -207,18 +105,8 @@ int main() {
   printf("Hello World\n");
   return 0;
 }
-
-              </script></code></pre>
-        </section>
-        <section>
-          <h2>Brief History of C</h2>
-          <hr><br><img src="./0-intro/figs/c-history.jpg" alt="History of C" width="1400">
-          <p>You do <em>not</em> have to become a <em>language lawyer</em>.</p>
-        </section>
-        <section>
-          <h2>Brief History of C</h2>
-          <hr><br><img src="./0-intro/figs/thompson-ritchie.jpg" alt="Thompson and Ritchie" width="800">
-          <p>Turing Award (1983)</p>
+              </script></code></pre><br>
+          <p><code>main</code> (主) 函数是程序的入口</p>
         </section>
         <section>
           <h2>Game: Guess the Number</h2>
@@ -226,242 +114,270 @@ int main() {
           <p><a class="button" href="https://www.abcya.com/games/guess_the_number">Guess the Number</a></p>
         </section>
         <section>
-          <h2>Game: Guess the Number</h2>
-          <hr><img src="./0-intro/figs/programming-is-thinking.jpg" alt="Quote: Programming is Thinking, not Typing" width="500">
-          <p>You think. I will type it for you.</p>
-        </section>
-        <section>
-          <h2>How to Obtain a Random Number?</h2>
-          <hr><br><img src="./0-intro/figs/random-range.jpg" alt="Generate a Random Number in Given Range" width="800">
-        </section>
-        <section>
-          <h2>How to Obtain a Random Number?</h2>
-          <hr><br><img src="./0-intro/figs/getRandomNumber.jpeg" alt="getRandomNumber" width="800">
-        </section>
-        <section>
-          <h2>How to Obtain a Random Number?</h2>
-          <hr><img src="./0-intro/figs/cpp-random.png" alt="rand() on cppreference" width="900">
-          <p><a class="button" href="https://en.cppreference.com/w/c">https://en.cppreference.com/w/c</a></p>
-        </section>
-        <section>
-          <h2>Code Style</h2>
-          <hr><br><div class="row">
-<div class="column"><img src="./0-intro/figs/code-style-braces.png" alt="Code Style: Braces" width="300">
-          <p>Braces</p></div>
-<div class="column">
-          <video width="600" height="400" controls>
-            <source src="./0-intro/videos/tabs-vs-spaces.mp4" type="video/mp4">Your browser does not support the video tag.
-          </video>
-          <p>Tabs vs. Spaces</p></div>
-</div>
-          <p><a class="button" href="https://www.jetbrains.com/help/clion/code-style-c-c.html">Code Style in CLion</a></p>
-        </section>
-        <section>
-          <h2>Programming Style Guide</h2>
-          <hr><br><div class="row">
-<div class="column"><img src="./0-intro/figs/google-styleguide.png" alt="Google C++ Style Guide" width="750">
-          <p><a class="button" href="https://google.github.io/styleguide/">Google Style Guides</a></p></div>
-<div class="column"><img src="./0-intro/figs/huawei-c.png" alt="HuaWei C Programming Style" width="450">
-          <p><a class="button" href="https://github.com/courses-at-nju-by-hfwei/c-pl-resources/blob/main/books/%E5%8D%8E%E4%B8%BAC%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B%E6%8C%87%E5%8D%97.pdf">华为C语言编程指南.pdf</a></p></div>
-</div>
-        </section>
-        <section>
-          <h2>Secure C</h2>
-          <hr><br><div class="row">
-<div class="column"><img src="./0-intro/figs/cert-c.jpeg" alt="Cert C" width="400"></div>
-<div class="column"><img src="./0-intro/figs/c-pitfalls.jpg" alt="C Traps and Pitfalls" width="350"></div>
-</div>
-        </section>
-        <section>
-          <h2>How to Obtain a Random Number (Revisited)?</h2>
-          <hr><br><img src="./0-intro/figs/huawei-rand.png" alt="Huawei Rand()" width="1000">
-        </section>
-        <section>
-          <h2>What is Next?</h2>
+          <h2>Overview</h2>
           <hr><br>
+          <p>Variables (变量) &emsp; Constants (常量)</p>
+          <p>Data Types (数据类型)</p><br>
+          <p>Operators (运算符) &emsp; Expressions (表达式)</p>
+          <p>Assignment Statements (赋值语句)</p><br>
+          <p>I/O (Input/Output; 输入输出)</p>
+        </section>
+        <section>
+          <h2>Program</h2>
+          <hr><br><div class="row">
+<div class="column"><img src="./1-io/figs/program-wirth.png" alt="Book by Wirth" width="400">
+          <p>程序 = 数据 + 操作</p></div>
+<div class="column"><img src="./1-io/figs/Wirth.jpg" alt="Wirth" width="450">
+          <p>Niklaus Wirth ($1934 \sim$)</p>
+          <p><small> Turing Award ($1984$) for developing a sequence of innovative computer languages</small></p></div>
+</div>
+        </section>
+        <section><br><br><img src="./0-intro/figs/lets-code.jpeg" alt="Let's Code" width="600"></section>
+        <section>
+          <h2>A (Naive) Administration System</h2>
+          <hr><br><div class="row">
+<div class="column">
           <ul>
-            <li>Variables and Types (<code>int</code>, <code>double</code>)</li>
-            <li>Math: computer arithmetic</li>
-            <li>Input/Ouput (I/O)</li><br>
-            <li>Branching: "if/else", "switch/case"</li>
-            <li>Looping: "while", "do/while", "for"</li>
-            <li>Jumps: "break", "continue", "goto"</li><br>
-            <li>Functions & Libraries</li>
+            <li>Name (CH)</li>
+            <li>Name (EN)</li>
+            <li>Gender (F/M)</li>
+            <li>Birthday (mm-dd-yyyy)</li>
+            <li>Weekday (Xyz.)</li>
+            <li>MAC Address (HEX)</li>
+          </ul></div>
+<div class="column">
+          <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Mean (.d)</li>
+            <li>Standard Deviation (.dd)</li>
+            <li>Ranking ($\%$)</li>
+          </ul></div>
+</div>
+        </section>
+        <section>
+          <h2>Linus Torvalds</h2>
+          <hr><img src="./1-io/figs/Linus.jpg" alt="Linus Torvalds" width="350">
+          <p>Linus Torvalds ($12\text{-}28\text{-}1969$)</p>
+        </section>
+        <section>
+          <h2>Declaration (声明)</h2>
+          <hr>
+          <p><code><mark>char gender = 'M';</mark></code></p><br>
+          <ul>
+            <li class="fragment">Introduce a <em>variable</em> called <code>gender</code> into your program.</li>
+            <li class="fragment">You can use <code>gender</code> later in your program.</li>
+            <li class="fragment">The type of <code>gender</code> is <code>char</code> (character).</li>
+            <li class="fragment"><code>gender</code> is <em>initialized</em> (初始化) to the character <code>M</code>.</li>
+            <li class="fragment">You can <em>assign</em> (赋值) other values to <code>gender</code>.</li>
+            <li class="fragment"><code>gender</code> refers to a <em>location</em> (<em>object</em>) in memory.</li>
           </ul>
         </section>
         <section>
-          <h2>Keeping Programming</h2>
-          <hr><br><img src="./0-intro/figs/GitHub-Classroom.png" alt="GitHub Classroom" width="600">
-          <p><a class="button" href="https://www.bilibili.com/video/BV12L41147r7?share_source=copy_web">GitHub Classroom @ Bilibili</a></p>
-        </section>
-        <section>
-          <h2>No Plagiarism!!!</h2>
-          <hr><br><img src="./0-intro/figs/plagiarism.jpg" alt="Plagiarism" width="700">
-          <p>前两次各扣 10 分, 第三次总分降为 60 分 $\;(\times\; 60\%)$</p>
-        </section>
-        <section>
-          <h2>Resources</h2>
-          <hr><br><img src="./0-intro/figs/QQ-2021-C-PL-qrcode.png" alt="QQ Group" width="350">
-          <p>6735 99232 &emsp; 2021-C-PL</p>
-        </section>
-        <section>
-          <h2>Resources</h2>
-          <hr><br><div class="row">
-<div class="column"><br><img src="./0-intro/figs/teaching-square-logo.png" alt="Logo for Teaching Square" width="400"></div>
-<div class="column"><img src="./0-intro/figs/qrcode-teachingsquare-c-pl.jpg" alt="Teaching Square for C Class" width="350"></div>
-</div>
-          <p>发布课件、资料、调查问卷等</p>
-        </section>
-        <section>
-          <h2>Resources</h2>
-          <hr><br><img src="./0-intro/figs/problemoverflow-qa.png" alt="problemoverflow.cn" width="800">
-          <p><a class="button" href="problemoverflow.cn">problemoverflow.cn</a></p>
-        </section>
-        <section>
-          <h2></h2><br><br><img src="./0-intro/figs/see-you.jpeg" alt="See you Next Week" width="500">
-        </section>
-        <section>
-          <h1 style="font-variant: small-caps">Types, Variables, IO</h1>
+          <h2>Definition (定义)</h2>
           <hr><br>
-          <h4>Hengfeng Wei</h4>
-          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./1-io/figs/C.png" alt="The C Programming Language" width="200">
-          <p>Sep. 27, 2021</p>
+          <p><code><mark>char gender = 'M';</mark></code> is also a <em>definition</em>.</p><br>
+          <p class="fragment">Any definitions are declarations.</p>
+          <p class="fragment"><del>All declarations are definitions</del> (at least for now).</p>
+        </section>
+        <section>
+          <h2>Identifiers (标识符)</h2>
+          <hr><br>
+          <p><code><mark>char gender = 'M';</mark></code></p><br>
+          <p>the name <code>gender</code> is an <em>identifier</em>.</p><br>
+          <ul>
+            <li>made up of letters, numbers, and underscores</li>
+            <li>do <em>not</em> start with a number</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Identifiers (标识符)</h2>
+          <hr>
+          <p>命名规范 (google; huawei)</p>
+        </section>
+        <section>
+          <h2>Data Types</h2>
+          <hr><br><br>
+          <ul>
+            <li><code>int</code></li>
+            <li><code>double</code></li>
+            <li><code>char</code></li>
+            <li><code>C string</code> (char array; 字符数组)</li>
+          </ul>
         </section>
         <section>
           <h2>Data Types</h2>
           <hr><br>
           <p><code>int</code> &emsp; <code>double</code></p><br>
           <p class="fragment"><code>int</code> $\approx \mathbb{Z}$ &emsp; <code>double</code> $\approx \mathbb{R}$</p><br>
-          <p class="fragment">$3 \in $ <code>int</code> &emsp; $-3 \in $ <code>int</code></p>
+          <p class="fragment">$100 \in $ <code>int</code> &emsp; $-100 \in $ <code>int</code></p><br>
+          <p class="fragment">$3.14159 \in $ <code>double</code> &emsp; $6.022e23 \in $ <code>double</code></p>
+        </section>
+        <section>
+          <h2>Data Types: <code>int</code></h2>
+          <hr><br>
+          <p><code>INT_MIN</code> &emsp; <code>INT_MAX</code></p><br>
+          <pre><code class="lang-c">
+              <script type="text/template">#include <limits.h>
+
+printf("INT_MIN = %d \t INT_MAX = %d\n", INT_MIN, INT_MAX);
+              </script></code></pre><br>
+          <p><code>INT_MIN = -2147483647 INT_MAX = 2147483648</code></p>
+        </section>
+        <section>
+          <h2>Data Types: <code>double</code></h2>
+          <hr><br>
+          <p><code>DOUBLE_MIN</code> &emsp; <code>DOUBLE_MAX</code></p><br>
+          <pre><code class="lang-c">
+              <script type="text/template">#include <float.h>
+
+printf("DBL_MIN = %f \t DBL_MAX = %f\n", DBL_MIN, DBL_MAX);
+              </script></code></pre><br>
+          <p><code>DBL_MIN = - DBL_MAX = </code></p>
         </section>
         <section>
           <h2>Data Types</h2>
-          <hr><br>
+          <hr>
           <p>$a \in $ <code>int</code> &emsp; $b \in $ <code>int</code></p><br>
           <p>$a + b \in $ <code>int</code></p>
           <p>$a - b \in $ <code>int</code></p>
           <p>$a \times b \in $ <code>int</code></p>
           <p><span class = hl>$a \;/\; b \in $ <code>int</code></span></p>
+          <p>$a \;\%\; b \in $ <code>int</code> (取余)</p>
         </section>
         <section>
           <h2>Data Types</h2>
-          <hr><br>
-          <h4 class="r-fit-text">Data Type = Data Set + Operations</h4>
-        </section>
-        <section>
-          <h2>Variables</h2>
-          <hr><br>
-          <p><code>int number;</code></p><br>
+          <hr><br><br>
+          <p>The <mark>type</mark> of a variable determines</p>
           <ul>
-            <li class="fragment"><span class = "hl">Declare</span> a <em>variable</em> with name called <code>number</code>.</li>
-            <li class="fragment">The type of <code>number</code> is <code>int</code>.</li>
-            <li class="fragment"><code>number</code> refers to a <em>location</em> (<em>object</em>) in memory.</li>
-            <li class="fragment"><code>number</code> is <em>uninitialized</em>.</li>
-            <li class="fragment">You can <span class = "hl">assign</span> values to <code>number</code> later.</li>
+            <li>the set of <em>values</em> it can have and</li>
+            <li>what <em>operations</em> can be performed on it.</li>
           </ul>
         </section>
         <section>
-          <h2 style="font-variant: small-caps">Recommend</h2><img src="./1-io/figs/5-stars.png" alt="Recommend" width="300">
+          <h2>Data Types: <code>char</code></h2>
           <hr><br>
-          <p><code>int number = 100;</code></p><br>
-          <p><code>number</code> has also been <em>initialized</em>.</p>
         </section>
         <section>
-          <h2>Declare vs. Define</h2>
-          <hr><br>
-          <p><code>int number = 100;</code> is also a <em>definition</em>.</p><br>
-          <p class="fragment">Any definitions are declarations.</p><br>
-          <p class="fragment">But not all declarations are definitions.</p>
-        </section>
-        <section>
-          <h2><code>int</code></h2>
-          <hr><br>
-          <p><code>INT_MAX</code> &emsp; <code>INT_MIN</code></p><br>
+          <h2><code>printf</code></h2>
+          <hr><br><code><mark>int printf(const char *format, ...);</mark></code><br><br>
+          <ul>
+            <li><code>format</code>: format string (格式串)</li>
+            <li><code>...</code>: 可变长参数列表</li>
+          </ul><br><br>
           <pre><code class="lang-c">
-              <script type="text/template">printf("INT_MAX = %d \t INT_MIN = %d\n", INT_MAX, INT_MIN);</script></code></pre><br>
-          <p><code>INT_MAX = 2147483647 INT_MIN = -2147483648</code></p>
+              <script type="text/template">printf("INT_MIN = %d \t INT_MAX = %d\n", INT_MIN, INT_MAX);
+
+              </script></code></pre>
         </section>
         <section>
-          <h2>Output <code>int</code></h2>
-          <hr><br>
-          <p class="fragment"><code>printf("Number is %d.\n", number)</code></p><br>
-          <p class="fragment"><code>printf("Number is %d, and Counter is %d.\n", number, counter)</code></p><br>
-          <p class="fragment"><code>printf</code></p>
+          <h2><code>printf</code></h2>
+          <hr><br><code><mark>int printf(const char *format, ...);</mark></code><br><br>
+          <p>The <code>format</code> string consists of</p>
+          <ul>
+            <li>$\ge 0$ ordinary characters (not $\%$)</li>
+            <li>$\ge 0$ conversion specifications (转换说明), each of which is introduced by $\%$</li>
+          </ul>
         </section>
         <section>
-          <h2>Input <code>int</code></h2>
-          <hr><br>
-          <p><code>scanf("%d", &number)</code></p><br>
-          <p class="fragment"><code>scanf("%d%d", &number, &counter)</code></p><br>
-          <p class="fragment"><code>scanf</code></p>
-        </section>
-        <section><br><br><img src="./0-intro/figs/lets-code.jpeg" alt="Let's Code" width="600"></section>
-        <section>
-          <h2>(1) Max: Taking the maximum of two ints</h2>
-          <hr>
-        </section>
-        <section>
-          <h2>(2) Max: Taking the maximum of three ints</h2>
-          <hr>
+          <h2><code>printf</code></h2>
+          <hr><code><mark>int printf(const char *format, ...);</mark></code>
+          <p>Escape sequence (转义序列)</p>
+          <ul>
+            <li class="fragment"><code>\n</code>: Newline</li>
+            <li class="fragment"><code>\t</code>: Horizontal Tab</li>
+            <li class="fragment"><code>\"</code>: Double quotation mark</li>
+            <li class="fragment"><code>\'</code>: Single quotation mark</li>
+            <li class="fragment"><code>\\</code>:	Backslash</li>
+            <li class="fragment"><code>\b</code>: Backspace</li>
+            <li class="fragment"><code>\a</code>: Alert</li>
+          </ul>
         </section>
         <section>
-          <h2>(3) Number of Digits</h2>
-          <hr>
+          <h2><code>printf</code></h2>
+          <hr><br><code><mark>int printf(const char *format, ...);</mark></code><br><br>
+          <table>
+            <thead>
+              <tr>
+                <th>%specifier</th>
+                <th>Argument</th>
+                <th>Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>%d (%i)</td>
+                <td>int</td>
+                <td>decimal([-]dddd)</td>
+              </tr>
+              <tr>
+                <td>%f</td>
+                <td>double</td>
+                <td>decimal ([-]ddd.ddd)</td>
+              </tr>
+              <tr>
+                <td>%e (%E)</td>
+                <td>double</td>
+                <td>decimal ([-]d.ddde[+-]dd)</td>
+              </tr>
+              <tr>
+                <td>%g (%G)</td>
+                <td>double</td>
+                <td>%f or %e</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
         <section>
-          <h2><code>double</code></h2>
-          <hr><br>
-          <p><code>double pi = 3.14159f</code></p><br>
-          <p>Recommend!!! f???</p>
+          <h2><code>printf</code></h2>
+          <hr><br><code><mark>int printf(const char *format, ...);</mark></code><br><br>
+          <table>
+            <thead>
+              <tr>
+                <th>%specifier</th>
+                <th>Argument</th>
+                <th>Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>%c</td>
+                <td>int</td>
+                <td>character</td>
+              </tr>
+              <tr>
+                <td>%s</td>
+                <td>pointer to a char array</td>
+                <td>string</td>
+              </tr>
+              <tr>
+                <td>%p</td>
+                <td>pointer to <code>void</code> (address)</td>
+                <td>address</td>
+              </tr>
+              <tr>
+                <td>%%</td>
+                <td></td>
+                <td>%</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
         <section>
-          <h2>Output and Input <code>double</code></h2>
-          <hr><br>
-          <p><code>printf()</code></p>
-          <p><code>scanf()</code></p>
+          <h2><code>printf</code></h2>
+          <hr><img src="./1-io/figs/c-std-book.jpg" alt="The Standard C Library" width="350">
+          <p>"It is <mark>up to you</mark> to ensure that the type of the actual argument <em>matches</em> the type expected by CS."</p>
         </section>
         <section>
-          <h2>Floating-point Arithmetic</h2><img src="./1-io/figs/bad-news.png" alt="Bad News" width="150">
-          <hr><br>
-          <h4 class="fragment r-fit-text">"Floating-point arithmetic is complicated."</h4><br><br>
-          <h4 class="fragment r-fit-text">"Writing portable code is much more challenging."</h4><br><br>
-          <h4 class="fragment r-fit-text">"Writing good math functions is hard."</h4>
-        </section>
-        <section>
-          <h2>Floating-point Arithmetic</h2><img src="./1-io/figs/bad-news.png" alt="Bad News" width="150">
-          <hr><br>
-          <h4 class="r-fit-text">Overflow</h4>
-        </section>
-        <section>
-          <h2>Floating-point Arithmetic</h2><img src="./1-io/figs/bad-news.png" alt="Bad News" width="150">
-          <hr><br>
-          <h4 class="r-fit-text">Underflow</h4>
-        </section>
-        <section>
-          <h2>Floating-point Arithmetic</h2><img src="./1-io/figs/bad-news.png" alt="Bad News" width="150">
-          <hr><br>
-          <h4 class="r-fit-text">Significance Loss</h4>
-        </section>
-        <section>
-          <h2>Floating-point Arithmetic (Good News)</h2>
-          <hr><br>
-          <h3 class="fragment">"Many applications don't need floating-point arithmetic at all."</h3><br><br>
-          <h2 class="fragment">Use <mark>math.h</mark></h2>
-        </section>
-        <section>
-          <h2>double??? circle??? pi??? 周长;面积;体积</h2>
-        </section>
-        <section>
-          <h2>solving equations (root)</h2>
-        </section>
-        <section>
-          <h2>log, pow, floor, ceil</h2>
-        </section>
-        <section>
-          <h2>Books</h2>
-          <hr><br>
-          <p>TAOCP</p>
-          <p>CSAPP</p>
+          <h2><code>printf</code></h2>
+          <hr><br><code><mark>int printf(const char *format, ...);</mark></code>
+          <p><code>%[flags][width][.precision]specifier</code></p>
+          <ul>
+            <li class="fragment"><code>width</code></li>
+            <li class="fragment"><code>flags</code></li>
+            <li class="fragment"><code>.precision</code></li>
+          </ul>
         </section>
       </div>
     </div>
