@@ -532,8 +532,8 @@ section
         td a character
         td pointer to a <code>char</code>
       tr.fragment
-        td %[], %[^]
-        td
+        td %[abc], %[^abc]
+        td <code>(a|b|c)*</code>
         td pointer to a <code>char</code> array
       tr.fragment
         td %%
@@ -554,6 +554,13 @@ section
     li.fragment $\star$: assignment-suppressing
     li.fragment width: <em>maximum</em> field width
 
+//- section
+//-   h2 <code>scanf</code>
+//-   hr
+
+//-   br
+//-   p <code>scanf ("%[^\n]%*c", name)</code>
+
 section
   h2 <code>scanf</code>
   hr
@@ -562,3 +569,15 @@ section
   p "It is <mark>up to you</mark> to ensure that
   p the type of each actual argument pointer
   p <mark><em>matches</em></mark> the type expected by conversion specifiers."
+
+section
+  h2 References
+  hr
+
+  br
+  br
+  <a href = "https://en.cppreference.com/w/c/io/fprintf">printf @ cppreference</a>
+
+  br
+  br
+  <a href = "https://en.cppreference.com/w/c/io/fscanf">scanf @ cppreference</a>
