@@ -7,24 +7,6 @@
   <p>Oct. 11, 2021</p>
 </section>
 <section>
-  <h2>Hello World (Standard C)</h2>
-  <hr/><br/>
-  <pre><code class="lang-c">
-      <script type="text/template">#include <stdio.h>
-
-int main() {
-  printf("Hello World\n");
-  return 0;
-}
-      </script></code></pre><br/>
-  <p><code>main</code> (主) 函数是程序的入口</p>
-</section>
-<section>
-  <h2>Game: Guess the Number</h2>
-  <hr/><img src="./0-intro/figs/guess-the-number.png" alt="Guess the Number" width="500"/>
-  <p><a class="button" href="https://www.abcya.com/games/guess_the_number">Guess the Number</a></p>
-</section>
-<section>
   <h2>Overview</h2>
   <hr/><br/>
   <p>Variables (变量) &emsp; Constants (常量)</p>
@@ -43,8 +25,7 @@ int main() {
   <hr/><br/>
   <p>Given a radius ($10$) of a circle,</p>
   <p>Compute its circumference and area.</p>
-  <p>$L = 2\pi r$</p>
-  <p>$S = \pi r^2$</p><br/>
+  <p>$L = 2\pi r$ &emsp; $S = \pi r^2$</p><br/>
   <ul>
     <li>每个结果各占一行</li>
     <li>小数点后保留两位</li>
@@ -104,13 +85,16 @@ int main() {
   <hr/>
   <p>Given a radius ($100$) of a sphere,</p>
   <p>Compute its surface area and volume.</p>
-  <p>$A = 4 \pi r^2$</p>
-  <p>$V = \frac{4}{3} \pi r^3$</p><br/>
+  <p>$A = 4 \pi r^2$ &emsp; $V = \frac{4}{3} \pi r^3$</p><br/>
   <ul>
     <li>每个结果各占一行</li>
     <li>小数点后保留四位</li>
-    <li>每个结果至少占$15$字符 ( <code> : A/V</code>)</li>
-    <li>两个结果左对齐</li>
+    <li>每个结果至少占$15$字符, 左对齐
+      <ul>
+        <li><code>_______________ : surface_area</code></li>
+        <li><code>_______________ : volume</code></li>
+      </ul>
+    </li>
   </ul>
 </section>
 <section>
@@ -145,7 +129,6 @@ int main() {
   <hr/><br/><div class="row">
 <div class="column">
   <ul>
-    <li>Name (CH)</li>
     <li>Name (EN)</li>
     <li>Gender (F/M)</li>
     <li>Birthday (mm-dd-yyyy)</li>
@@ -361,7 +344,11 @@ int main() {
   <p>The <code>format</code> string consists of</p>
   <ul>
     <li>white-space characters</li>
-    <li>ordinary characters (neither % nor white-spaces)</li>
+    <li>ordinary characters
+      <ul>
+        <li>neither % nor white-spaces</li>
+      </ul>
+    </li>
     <li>conversion specifications
       <ul>
         <li>each of which is introduced by %</li>
@@ -409,7 +396,7 @@ int main() {
 </section>
 <section>
   <h2><code>scanf</code></h2>
-  <hr/><br/><code><mark>int scanf(const char *format, ...);</mark></code><br/><br/>
+  <hr/><br/><code><mark>int scanf(const char *format, ...);</mark></code><br/>
   <table>
     <thead>
       <tr>
@@ -425,8 +412,13 @@ int main() {
         <td>pointer to a <code>char</code></td>
       </tr>
       <tr class="fragment">
-        <td>%[abc], %[^abc]</td>
+        <td>%[abc] %[^abc]</td>
         <td><code>(a|b|c)*</code></td>
+        <td>pointer to a <code>char</code> array</td>
+      </tr>
+      <tr class="fragment">
+        <td>%[^abc]</td>
+        <td></td>
         <td>pointer to a <code>char</code> array</td>
       </tr>
       <tr class="fragment">

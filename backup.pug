@@ -342,3 +342,31 @@ section
 //-   br
 //-   p TAOCP
 //-   p CSAPP
+
+section
+  h2 Hello World (Standard C)
+  hr
+
+  br
+  pre
+    code(class="lang-c")
+      script(type="text/template").
+        #include <stdio.h>
+
+        int main() {
+          printf("Hello World\n");
+          return 0;
+        }
+  br
+  p <code>main</code> (主) 函数是程序的入口
+
+section
+  h2 Game: Guess the Number
+  hr
+
+  img(src = "./0-intro/figs/guess-the-number.png",
+      alt = "Guess the Number",
+      width = 500, height = auto)
+
+  p
+    a(class = "button" href = "https://www.abcya.com/games/guess_the_number") Guess the Number
