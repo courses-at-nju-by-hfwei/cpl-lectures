@@ -1,0 +1,200 @@
+section
+  h1(style="font-variant: small-caps") If, For, Array
+  hr
+
+  br
+  h4 Hengfeng Wei
+  h4 <u>hfwei@nju.edu.cn</u>
+
+  //- br
+  img(src = "./1-io/figs/C.png", alt = "The C Programming Language",
+      width = 200, height = auto)
+  p Oct. 18, 2021
+
+section
+  h2 Overview
+  hr
+
+  br
+  h3 If Statement (If 语句)
+  br
+  h3 Boolean Expressions (布尔表达式)
+  br
+  h3 For Statement (For 语句)
+  br
+  h3 Array (数组)
+
+section
+  h2(class = "r-fit-text" style="font-variant: small-caps") "Talk is Cheap. Show me the Code."
+  hr
+
+  img(src = "./0-intro/figs/lets-code.jpeg" alt = "Let's Code"
+    width = 600 height = auto)
+
+  br
+  p <code>min leap</code>
+  p <code>sum.c counting.c stars.c selection-sort.c</code>
+
+//- ---------- If (Min) -------------
+section
+  h2 Min
+  hr
+
+  br
+  p Given two integers $a$ and $b$,
+  p to compute their minimum.
+
+  br
+  p $\mathit{min} = \min\{a, b\}$
+
+section
+  h2 <code>if(-else)</code>
+  hr
+
+  br
+  p
+
+section
+  h2(class = "r-fit-text") Relational Operators (关系运算符)
+  hr
+
+  br
+  ul
+    li <code>>=</code>
+    li <code>></code>
+    li <code><=</code>
+    li <code><</code>
+    li.fragment <code><mark>==</mark></code> (equal to)
+    li.fragment <code>!=</code> (not equal to)
+
+section
+  h2 <code>?:</code>
+  hr
+
+  br
+  p <code><mark>min = a >= b ? b : a;</mark></code>
+
+  br
+  p Conditional Expression (条件表达式)
+  p Ternary Operator (三目运算符)
+
+  br
+  p(class = "r-fit-text") Do Not Use it Too Much!
+
+section
+  h2 Min of Three
+  hr
+
+  br
+  p Given three integers $a$, $b$, and $c$,
+  p to compute their minimum.
+
+  br
+  p $\mathit{min} = \min\{a, b, c\}$
+
+section
+  h2 Nested <code>if(-else)</code>
+  hr
+
+  br
+  p
+
+section
+  h2 Min of a Set of Numbers
+  hr
+
+  br
+  p Given a set $A$ of integers,
+  p to compute their minimum.
+
+  br
+  p $\mathit{min} = \min A$
+
+  img.fragment(src = "./2-if-for-array/figs/loop.jpg" alt = "Loop Logo"
+    width = 400 height = auto)
+
+//- ---------- If (Leap) -------------
+section
+  h2 Leap Year
+  hr
+
+  br
+  img(src = "./2-if-for-array/figs/leap-year.jpeg" alt = "Leap Year"
+    width = 650 height = auto)
+
+section
+  h2 Leap Year (1): Nested <code>if(-else)</code>
+  hr
+
+  br
+  img(src = "./2-if-for-array/figs/leap-year-flowchart.png" alt = "Leap Year Flowchart"
+    width = 750 height = auto)
+
+section
+  h2 Leap Year (2): Nested <code>if(-else)</code>
+  hr
+
+  br
+  img(src = "./2-if-for-array/figs/leap-year-wiki.png" alt = "Leap Year Psuedocode using Else-If"
+    width = 1200 height = auto)
+
+section
+  h2 Logical Operators (逻辑运算符)
+  hr
+
+  br
+
+section
+  h2 Boolean Expressions
+  hr
+
+  br
+  br
+
+section
+  h2 Leap Year (3): <code>else-if</code>
+  hr
+
+  br
+  p <code>else if</code>
+
+section
+  h2(class = "r-fit-text") Leap Year (4): The Ultimate Version
+  hr
+
+  br
+  p A year is a leap year <em>if</em>
+  br
+  ul
+    li it is divisible by 4 but not by 100,
+    li except that years divisible by 400 are leap years.
+
+section
+  h2 Short-circuit Evaluation
+  hr
+
+  br
+
+//- ---------- For (and Array) -------------
+
+//- ---------- References -------------
+section
+  h2 References
+  hr
+
+  br
+  br
+  <a href = "https://en.cppreference.com/w/c/io/fprintf">printf @ cppreference</a>
+
+  br
+  br
+  <a href = "https://en.cppreference.com/w/c/io/fscanf">scanf @ cppreference</a>
+
+section
+  h2 References
+  hr
+
+  br
+  br
+  p(class = "r-fit-text") Do not use <code>scanf</code>.
+  p(class = "r-fit-text") Use $\dots$ instead.

@@ -471,7 +471,7 @@ li + li {
                 <td>pointer to <code>int</code></td>
               </tr>
               <tr class="fragment">
-                <td>%e, %f, %g</td>
+                <td>%le, %lf, %lg</td>
                 <td>skip white-spaces; matches a <code>double</code></td>
                 <td>pointer to <code>double</code></td>
               </tr>
@@ -533,6 +533,126 @@ li + li {
           <p>"It is <mark>up to you</mark> to ensure that</p>
           <p>the type of each actual argument pointer</p>
           <p><mark><em>matches</em></mark> the type expected by conversion specifiers."</p>
+        </section>
+        <section>
+          <h2>References</h2>
+          <hr><br><br><a href = "https://en.cppreference.com/w/c/io/fprintf">printf @ cppreference</a><br><br><a href = "https://en.cppreference.com/w/c/io/fscanf">scanf @ cppreference</a>
+        </section>
+        <section>
+          <h2>References</h2>
+          <hr><br><br>
+          <p class="r-fit-text">Do not use <code>scanf</code>.</p>
+          <p class="r-fit-text">Use $\dots$ instead.</p>
+        </section>
+        <section>
+          <h1 style="font-variant: small-caps">If, For, Array</h1>
+          <hr><br>
+          <h4>Hengfeng Wei</h4>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./1-io/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Oct. 18, 2021</p>
+        </section>
+        <section>
+          <h2>Overview</h2>
+          <hr><br>
+          <h3>If Statement (If 语句)</h3><br>
+          <h3>Boolean Expressions (布尔表达式)</h3><br>
+          <h3>For Statement (For 语句)</h3><br>
+          <h3>Array (数组)</h3>
+        </section>
+        <section>
+          <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
+          <hr><img src="./0-intro/figs/lets-code.jpeg" alt="Let's Code" width="600"><br>
+          <p><code>min leap</code></p>
+          <p><code>sum.c counting.c stars.c selection-sort.c</code></p>
+        </section>
+        <section>
+          <h2>Min</h2>
+          <hr><br>
+          <p>Given two integers $a$ and $b$,</p>
+          <p>to compute their minimum.</p><br>
+          <p>$\mathit{min} = \min\{a, b\}$</p>
+        </section>
+        <section>
+          <h2><code>if(-else)</code></h2>
+          <hr><br>
+          <p></p>
+        </section>
+        <section>
+          <h2 class="r-fit-text">Relational Operators (关系运算符)</h2>
+          <hr><br>
+          <ul>
+            <li><code>>=</code></li>
+            <li><code>></code></li>
+            <li><code><=</code></li>
+            <li><code><</code></li>
+            <li class="fragment"><code><mark>==</mark></code> (equal to)</li>
+            <li class="fragment"><code>!=</code> (not equal to)</li>
+          </ul>
+        </section>
+        <section>
+          <h2><code>?:</code></h2>
+          <hr><br>
+          <p><code><mark>min = a >= b ? b : a;</mark></code></p><br>
+          <p>Conditional Expression (条件表达式)</p>
+          <p>Ternary Operator (三目运算符)</p><br>
+          <p class="r-fit-text">Do Not Use it Too Much!</p>
+        </section>
+        <section>
+          <h2>Min of Three</h2>
+          <hr><br>
+          <p>Given three integers $a$, $b$, and $c$,</p>
+          <p>to compute their minimum.</p><br>
+          <p>$\mathit{min} = \min\{a, b, c\}$</p>
+        </section>
+        <section>
+          <h2>Nested <code>if(-else)</code></h2>
+          <hr><br>
+          <p></p>
+        </section>
+        <section>
+          <h2>Min of a Set of Numbers</h2>
+          <hr><br>
+          <p>Given a set $A$ of integers,</p>
+          <p>to compute their minimum.</p><br>
+          <p>$\mathit{min} = \min A$</p><img class="fragment" src="./2-if-for-array/figs/loop.jpg" alt="Loop Logo" width="400">
+        </section>
+        <section>
+          <h2>Leap Year</h2>
+          <hr><br><img src="./2-if-for-array/figs/leap-year.jpeg" alt="Leap Year" width="650">
+        </section>
+        <section>
+          <h2>Leap Year (1): Nested <code>if(-else)</code></h2>
+          <hr><br><img src="./2-if-for-array/figs/leap-year-flowchart.png" alt="Leap Year Flowchart" width="750">
+        </section>
+        <section>
+          <h2>Leap Year (2): Nested <code>if(-else)</code></h2>
+          <hr><br><img src="./2-if-for-array/figs/leap-year-wiki.png" alt="Leap Year Psuedocode using Else-If" width="1200">
+        </section>
+        <section>
+          <h2>Logical Operators (逻辑运算符)</h2>
+          <hr><br>
+        </section>
+        <section>
+          <h2>Boolean Expressions</h2>
+          <hr><br><br>
+        </section>
+        <section>
+          <h2>Leap Year (3): <code>else-if</code></h2>
+          <hr><br>
+          <p><code>else if</code></p>
+        </section>
+        <section>
+          <h2 class="r-fit-text">Leap Year (4): The Ultimate Version</h2>
+          <hr><br>
+          <p>A year is a leap year <em>if</em></p><br>
+          <ul>
+            <li>it is divisible by 4 but not by 100,</li>
+            <li>except that years divisible by 400 are leap years.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Short-circuit Evaluation</h2>
+          <hr><br>
         </section>
         <section>
           <h2>References</h2>
