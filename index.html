@@ -562,10 +562,10 @@ li + li {
           <h2>Constants</h2>
           <hr><br>
           <ul>
-            <li><code>int</code>: <code>42 &emsp; -42</code></li>
-            <li><code>double</code>: <code>3.14 &emsp; 6.02e23</code></li>
+            <li><code>int</code>: <code>42</code></li>
+            <li><code>double</code>: <code>3.14</code></li>
             <li><code>char</code>: <code>'c'</code></li>
-            <li><code>double</code>: <code>"How are you?"</code></li>
+            <li><code>string</code>: <code>"Hello World"</code></li>
           </ul><br>
           <p>Literal constants (字面常量)</p><br>
           <p class="fragment"><code><mark>const double PI = 3.14159;</mark></code></p>
@@ -576,14 +576,14 @@ li + li {
           <hr><br>
           <h3>If Statement (If 语句)</h3><br>
           <h3>For Statement (For 语句)</h3><br>
-          <h3>Boolean Expressions (布尔表达式)</h3><br>
+          <h3>Logical Expressions (逻辑表达式)</h3><br>
           <h3>Array (数组)</h3>
         </section>
         <section>
           <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
           <hr><img src="./0-intro/figs/lets-code.jpeg" alt="Let's Code" width="600"><br>
           <p><code>min leap</code></p>
-          <p><code>sum.c counting.c stars.c selection-sort.c</code></p>
+          <p><code>sum.c min.c</code></p>
         </section>
         <section>
           <h2>Min</h2>
@@ -597,48 +597,18 @@ li + li {
           <p>$\mathit{min} = \min\{a, b\}$</p>
         </section>
         <section>
-          <h2><code>if(-else)</code></h2>
-          <hr><br><img src="./2-if-for-array/figs/if-else.png" alt="if-else" width="500">
+          <h2><code>if</code></h2>
+          <hr><br><img src="./2-if-for-array/figs/if-syntax.png" alt="if-else" width="400">
           <p>The <code>else</code> part is <em>optional</em>.</p>
         </section>
         <section>
-          <h2>Declarations, Expressions, and Statements (Informal)</h2>
-          <hr><br>
-          <p><code>double circumference = <mark>0</mark>;</code></p>
-          <p><code>circumference = <mark>2 * PI * radius</mark>;</code></p><br>
-          <p class="fragment">Declarations declare <em>variables</em>.</p>
-          <p class="fragment">Expressions express <em>values</em>.</p>
-          <p class="fragment">Statements state <em>actions</em>.</p>
-        </section>
-        <section>
-          <h2>Expressions (Formal)</h2>
-          <hr><br>
-          <p><code>circumference = <mark>2 * PI * radius</mark>;</code></p><br>
-          <ul>
-            <li>Variables are expressions;</li>
-            <li>Constants are expressions;</li>
-            <li>If $E_{1}$ and $E_{2}$ are expressions, then $E_{1} \circ E_{2}$ is an expression.
-              <ul>
-                <li>($\circ$ is an operator)</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h2>Statements (Formal)</h2>
-          <hr><br>
-          <ul>
-            <li>Assignment statements</li>
-            <li>If statements</li>
-            <li>For statements</li>
-            <li>$\ldots$</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Compound Statements (Blocks)</h2>
+          <h2><code>if</code></h2>
           <hr>
-          <p class="r-fit-text">Declarations and statements surrounded by <code>{}</code>.</p><img src="./2-if-for-array/figs/compound-statement.png" alt="Compound Statement" width="400">
-          <h3>Always use <code>{}</code>.</h3>
+          <p class="r-fit-text">Multiple declarations and statements surrounded by <code>{}</code></p><div class="row">
+<div class="column"><img src="./2-if-for-array/figs/if-syntax-with-braces.png" alt="if-else with braces" width="360"></div>
+<div class="column"><img class="fragment" src="./2-if-for-array/figs/if-syntax-no-braces.png" alt="if-else without braces" width="400"></div>
+</div>
+          <h3 class="fragment">Always Use <code>{}</code>!</h3>
         </section>
         <section>
           <h2 class="r-fit-text">Relational Operators (关系运算符)</h2>
@@ -659,7 +629,7 @@ li + li {
           <h2 class="r-fit-text">Relational Expressions (关系表达式)</h2>
           <hr><img src="./2-if-for-array/figs/relational-expression.png" alt="Relational Expression" width="400">
           <p class="r-fit-text">Relational expressions have values 0 (<code>false</code>) or 1 (<code>true</code>).</p><br>
-          <p class="fragment"><mark>In C, non-zero numbers are treated as 1.</mark></p>
+          <p class="fragment"><mark>In C, non-zero numbers are treated as 1 (<code>true</code>).</mark></p>
         </section>
         <section>
           <h2><code>?:</code></h2>
@@ -667,7 +637,7 @@ li + li {
           <p><code><mark>min = a >= b ? b : a;</mark></code></p><br>
           <p>Conditional Expression (条件表达式)</p>
           <p>Ternary Operator (三目运算符)</p><br>
-          <p class="fragment r-fit-text">Do Not Use it Too Much!</p>
+          <h2 class="fragment">Do Not Use it Too Much!</h2>
         </section>
         <section>
           <h2>Min of Three</h2>
@@ -678,8 +648,7 @@ li + li {
         </section>
         <section>
           <h2>Nested <code>if</code></h2>
-          <hr><br><img src="./2-if-for-array/figs/compound-statement.png" alt="Compound Statement" width="400">
-          <h3>Always use <code>{}</code>.</h3>
+          <hr><img src="./2-if-for-array/figs/nested-if.png" alt="Nested if" width="300">
         </section>
         <section>
           <h2>Min of a Set of Numbers</h2>
@@ -720,7 +689,7 @@ li + li {
         <section>
           <h2>Logical Expressions (逻辑表达式)</h2>
           <hr><br><img src="./2-if-for-array/figs/logical-expression.png" alt="Logical Expression" width="1000">
-          <p class="r-fit-text">Logical expressions have value <code>0</code> (<code>false</code>) or <code>1</code> (<code>true</code>).</p>
+          <p class="r-fit-text">Logical expressions have values <code>0</code> (<code>false</code>) or <code>1</code> (<code>true</code>).</p>
         </section>
         <section>
           <h2>Short-circuit Evaluation</h2>
@@ -736,7 +705,7 @@ li + li {
           <p>Given an integer $n \ge 0$, to compute $\sum\limits_{i = 1}^{n} i$.</p>
         </section>
         <section>
-          <h2>Increment/Decrement Operators</h2>
+          <h2>Increment/Decrement Operators (<code>++</code>, <code>--</code>)</h2>
           <hr><br>
           <ul>
             <li><code>i++</code>
@@ -750,6 +719,13 @@ li + li {
               </ul>
             </li>
           </ul>
+        </section>
+        <section>
+          <h2>Increment/Decrement Operators (<code>++</code>, <code>--</code>)</h2>
+          <hr><br>
+          <p><code>i = 2;</code></p>
+          <p><code>j = i * i++;</code></p><br>
+          <p class="fragment">Undefined Behavior (未定义行为)</p>
         </section>
         <section>
           <h2>For Statement</h2>
@@ -766,16 +742,16 @@ li + li {
           <h2><code>#define NUM 5</code></h2>
           <hr><br>
           <p>Symbolic Constants (符号常量)</p><br>
-          <p><code>#define</code> is a <em>pre-processing directive</em> (预处理指令).</p><br>
-          <p><mark><code>int numbers[NUM] = {0};</code></mark> has a <em>constant</em> size.</p>
+          <p class="fragment"><code>#define</code> is a <em>pre-processing directive</em> (预处理指令).</p><br>
+          <p class="fragment"><mark><code>int numbers[NUM] = {0};</code></mark> has a <em>constant</em> size.</p>
           <ul>
-            <li><code>NUM</code> is known at <em>compiler</em> time.</li>
+            <li class="fragment"><code>NUM</code> is known at <em>compiler</em> time.</li>
           </ul>
         </section>
         <section>
           <h2>Array Initializer</h2>
           <hr><br>
-          <p><code><mark>int numbers[NUM] = {0};</mark></code></p><br>
+          <p><code><mark>int numbers[NUM] = {0};</mark></code></p>
           <ul>
             <li class="fragment"><code>int numbers[NUM] = {1};</code>
               <ul>
@@ -797,8 +773,8 @@ li + li {
         </section>
         <section>
           <h2>Array Initializer</h2>
-          <hr>
-          <p><code><mark>int numbers[NUM] = {0};</mark></code></p><br>
+          <hr><br>
+          <p><code><mark>int numbers[NUM] = {0};</mark></code></p>
           <ul>
             <li class="fragment"><del><code>int numbers[NUM] = {};</code></del>
               <ul>
@@ -822,6 +798,10 @@ li + li {
           <h2>Array Members</h2>
           <hr><br><img src="./2-if-for-array/figs/array-members.png" alt="Array Members" width="800">
           <p><code>[]</code>: <em>subscript</em> operator (下标运算符)</p>
+        </section>
+        <section>
+          <h2>Stars Pyramid</h2>
+          <hr><br><img src="./2-if-for-array/figs/stars.jpg" alt="Array Members" width="800">
         </section>
       </div>
     </div>
