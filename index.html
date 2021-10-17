@@ -548,7 +548,7 @@ li + li {
           <h1 style="font-variant: small-caps">If, For, Array</h1>
           <hr><br>
           <h4>Hengfeng Wei</h4>
-          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./1-io/figs/C.png" alt="The C Programming Language" width="200">
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./2-if-for-array/figs/C.png" alt="The C Programming Language" width="200">
           <p>Oct. 18, 2021</p>
         </section>
         <section>
@@ -557,6 +557,19 @@ li + li {
           <p>Variables &emsp; <mark>Constants</mark> &emsp; Data Types</p><br>
           <p>Operators &emsp; Expressions &emsp; Assignment Statements</p><br>
           <p>I/O (Input/Output)</p>
+        </section>
+        <section>
+          <h2>Constants</h2>
+          <hr><br>
+          <ul>
+            <li><code>int</code>: <code>42 &emsp; -42</code></li>
+            <li><code>double</code>: <code>3.14 &emsp; 6.02e23</code></li>
+            <li><code>char</code>: <code>'c'</code></li>
+            <li><code>double</code>: <code>"How are you?"</code></li>
+          </ul><br>
+          <p>Literal constants (字面常量)</p><br>
+          <p class="fragment"><code><mark>const double PI = 3.14159;</mark></code></p>
+          <p class="fragment"><code>PI</code> is still a <em>variable</em>.</p>
         </section>
         <section>
           <h2>Overview</h2>
@@ -574,6 +587,10 @@ li + li {
         </section>
         <section>
           <h2>Min</h2>
+          <hr><br><img src="./2-if-for-array/figs/minimum.jpg" alt="Minimum Logo" width="600">
+        </section>
+        <section>
+          <h2>Min of Two</h2>
           <hr><br>
           <p>Given two integers $a$ and $b$,</p>
           <p>to compute their minimum.</p><br>
@@ -639,6 +656,12 @@ li + li {
 </div>
         </section>
         <section>
+          <h2 class="r-fit-text">Relational Expressions (关系表达式)</h2>
+          <hr><img src="./2-if-for-array/figs/relational-expression.png" alt="Relational Expression" width="400">
+          <p class="r-fit-text">Relational expressions have values 0 (<code>false</code>) or 1 (<code>true</code>).</p><br>
+          <p class="fragment"><mark>In C, non-zero numbers are treated as 1.</mark></p>
+        </section>
+        <section>
           <h2><code>?:</code></h2>
           <hr><br>
           <p><code><mark>min = a >= b ? b : a;</mark></code></p><br>
@@ -671,16 +694,15 @@ li + li {
         </section>
         <section>
           <h2>Leap Year (1): Nested <code>if</code></h2>
-          <hr><br><img src="./2-if-for-array/figs/leap-year-flowchart.png" alt="Leap Year Flowchart" width="750">
+          <hr><img src="./2-if-for-array/figs/leap-year-flowchart.png" alt="Leap Year Flowchart" width="800">
         </section>
         <section>
           <h2>Leap Year (2): Nested <code>if</code></h2>
-          <hr><br><img src="./2-if-for-array/figs/leap-year-wiki.png" alt="Leap Year Psuedocode using Else-If" width="1200">
+          <hr><br><img src="./2-if-for-array/figs/leap-year-wiki.png" alt="Leap Year using Else-If" width="1200">
         </section>
         <section>
           <h2>Leap Year (3): <code>else-if</code></h2>
-          <hr><br>
-          <p><code>else if</code></p>
+          <hr><br><img src="./2-if-for-array/figs/leap-year-elseif.png" alt="Leap Year using elseif" width="1000">
         </section>
         <section>
           <h2 class="r-fit-text">Leap Year (4): The Ultimate Version</h2>
@@ -693,38 +715,96 @@ li + li {
         </section>
         <section>
           <h2>Logical Operators (逻辑运算符)</h2>
-          <hr><br>
+          <hr><img src="./2-if-for-array/figs/logical-operator.png" alt="Logical Operator" width="1000"><img src="./2-if-for-array/figs/logical-operators.png" alt="Logical Operators Table" width="300">
         </section>
         <section>
-          <h2>Boolean Expressions</h2>
-          <hr><br><br>
+          <h2>Logical Expressions (逻辑表达式)</h2>
+          <hr><br><img src="./2-if-for-array/figs/logical-expression.png" alt="Logical Expression" width="1000">
+          <p class="r-fit-text">Logical expressions have value <code>0</code> (<code>false</code>) or <code>1</code> (<code>true</code>).</p>
         </section>
         <section>
           <h2>Short-circuit Evaluation</h2>
-          <hr><br>
-        </section>
-        <section>
-          <h2>Min of an Array of Numbers</h2>
-          <hr><br>
-          <p><code><mark>int numbers[NUM] = {0};</mark></code></p>
+          <hr><br><img src="./2-if-for-array/figs/logical-expression.png" alt="Logical Expressions" width="1000"><br>
           <ul>
-            <li class="fragment"><code>int numbers[NUM] = {1};</code></li>
-            <li class="fragment"><code>int numbers[NUM] = {};</code></li>
-            <li class="fragment"><code>int numbers[NUM] = {.2 = 1};</code></li>
-            <li class="fragment"><code>int numbers[NUM];</code></li>
-            <li class="fragment"><code>int numbers[] = {0};</code></li>
-            <li class="fragment"><code>int numbers[];</code></li>
+            <li class="fragment"><code>year = 25</code></li>
+            <li class="fragment"><code>year = 80</code></li>
           </ul>
         </section>
         <section>
-          <h2>References</h2>
-          <hr><br><br><a href = "https://en.cppreference.com/w/c/io/fprintf">printf @ cppreference</a><br><br><a href = "https://en.cppreference.com/w/c/io/fscanf">scanf @ cppreference</a>
+          <h2>Sum</h2>
+          <hr><br>
+          <p>Given an integer $n \ge 0$, to compute $\sum\limits_{i = 1}^{n} i$.</p>
         </section>
         <section>
-          <h2>References</h2>
-          <hr><br><br>
-          <p class="r-fit-text">Do not use <code>scanf</code>.</p>
-          <p class="r-fit-text">Use $\dots$ instead.</p>
+          <h2>For Statement</h2>
+          <hr><br><img src="./2-if-for-array/figs/for-general.png" alt="General Structure of For Loops" width="900"><br><img class="fragment" src="./2-if-for-array/figs/for-special.png" alt="Common Structure of For Loops" width="900"><br><img class="fragment" src="./2-if-for-array/figs/for-sum.png" alt="For Statement in Sum" width="600">
+        </section>
+        <section>
+          <h2>Min of a Set of Numbers</h2>
+          <hr><br>
+          <p>Given a set $A$ of integers,</p>
+          <p>to compute their minimum.</p><br>
+          <p>$\mathit{min} = \min A$</p>
+        </section>
+        <section>
+          <h2><code>#define NUM 5</code></h2>
+          <hr><br>
+          <p>Symbolic Constants (符号常量)</p><br>
+          <p><code>#define</code> is a <em>pre-processing directive</em> (预处理指令).</p><br>
+          <p><mark><code>int numbers[NUM] = {0};</code></mark> has a <em>constant</em> size.</p>
+          <ul>
+            <li><code>NUM</code> is known at <em>compiler</em> time.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Array Initializer</h2>
+          <hr><br>
+          <p><code><mark>int numbers[NUM] = {0};</mark></code></p><br>
+          <ul>
+            <li class="fragment"><code>int numbers[NUM] = {1};</code>
+              <ul>
+                <li><code>{1, 0, 0, 0, 0}</code></li>
+              </ul>
+            </li>
+            <li class="fragment"><code>int numbers[] = {0};</code>
+              <ul>
+                <li><code>{0}</code></li>
+              </ul>
+            </li>
+            <li class="fragment"><code>int numbers[NUM] = {[2] = 1};</code>
+              <ul>
+                <li><code>{0, 0, 1, 0, 0}</code></li>
+                <li>See Section 8.1.3</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Array Initializer</h2>
+          <hr>
+          <p><code><mark>int numbers[NUM] = {0};</mark></code></p><br>
+          <ul>
+            <li class="fragment"><del><code>int numbers[NUM] = {};</code></del>
+              <ul>
+                <li>Forbidden in <code>C99</code> (Unfortunately)</li>
+                <li>Allowed by GCC by default (Unfortunately)</li>
+              </ul>
+            </li>
+            <li class="fragment"><del><code>int numbers[NUM];</code></del>
+              <ul>
+                <li>May contain garbage values</li>
+              </ul>
+            </li>
+            <li class="fragment"><del><code>int numbers[];</code></del>
+              <ul>
+                <li>You must specify the size so that the compiler can allocate memory for it.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Array Members</h2>
+          <hr><br><img class="fragment" src="./2-if-for-array/figs/array-members.png" alt="Array Members" width="600">
         </section>
       </div>
     </div>

@@ -7,7 +7,7 @@ section
   h4 <u>hfwei@nju.edu.cn</u>
 
   //- br
-  img(src = "./1-io/figs/C.png", alt = "The C Programming Language",
+  img(src = "./2-if-for-array/figs/C.png", alt = "The C Programming Language",
       width = 200, height = auto)
   p Oct. 18, 2021
 
@@ -21,6 +21,23 @@ section
   p Operators &emsp; Expressions &emsp; Assignment Statements
   br
   p I/O (Input/Output)
+
+section
+  h2 Constants
+  hr
+
+  br
+  ul
+    li <code>int</code>: <code>42 &emsp; -42</code>
+    li <code>double</code>: <code>3.14 &emsp; 6.02e23</code>
+    li <code>char</code>: <code>'c'</code>
+    li <code>double</code>: <code>"How are you?"</code>
+  br
+  p Literal constants (字面常量)
+
+  br
+  p.fragment <code><mark>const double PI = 3.14159;</mark></code>
+  p.fragment <code>PI</code> is still a <em>variable</em>.
 
 section
   h2 Overview
@@ -49,6 +66,14 @@ section
 //- ---------- If (Min) -------------
 section
   h2 Min
+  hr
+
+  br
+  img(src = "./2-if-for-array/figs/minimum.jpg", alt = "Minimum Logo",
+      width = 600, height = auto)
+
+section
+  h2 Min of Two
   hr
 
   br
@@ -136,6 +161,16 @@ section
   </div>
 
 section
+  h2(class = "r-fit-text") Relational Expressions (关系表达式)
+  hr
+
+  img(src = "./2-if-for-array/figs/relational-expression.png" alt = "Relational Expression"
+    width = 400 height = auto)
+  p(class = "r-fit-text") Relational expressions have values 0 (<code>false</code>) or 1 (<code>true</code>).
+  br
+  p.fragment <mark>In C, non-zero numbers are treated as 1.</mark>
+
+section
   h2 <code>?:</code>
   hr
 
@@ -182,7 +217,6 @@ section
 
   img.fragment(src = "./2-if-for-array/figs/loop.jpg" alt = "Loop Logo"
     width = 400 height = auto)
-
 //- ---------- If (Leap) -------------
 section
   h2 Leap Year
@@ -196,16 +230,15 @@ section
   h2 Leap Year (1): Nested <code>if</code>
   hr
 
-  br
   img(src = "./2-if-for-array/figs/leap-year-flowchart.png" alt = "Leap Year Flowchart"
-    width = 750 height = auto)
+    width = 800 height = auto)
 
 section
   h2 Leap Year (2): Nested <code>if</code>
   hr
 
   br
-  img(src = "./2-if-for-array/figs/leap-year-wiki.png" alt = "Leap Year Psuedocode using Else-If"
+  img(src = "./2-if-for-array/figs/leap-year-wiki.png" alt = "Leap Year using Else-If"
     width = 1200 height = auto)
 
 section
@@ -213,7 +246,8 @@ section
   hr
 
   br
-  p <code>else if</code>
+  img(src = "./2-if-for-array/figs/leap-year-elseif.png" alt = "Leap Year using elseif"
+    width = 1000 height = auto)
 
 section
   h2(class = "r-fit-text") Leap Year (4): The Ultimate Version
@@ -230,55 +264,131 @@ section
   h2 Logical Operators (逻辑运算符)
   hr
 
-  br
+  img(src = "./2-if-for-array/figs/logical-operator.png" alt = "Logical Operator"
+    width = 1000 height = auto)
+
+  img(src = "./2-if-for-array/figs/logical-operators.png" alt = "Logical Operators Table"
+    width = 300 height = auto)
 
 section
-  h2 Boolean Expressions
+  h2 Logical Expressions (逻辑表达式)
   hr
 
   br
-  br
-
+  img(src = "./2-if-for-array/figs/logical-expression.png" alt = "Logical Expression"
+    width = 1000 height = auto)
+  p(class = "r-fit-text") Logical expressions have value <code>0</code> (<code>false</code>) or <code>1</code> (<code>true</code>).
 
 section
   h2 Short-circuit Evaluation
   hr
 
   br
-
+  img(src = "./2-if-for-array/figs/logical-expression.png" alt = "Logical Expressions"
+    width = 1000 height = auto)
+  br
+  ul
+    li.fragment <code>year = 25</code>
+    li.fragment <code>year = 80</code>
 //- ---------- For (and Array) -------------
 section
-  h2 Min of an Array of Numbers
+  h2 Sum
+  hr
+
+  br
+  p Given an integer $n \ge 0$, to compute $\sum\limits_{i = 1}^{n} i$.
+
+section
+  h2 Increment/Decrement Operator
+  hr
+
+  br
+  p <code>i++</code>
+  p <code>++i</code>
+
+section
+  h2 For Statement
+  hr
+
+  br
+  img(src = "./2-if-for-array/figs/for-general.png" alt = "General Structure of For Loops"
+    width = 900 height = auto)
+  br
+  img.fragment(src = "./2-if-for-array/figs/for-special.png" alt = "Common Structure of For Loops"
+    width = 900 height = auto)
+  br
+  img.fragment(src = "./2-if-for-array/figs/for-sum.png" alt = "For Statement in Sum"
+    width = 600 height = auto)
+
+section
+  h2 Min of a Set of Numbers
+  hr
+
+  br
+  p Given a set $A$ of integers,
+  p to compute their minimum.
+
+  br
+  p $\mathit{min} = \min A$
+
+section
+  h2 <code>#define NUM 5</code>
+  hr
+
+  br
+  p Symbolic Constants (符号常量)
+  br
+  p <code>#define</code> is a <em>pre-processing directive</em> (预处理指令).
+
+  br
+  p <mark><code>int numbers[NUM] = {0};</code></mark> has a <em>constant</em> size.
+  ul
+    li <code>NUM</code> is known at <em>compiler</em> time.
+
+section
+  h2 Array Initializer
   hr
 
   br
   p <code><mark>int numbers[NUM] = {0};</mark></code>
+
+  br
   ul
     li.fragment <code>int numbers[NUM] = {1};</code>
-    li.fragment <code>int numbers[NUM] = {};</code>
-    li.fragment <code>int numbers[NUM] = {.2 = 1};</code>
-    li.fragment <code>int numbers[NUM];</code>
+      ul
+        li <code>{1, 0, 0, 0, 0}</code>
     li.fragment <code>int numbers[] = {0};</code>
-    li.fragment <code>int numbers[];</code>
+      ul
+        li <code>{0}</code>
+    li.fragment <code>int numbers[NUM] = {[2] = 1};</code>
+      ul
+        li <code>{0, 0, 1, 0, 0}</code>
+        li See Section 8.1.3
 
-//- ---------- References -------------
 section
-  h2 References
+  h2 Array Initializer
+  hr
+
+  p <code><mark>int numbers[NUM] = {0};</mark></code>
+
+  br
+  ul
+    li.fragment <del><code>int numbers[NUM] = {};</code></del>
+      ul
+        li Forbidden in <code>C99</code> (Unfortunately)
+        li Allowed by GCC by default (Unfortunately)
+    li.fragment <del><code>int numbers[NUM];</code></del>
+      ul
+        li May contain garbage values
+    li.fragment <del><code>int numbers[];</code></del>
+      ul
+        li You must specify the size so that the compiler can allocate memory for it.
+
+section
+  h2 Array Members
   hr
 
   br
-  br
-  <a href = "https://en.cppreference.com/w/c/io/fprintf">printf @ cppreference</a>
-
-  br
-  br
-  <a href = "https://en.cppreference.com/w/c/io/fscanf">scanf @ cppreference</a>
-
-section
-  h2 References
-  hr
-
-  br
-  br
-  p(class = "r-fit-text") Do not use <code>scanf</code>.
-  p(class = "r-fit-text") Use $\dots$ instead.
+  img.fragment(src = "./2-if-for-array/figs/array-members.png" alt = "Array Members"
+    width = 1000 height = auto)
+  p <code>[]</code>: <em>subscript</em> operator (下标运算符)
