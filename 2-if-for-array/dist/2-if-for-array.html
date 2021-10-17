@@ -7,11 +7,18 @@
   <p>Oct. 18, 2021</p>
 </section>
 <section>
+  <h2>Review</h2>
+  <hr/><br/>
+  <p>Variables &emsp; <mark>Constants</mark> &emsp; Data Types</p><br/>
+  <p>Operators &emsp; Expressions &emsp; Assignment Statements</p><br/>
+  <p>I/O (Input/Output)</p>
+</section>
+<section>
   <h2>Overview</h2>
   <hr/><br/>
   <h3>If Statement (If 语句)</h3><br/>
-  <h3>Boolean Expressions (布尔表达式)</h3><br/>
   <h3>For Statement (For 语句)</h3><br/>
+  <h3>Boolean Expressions (布尔表达式)</h3><br/>
   <h3>Array (数组)</h3>
 </section>
 <section>
@@ -29,20 +36,62 @@
 </section>
 <section>
   <h2><code>if(-else)</code></h2>
+  <hr/><br/><img src="./2-if-for-array/figs/if-else.png" alt="if-else" width="500"/>
+  <p>The <code>else</code> part is <em>optional</em>.</p>
+</section>
+<section>
+  <h2>Declarations, Expressions, and Statements (Informal)</h2>
   <hr/><br/>
-  <p></p>
+  <p><code>double circumference = <mark>0</mark>;</code></p>
+  <p><code>circumference = <mark>2 * PI * radius</mark>;</code></p><br/>
+  <p class="fragment">Declarations declare <em>variables</em>.</p>
+  <p class="fragment">Expressions express <em>values</em>.</p>
+  <p class="fragment">Statements state <em>actions</em>.</p>
+</section>
+<section>
+  <h2>Expressions (Formal)</h2>
+  <hr/><br/>
+  <p><code>circumference = <mark>2 * PI * radius</mark>;</code></p><br/>
+  <ul>
+    <li>Variables are expressions;</li>
+    <li>Constants are expressions;</li>
+    <li>If $E_{1}$ and $E_{2}$ are expressions, then $E_{1} \circ E_{2}$ is an expression.
+      <ul>
+        <li>($\circ$ is an operator)</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+<section>
+  <h2>Statements (Formal)</h2>
+  <hr/><br/>
+  <ul>
+    <li>Assignment statements</li>
+    <li>If statements</li>
+    <li>For statements</li>
+    <li>$\ldots$</li>
+  </ul>
+</section>
+<section>
+  <h2>Compound Statements (Blocks)</h2>
+  <hr/>
+  <p class="r-fit-text">Declarations and statements surrounded by <code>{}</code>.</p><img src="./2-if-for-array/figs/compound-statement.png" alt="Compound Statement" width="400"/>
+  <h3>Always use <code>{}</code>.</h3>
 </section>
 <section>
   <h2 class="r-fit-text">Relational Operators (关系运算符)</h2>
-  <hr/><br/>
+  <hr/><br/><div class="row">
+<div class="column"><img src="./2-if-for-array/figs/relational-operator.png" alt="Relational Operator" width="400"/></div>
+<div class="column">
   <ul>
     <li><code>>=</code></li>
-    <li><code>></code></li>
     <li><code><=</code></li>
+    <li><code>></code></li>
     <li><code><</code></li>
-    <li class="fragment"><code><mark>==</mark></code> (equal to)</li>
-    <li class="fragment"><code>!=</code> (not equal to)</li>
-  </ul>
+    <li><code><mark>==</mark></code> (equal to)</li>
+    <li><code>!=</code> (not equal to)</li>
+  </ul></div>
+</div>
 </section>
 <section>
   <h2><code>?:</code></h2>
@@ -50,7 +99,7 @@
   <p><code><mark>min = a >= b ? b : a;</mark></code></p><br/>
   <p>Conditional Expression (条件表达式)</p>
   <p>Ternary Operator (三目运算符)</p><br/>
-  <p class="r-fit-text">Do Not Use it Too Much!</p>
+  <p class="fragment r-fit-text">Do Not Use it Too Much!</p>
 </section>
 <section>
   <h2>Min of Three</h2>
@@ -60,9 +109,9 @@
   <p>$\mathit{min} = \min\{a, b, c\}$</p>
 </section>
 <section>
-  <h2>Nested <code>if(-else)</code></h2>
-  <hr/><br/>
-  <p></p>
+  <h2>Nested <code>if</code></h2>
+  <hr/><br/><img src="./2-if-for-array/figs/compound-statement.png" alt="Compound Statement" width="400"/>
+  <h3>Always use <code>{}</code>.</h3>
 </section>
 <section>
   <h2>Min of a Set of Numbers</h2>
@@ -76,20 +125,12 @@
   <hr/><br/><img src="./2-if-for-array/figs/leap-year.jpeg" alt="Leap Year" width="650"/>
 </section>
 <section>
-  <h2>Leap Year (1): Nested <code>if(-else)</code></h2>
+  <h2>Leap Year (1): Nested <code>if</code></h2>
   <hr/><br/><img src="./2-if-for-array/figs/leap-year-flowchart.png" alt="Leap Year Flowchart" width="750"/>
 </section>
 <section>
-  <h2>Leap Year (2): Nested <code>if(-else)</code></h2>
+  <h2>Leap Year (2): Nested <code>if</code></h2>
   <hr/><br/><img src="./2-if-for-array/figs/leap-year-wiki.png" alt="Leap Year Psuedocode using Else-If" width="1200"/>
-</section>
-<section>
-  <h2>Logical Operators (逻辑运算符)</h2>
-  <hr/><br/>
-</section>
-<section>
-  <h2>Boolean Expressions</h2>
-  <hr/><br/><br/>
 </section>
 <section>
   <h2>Leap Year (3): <code>else-if</code></h2>
@@ -106,8 +147,29 @@
   </ul>
 </section>
 <section>
+  <h2>Logical Operators (逻辑运算符)</h2>
+  <hr/><br/>
+</section>
+<section>
+  <h2>Boolean Expressions</h2>
+  <hr/><br/><br/>
+</section>
+<section>
   <h2>Short-circuit Evaluation</h2>
   <hr/><br/>
+</section>
+<section>
+  <h2>Min of an Array of Numbers</h2>
+  <hr/><br/>
+  <p><code><mark>int numbers[NUM] = {0};</mark></code></p>
+  <ul>
+    <li class="fragment"><code>int numbers[NUM] = {1};</code></li>
+    <li class="fragment"><code>int numbers[NUM] = {};</code></li>
+    <li class="fragment"><code>int numbers[NUM] = {.2 = 1};</code></li>
+    <li class="fragment"><code>int numbers[NUM];</code></li>
+    <li class="fragment"><code>int numbers[] = {0};</code></li>
+    <li class="fragment"><code>int numbers[];</code></li>
+  </ul>
 </section>
 <section>
   <h2>References</h2>

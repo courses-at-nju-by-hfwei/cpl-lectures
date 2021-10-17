@@ -12,15 +12,26 @@ section
   p Oct. 18, 2021
 
 section
+  h2 Review
+  hr
+
+  br
+  p Variables &emsp; <mark>Constants</mark> &emsp; Data Types
+  br
+  p Operators &emsp; Expressions &emsp; Assignment Statements
+  br
+  p I/O (Input/Output)
+
+section
   h2 Overview
   hr
 
   br
   h3 If Statement (If 语句)
   br
-  h3 Boolean Expressions (布尔表达式)
-  br
   h3 For Statement (For 语句)
+  br
+  h3 Boolean Expressions (布尔表达式)
   br
   h3 Array (数组)
 
@@ -52,20 +63,77 @@ section
   hr
 
   br
-  p
+  img(src = "./2-if-for-array/figs/if-else.png" alt = "if-else"
+    width = 500 height = auto)
+  p The <code>else</code> part is <em>optional</em>.
+
+section
+  h2 Declarations, Expressions, and Statements (Informal)
+  hr
+
+  br
+  p <code>double circumference = <mark>0</mark>;</code>
+  p <code>circumference = <mark>2 * PI * radius</mark>;</code>
+
+  br
+  p.fragment Declarations declare <em>variables</em>.
+  p.fragment Expressions express <em>values</em>.
+  p.fragment Statements state <em>actions</em>.
+
+section
+  h2 Expressions (Formal)
+  hr
+
+  br
+  p <code>circumference = <mark>2 * PI * radius</mark>;</code>
+  br
+  ul
+    li Variables are expressions;
+    li Constants are expressions;
+    li If $E_{1}$ and $E_{2}$ are expressions, then $E_{1} \circ E_{2}$ is an expression.
+      ul
+        li ($\circ$ is an operator)
+
+section
+  h2 Statements (Formal)
+  hr
+
+  br
+  ul
+    li Assignment statements
+    li If statements
+    li For statements
+    li $\ldots$
+
+section
+  h2 Compound Statements (Blocks)
+  hr
+
+  p(class = "r-fit-text") Declarations and statements surrounded by <code>{}</code>.
+  img(src = "./2-if-for-array/figs/compound-statement.png" alt = "Compound Statement"
+    width = 400 height = auto)
+  h3 Always use <code>{}</code>.
 
 section
   h2(class = "r-fit-text") Relational Operators (关系运算符)
   hr
 
   br
-  ul
-    li <code>>=</code>
-    li <code>></code>
-    li <code><=</code>
-    li <code><</code>
-    li.fragment <code><mark>==</mark></code> (equal to)
-    li.fragment <code>!=</code> (not equal to)
+  <div class="row">
+    <div class="column">
+      img(src = "./2-if-for-array/figs/relational-operator.png" alt = "Relational Operator"
+        width = 400 height = auto)
+    </div>
+    <div class="column">
+      ul
+        li <code>>=</code>
+        li <code><=</code>
+        li <code>></code>
+        li <code><</code>
+        li <code><mark>==</mark></code> (equal to)
+        li <code>!=</code> (not equal to)
+    </div>
+  </div>
 
 section
   h2 <code>?:</code>
@@ -79,7 +147,7 @@ section
   p Ternary Operator (三目运算符)
 
   br
-  p(class = "r-fit-text") Do Not Use it Too Much!
+  p.fragment(class = "r-fit-text") Do Not Use it Too Much!
 
 section
   h2 Min of Three
@@ -93,11 +161,13 @@ section
   p $\mathit{min} = \min\{a, b, c\}$
 
 section
-  h2 Nested <code>if(-else)</code>
+  h2 Nested <code>if</code>
   hr
 
   br
-  p
+  img(src = "./2-if-for-array/figs/compound-statement.png" alt = "Compound Statement"
+    width = 400 height = auto)
+  h3 Always use <code>{}</code>.
 
 section
   h2 Min of a Set of Numbers
@@ -123,7 +193,7 @@ section
     width = 650 height = auto)
 
 section
-  h2 Leap Year (1): Nested <code>if(-else)</code>
+  h2 Leap Year (1): Nested <code>if</code>
   hr
 
   br
@@ -131,25 +201,12 @@ section
     width = 750 height = auto)
 
 section
-  h2 Leap Year (2): Nested <code>if(-else)</code>
+  h2 Leap Year (2): Nested <code>if</code>
   hr
 
   br
   img(src = "./2-if-for-array/figs/leap-year-wiki.png" alt = "Leap Year Psuedocode using Else-If"
     width = 1200 height = auto)
-
-section
-  h2 Logical Operators (逻辑运算符)
-  hr
-
-  br
-
-section
-  h2 Boolean Expressions
-  hr
-
-  br
-  br
 
 section
   h2 Leap Year (3): <code>else-if</code>
@@ -170,12 +227,39 @@ section
     li except that years divisible by 400 are leap years.
 
 section
+  h2 Logical Operators (逻辑运算符)
+  hr
+
+  br
+
+section
+  h2 Boolean Expressions
+  hr
+
+  br
+  br
+
+
+section
   h2 Short-circuit Evaluation
   hr
 
   br
 
 //- ---------- For (and Array) -------------
+section
+  h2 Min of an Array of Numbers
+  hr
+
+  br
+  p <code><mark>int numbers[NUM] = {0};</mark></code>
+  ul
+    li.fragment <code>int numbers[NUM] = {1};</code>
+    li.fragment <code>int numbers[NUM] = {};</code>
+    li.fragment <code>int numbers[NUM] = {.2 = 1};</code>
+    li.fragment <code>int numbers[NUM];</code>
+    li.fragment <code>int numbers[] = {0};</code>
+    li.fragment <code>int numbers[];</code>
 
 //- ---------- References -------------
 section
