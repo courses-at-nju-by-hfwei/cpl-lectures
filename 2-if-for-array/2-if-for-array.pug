@@ -299,12 +299,17 @@ section
   p Given an integer $n \ge 0$, to compute $\sum\limits_{i = 1}^{n} i$.
 
 section
-  h2 Increment/Decrement Operator
+  h2 Increment/Decrement Operators
   hr
 
   br
-  p <code>i++</code>
-  p <code>++i</code>
+  ul
+    li <code>i++</code>
+      ul
+        li increment <code>i</code> <em>after</em> its value has been used
+    li <code>++i</code>
+      ul
+        li increment <code>i</code> <em>before</em> its value is used
 
 section
   h2 For Statement
@@ -389,6 +394,6 @@ section
   hr
 
   br
-  img.fragment(src = "./2-if-for-array/figs/array-members.png" alt = "Array Members"
-    width = 1000 height = auto)
+  img(src = "./2-if-for-array/figs/array-members.png" alt = "Array Members"
+    width = 800 height = auto)
   p <code>[]</code>: <em>subscript</em> operator (下标运算符)
