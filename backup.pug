@@ -370,3 +370,50 @@ section
 
   p
     a(class = "button" href = "https://www.abcya.com/games/guess_the_number") Guess the Number
+
+section
+  h2 Declarations, Expressions, and Statements (Informal)
+  hr
+
+  br
+  p <code>double circumference = <mark>0</mark>;</code>
+  p <code>circumference = <mark>2 * PI * radius</mark>;</code>
+
+  br
+  p.fragment Declarations declare <em>variables</em>.
+  p.fragment Expressions express <em>values</em>.
+  p.fragment Statements state <em>actions</em>.
+
+section
+  h2 Expressions (Formal)
+  hr
+
+  br
+  p <code>circumference = <mark>2 * PI * radius</mark>;</code>
+  br
+  ul
+    li Variables are expressions;
+    li Constants are expressions;
+    li If $E_{1}$ and $E_{2}$ are expressions, then $E_{1} \circ E_{2}$ is an expression.
+      ul
+        li ($\circ$ is an operator)
+
+section
+  h2 Statements (Formal)
+  hr
+
+  br
+  ul
+    li Assignment statements
+    li If statements
+    li For statements
+    li $\ldots$
+
+section
+  h2 Compound Statements (Blocks)
+  hr
+
+  p Declarations and statements surrounded by <code>{}</code>.
+  img(src = "./2-if-for-array/figs/compound-statement.png" alt = "Compound Statement"
+    width = 350 height = auto)
+  h3 Always use <code>{}</code>.

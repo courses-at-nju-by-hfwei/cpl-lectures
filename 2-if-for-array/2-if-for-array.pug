@@ -28,13 +28,12 @@ section
 
   br
   ul
-    li <code>int</code>: <code>42 &emsp; -42</code>
-    li <code>double</code>: <code>3.14 &emsp; 6.02e23</code>
+    li <code>int</code>: <code>42</code>
+    li <code>double</code>: <code>3.14</code>
     li <code>char</code>: <code>'c'</code>
-    li <code>double</code>: <code>"How are you?"</code>
+    li <code>string</code>: <code>"Hello World"</code>
   br
   p Literal constants (字面常量)
-
   br
   p.fragment <code><mark>const double PI = 3.14159;</mark></code>
   p.fragment <code>PI</code> is still a <em>variable</em>.
@@ -48,7 +47,7 @@ section
   br
   h3 For Statement (For 语句)
   br
-  h3 Boolean Expressions (布尔表达式)
+  h3 Logical Expressions (逻辑表达式)
   br
   h3 Array (数组)
 
@@ -61,7 +60,7 @@ section
 
   br
   p <code>min leap</code>
-  p <code>sum.c counting.c stars.c selection-sort.c</code>
+  p <code>sum.c min.c</code>
 
 //- ---------- If (Min) -------------
 section
@@ -84,60 +83,30 @@ section
   p $\mathit{min} = \min\{a, b\}$
 
 section
-  h2 <code>if(-else)</code>
+  h2 <code>if</code>
   hr
 
   br
-  img(src = "./2-if-for-array/figs/if-else.png" alt = "if-else"
-    width = 500 height = auto)
+  img(src = "./2-if-for-array/figs/if-syntax.png" alt = "if-else"
+    width = 400 height = auto)
   p The <code>else</code> part is <em>optional</em>.
 
 section
-  h2 Declarations, Expressions, and Statements (Informal)
+  h2 <code>if</code>
   hr
 
-  br
-  p <code>double circumference = <mark>0</mark>;</code>
-  p <code>circumference = <mark>2 * PI * radius</mark>;</code>
-
-  br
-  p.fragment Declarations declare <em>variables</em>.
-  p.fragment Expressions express <em>values</em>.
-  p.fragment Statements state <em>actions</em>.
-
-section
-  h2 Expressions (Formal)
-  hr
-
-  br
-  p <code>circumference = <mark>2 * PI * radius</mark>;</code>
-  br
-  ul
-    li Variables are expressions;
-    li Constants are expressions;
-    li If $E_{1}$ and $E_{2}$ are expressions, then $E_{1} \circ E_{2}$ is an expression.
-      ul
-        li ($\circ$ is an operator)
-
-section
-  h2 Statements (Formal)
-  hr
-
-  br
-  ul
-    li Assignment statements
-    li If statements
-    li For statements
-    li $\ldots$
-
-section
-  h2 Compound Statements (Blocks)
-  hr
-
-  p(class = "r-fit-text") Declarations and statements surrounded by <code>{}</code>.
-  img(src = "./2-if-for-array/figs/compound-statement.png" alt = "Compound Statement"
-    width = 400 height = auto)
-  h3 Always use <code>{}</code>.
+  p(class = "r-fit-text") Multiple declarations and statements surrounded by <code>{}</code>
+  <div class="row">
+    <div class="column">
+      img(src = "./2-if-for-array/figs/if-syntax-with-braces.png" alt = "if-else with braces"
+        width = 360 height = auto)
+    </div>
+    <div class="column">
+      img.fragment(src = "./2-if-for-array/figs/if-syntax-no-braces.png" alt = "if-else without braces"
+        width = 400 height = auto)
+    </div>
+  </div>
+  h3.fragment Always Use <code>{}</code>!
 
 section
   h2(class = "r-fit-text") Relational Operators (关系运算符)
@@ -168,7 +137,7 @@ section
     width = 400 height = auto)
   p(class = "r-fit-text") Relational expressions have values 0 (<code>false</code>) or 1 (<code>true</code>).
   br
-  p.fragment <mark>In C, non-zero numbers are treated as 1.</mark>
+  p.fragment <mark>In C, non-zero numbers are treated as 1 (<code>true</code>).</mark>
 
 section
   h2 <code>?:</code>
@@ -182,7 +151,7 @@ section
   p Ternary Operator (三目运算符)
 
   br
-  p.fragment(class = "r-fit-text") Do Not Use it Too Much!
+  h2.fragment Do Not Use it Too Much!
 
 section
   h2 Min of Three
@@ -199,10 +168,8 @@ section
   h2 Nested <code>if</code>
   hr
 
-  br
-  img(src = "./2-if-for-array/figs/compound-statement.png" alt = "Compound Statement"
-    width = 400 height = auto)
-  h3 Always use <code>{}</code>.
+  img(src = "./2-if-for-array/figs/nested-if.png" alt = "Nested if"
+    width = 300 height = auto)
 
 section
   h2 Min of a Set of Numbers
@@ -277,7 +244,7 @@ section
   br
   img(src = "./2-if-for-array/figs/logical-expression.png" alt = "Logical Expression"
     width = 1000 height = auto)
-  p(class = "r-fit-text") Logical expressions have value <code>0</code> (<code>false</code>) or <code>1</code> (<code>true</code>).
+  p(class = "r-fit-text") Logical expressions have values <code>0</code> (<code>false</code>) or <code>1</code> (<code>true</code>).
 
 section
   h2 Short-circuit Evaluation
@@ -299,7 +266,7 @@ section
   p Given an integer $n \ge 0$, to compute $\sum\limits_{i = 1}^{n} i$.
 
 section
-  h2 Increment/Decrement Operators
+  h2 Increment/Decrement Operators (<code>++</code>, <code>--</code>)
   hr
 
   br
@@ -310,6 +277,17 @@ section
     li <code>++i</code>
       ul
         li increment <code>i</code> <em>before</em> its value is used
+
+section
+  h2 Increment/Decrement Operators (<code>++</code>, <code>--</code>)
+  hr
+
+  br
+  p <code>i = 2;</code>
+  p <code>j = i * i++;</code>
+
+  br
+  p.fragment Undefined Behavior (未定义行为)
 
 section
   h2 For Statement
@@ -343,12 +321,12 @@ section
   br
   p Symbolic Constants (符号常量)
   br
-  p <code>#define</code> is a <em>pre-processing directive</em> (预处理指令).
+  p.fragment <code>#define</code> is a <em>pre-processing directive</em> (预处理指令).
 
   br
-  p <mark><code>int numbers[NUM] = {0};</code></mark> has a <em>constant</em> size.
+  p.fragment <mark><code>int numbers[NUM] = {0};</code></mark> has a <em>constant</em> size.
   ul
-    li <code>NUM</code> is known at <em>compiler</em> time.
+    li.fragment <code>NUM</code> is known at <em>compiler</em> time.
 
 section
   h2 Array Initializer
@@ -357,7 +335,6 @@ section
   br
   p <code><mark>int numbers[NUM] = {0};</mark></code>
 
-  br
   ul
     li.fragment <code>int numbers[NUM] = {1};</code>
       ul
@@ -374,9 +351,9 @@ section
   h2 Array Initializer
   hr
 
+  br
   p <code><mark>int numbers[NUM] = {0};</mark></code>
 
-  br
   ul
     li.fragment <del><code>int numbers[NUM] = {};</code></del>
       ul
@@ -397,3 +374,11 @@ section
   img(src = "./2-if-for-array/figs/array-members.png" alt = "Array Members"
     width = 800 height = auto)
   p <code>[]</code>: <em>subscript</em> operator (下标运算符)
+
+section
+  h2 Stars Pyramid
+  hr
+
+  br
+  img(src = "./2-if-for-array/figs/stars.jpg" alt = "Array Members"
+    width = 800 height = auto)
