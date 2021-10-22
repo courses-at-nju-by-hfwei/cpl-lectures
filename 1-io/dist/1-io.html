@@ -330,13 +330,12 @@
   </ul>
 </section>
 <section>
-  <h2><code>printf</code></h2>
+  <h2><code>scanf</code></h2>
   <hr/><br/><code><mark>int scanf(const char *format, ...);</mark></code><br/><br/>
   <ul>
     <li><code>format</code>: format string (格式串)</li>
     <li><code>...</code>: variable argument list (可变长参数列表)</li>
-  </ul><br/><br/>
-  <p><code>scanf("%d%d", &c_score, &music_score);</code></p>
+  </ul>
 </section>
 <section>
   <h2><code>scanf</code></h2>
@@ -387,16 +386,16 @@
         <td>pointer to <code>double</code></td>
       </tr>
       <tr class="fragment">
-        <td>%s</td>
-        <td>a sequence of non-white-spaces</td>
-        <td>pointer to a <code>char</code> array</td>
+        <td>%e, %f, %g</td>
+        <td>skip white-spaces; matches a <code>float</code></td>
+        <td>pointer to <code>float</code></td>
       </tr>
     </tbody>
   </table>
 </section>
 <section>
   <h2><code>scanf</code></h2>
-  <hr/><br/><code><mark>int scanf(const char *format, ...);</mark></code><br/>
+  <hr/>
   <table>
     <thead>
       <tr>
@@ -412,13 +411,18 @@
         <td>pointer to a <code>char</code></td>
       </tr>
       <tr class="fragment">
-        <td>%[abc] %[^abc]</td>
-        <td><code>(a|b|c)*</code></td>
+        <td>%s</td>
+        <td>a sequence of non-white-spaces</td>
+        <td>pointer to a <code>char</code> array</td>
+      </tr>
+      <tr class="fragment">
+        <td>%[abc]</td>
+        <td>scanlist</td>
         <td>pointer to a <code>char</code> array</td>
       </tr>
       <tr class="fragment">
         <td>%[^abc]</td>
-        <td></td>
+        <td>not in scanlist</td>
         <td>pointer to a <code>char</code> array</td>
       </tr>
       <tr class="fragment">

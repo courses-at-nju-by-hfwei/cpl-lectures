@@ -407,7 +407,7 @@ section
     li.fragment %s: <em>maximum</em> number of characters
 
 section
-  h2 <code>printf</code>
+  h2 <code>scanf</code>
   hr
 
   br
@@ -419,9 +419,9 @@ section
     li <code>format</code>: format string (格式串)
     li <code>...</code>: variable argument list (可变长参数列表)
 
-  br
-  br
-  p <code>scanf("%d%d", &c_score, &music_score);</code>
+  //- br
+  //- br
+  //- p <code>scanf("%d%d", &c_score, &music_score);</code>
 
 section
   h2 <code>scanf</code>
@@ -480,18 +480,16 @@ section
         td skip white-spaces; matches a <code>double</code>
         td pointer to <code>double</code>
       tr.fragment
-        td %s
-        td a sequence of non-white-spaces
-        td pointer to a <code>char</code> array
+        td %e, %f, %g
+        td skip white-spaces; matches a <code>float</code>
+        td pointer to <code>float</code>
 
 section
   h2 <code>scanf</code>
   hr
 
-  br
-  code <mark>int scanf(const char *format, ...);</mark>
+  //- code <mark>int scanf(const char *format, ...);</mark>
 
-  br
   table
     thead
       tr
@@ -504,12 +502,16 @@ section
         td a character
         td pointer to a <code>char</code>
       tr.fragment
-        td %[abc] %[^abc]
-        td <code>(a|b|c)*</code>
+        td %s
+        td a sequence of non-white-spaces
+        td pointer to a <code>char</code> array
+      tr.fragment
+        td %[abc]
+        td scanlist
         td pointer to a <code>char</code> array
       tr.fragment
         td %[^abc]
-        td
+        td not in scanlist
         td pointer to a <code>char</code> array
       tr.fragment
         td %%
