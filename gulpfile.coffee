@@ -24,6 +24,7 @@ deploySet = [
   './0-intro/figs/*.png'
   './1-io/figs/*.jpeg'
   './1-io/figs/*.png'
+  './2-if-for-array/figs/*'
   './node_modules/reveal.js/dist/reveal.js'
   './node_modules/reveal.js/plugin/highlight/highlight.js'
   './node_modules/reveal.js/plugin/highlight/monokai.css'
