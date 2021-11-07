@@ -25,6 +25,7 @@ deploySet = [
   './2-if-for-array/figs/*'
   './3-for-a-while/figs/*'
   './4-loops/figs/*'
+  './5-function/figs/*'
   './node_modules/reveal.js/dist/reveal.js'
   './node_modules/reveal.js/plugin/highlight/highlight.js'
   './node_modules/reveal.js/plugin/highlight/monokai.css'
