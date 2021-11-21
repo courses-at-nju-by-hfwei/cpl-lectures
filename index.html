@@ -89,102 +89,121 @@ li + li {
     <div class="reveal">
       <div class="slides">
         <section>
-          <h1 style="font-variant: small-caps">Recursion</h1>
+          <h1 style="font-variant: small-caps">Recursion; Data Types</h1>
           <hr><br>
           <h4>Hengfeng Wei</h4>
-          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./6-recursion/figs/C.png" alt="The C Programming Language" width="200">
-          <p>Nov. 15, 2021</p>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./7-data-types/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Nov. 22, 2021</p>
         </section>
         <section>
           <h2>Review</h2>
           <hr><br>
-          <h2>Functions</h2><br>
-          <ul>
-            <li>Function Declaration</li>
-            <li>Function Definition</li>
-            <li>Arrays as Parameters</li>
-            <li>Pass by Value</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Overview</h2>
-          <hr><br>
-          <h3 class="r-fit-text">Recursive Functions (Recursion)</h3><img src="./6-recursion/figs/recursion-stair.jpg" alt="Recursion Logo" width="500">
-          <p>A function that calls (调用) itself.</p>
+          <h3>Recursion</h3><img src="./6-recursion/figs/recursion-stair.jpg" alt="Recursion Logo" width="500">
+          <p>A function that calls itself.</p>
         </section>
         <section>
           <h2>Recursion</h2>
           <hr><br>
-          <h2 style="font-variant: small-caps">Thinking Recursively</h2><img src="./6-recursion/figs/think-recursively.jpg" alt="Thinking Recursively" width="600">
-          <p class="fragment">It is a looooooog way to go to master recursion!!!</p>
+          <h2 style="font-variant: small-caps">Thinking Recursively</h2><img src="./6-recursion/figs/think-recursively.jpg" alt="Thinking Recursively" width="500">
+          <h4>"有人教你 不一定你全都能够学会"</h4>
+          <h4>"什么左右你一直向前"</h4>
         </section>
         <section>
-          <h2>Recursion: Systems Implementation</h2>
+          <h2>Overview</h2>
           <hr><br>
-          <ul>
-            <li>Programs run in <mark>memory</mark> (内存; 記憶體).</li><br>
-            <li class="fragment">Memory = <mark>Stack</mark> (栈区) + Heap (堆区) + $\cdots$</li><br>
-            <li class="fragment">Each <mark>function call</mark> has its own <mark>stack frame</mark> (栈帧).</li><br>
-            <li class="fragment">Stack grows/shrinks with function calls and returns.</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Recursion: Systems Implementation</h2>
-          <hr><br><br>
-          <p><a class="button" href="https://pythontutor.com/c.html#code=%23include%20%3Cstdio.h%3E%0A%0Aint%20Min%28int%20a,%20int%20b%29%3B%0A%0Aint%20main%28%29%20%7B%0A%20%20int%20a%20%3D%2025%3B%0A%20%20int%20b%20%3D%2037%3B%0A%20%20%0A%20%20int%20min%20%3D%20Min%28a,%20b%29%3B%0A%20%20printf%28%22%25d%22,%20min%29%3B%0A%0A%20%20return%200%3B%0A%7D%0A%0Aint%20Min%28int%20a,%20int%20b%29%20%7B%0A%20%20return%20a%20%3E%20b%20%3F%20b%20%3A%20a%3B%0A%7D&amp;curInstr=9&amp;mode=display&amp;origin=opt-frontend.js&amp;py=c_gcc9.3.0&amp;rawInputLstJSON=%5B%5D">Visualization of Function Calls @ C Tutor</a></p>
-        </section>
-        <section>
-          <h2>Recursion: Mathematical Induction</h2>
-          <hr><br>
-          <ul>
-            <li>Base Case (基础情况)</li><br>
-            <li>Inductive Step (归纳步骤)</li>
-          </ul>
+          <p>Recursion (More Examples)</p><br>
+          <h3>Data Types</h3><br>
+          <p><code>static</code> &emsp; <code>switch/case</code> &emsp; <code>continue</code></p>
         </section>
         <section>
           <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
-          <hr><br><img src="./6-recursion/figs/coding.png" alt="Let's Code" width="800">
-        </section>
-        <section>
-          <h2>Min</h2>
-          <hr><br><img class="fragment" src="./6-recursion/figs/Min.png" alt="Min" width="800"><br>
-          <p><code>min-re.c</code></p>
-        </section>
-        <section>
-          <h2>Sum</h2>
-          <hr><br><img class="fragment" src="./6-recursion/figs/Sum.png" alt="Sum" width="800"><br>
-          <p><code>sum-re.c</code></p>
-        </section>
-        <section>
-          <h2>Fibonacci Sequence</h2>
-          <hr><br>
-          <p>$0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, \ldots$</p><br>
-          <ul class="fragment">
-            <li>$F_{0} = 0$</li>
-            <li>$F_{1} = 1$</li>
-            <li>$F_{n} = F(n - 1) + F(n - 2) \qquad (n > 1)$</li>
-          </ul><br><br>
-          <p class="fragment"><code>fib-re.c &emsp; fib-array.c &emsp; fib-iter.c</code></p>
-        </section>
-        <section>
-          <h2>Greatest Common Divisor</h2>
-          <hr>
-          <ul>
-            <li>$a > b \implies \text{gcd}(a, b) = \text{gcd}(a - b, b)$</li>
-            <li>$a < b \implies \text{gcd}(a, b) = \text{gcd}(a, b - a)$</li>
-          </ul><img src="./6-recursion/figs/euclid.jpeg" alt="Euclid" width="300"><br>
-          <p class="fragment"><code>gcd-euclid-re.c &emsp; gcd-euclid-iter.c</code></p>
-        </section>
-        <section>
-          <h2>Greatest Common Divisor</h2>
-          <hr><br>
-          <p>$\text{gcd}(a, b) = \text{gcd}(b, a \;\%\; b)$</p><img src="./6-recursion/figs/euclid.jpeg" alt="Euclid" width="300"><br>
-          <p><code>gcd-euclidean-re.c &emsp; gcd-euclidean-iter.c</code></p>
+          <hr><br><img src="./7-data-types/figs/coding.png" alt="Let's Code" width="800">
         </section>
         <section>
           <h2>Binary Search</h2>
-          <hr><br><img src="./6-recursion/figs/binary-search-mario.png" alt="Binary Search Mario" width="800"><br>
+          <hr><br><img src="./7-data-types/figs/binary-search-mario.png" alt="Binary Search Mario" width="800"><br>
           <p><code>bsearch-re.c</code></p>
+        </section>
+        <section>
+          <h2>Merge Sort</h2>
+          <hr><img src="./7-data-types/figs/mergesort-example.png" alt="MergeSort Example" width="550">
+          <p><code>merge-sort.c</code></p>
+        </section>
+        <section>
+          <h2>Data Types (<code>int</code>)</h2>
+          <hr><br>
+          <p>$a \in $ <code>int</code> &emsp; $b \in $ <code>int</code></p><br>
+          <p>$a + b \in $ <code>int</code></p>
+          <p>$a - b \in $ <code>int</code></p>
+          <p>$a \times b \in $ <code>int</code></p>
+          <p><span class = hl>$a \;/\; b \in $ <code>int</code></span></p>
+          <p>$a \;\%\; b \in $ <code>int</code></p>
+        </section>
+        <section>
+          <h2>Data Types</h2>
+          <hr><br><br>
+          <p>The <mark>type</mark> of a variable determines</p><br>
+          <ul>
+            <li>the set of <em>values</em> it may take on and</li><br>
+            <li>what <em>operations</em> can be performed on them.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Data Types (<code>double</code>)</h2>
+          <hr><br>
+          <p><code>DBL_MIN</code> &emsp; <code>DBL_MAX</code></p><br>
+          <p class="r-fit-text"><code>printf("DBL_MIN = %f \t DBL_MAX = %f\n", DBL_MIN, DBL_MAX);</code></p>
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic</h2>
+          <hr><br><div class="row">
+<div class="column"><img src="./7-data-types/figs/c-std-book.jpg" alt="The Standard C Library" width="350"></div>
+<div class="column"><br><br><img src="./7-data-types/figs/bad-news.png" alt="Bad News" width="400"></div>
+</div>
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic</h2>
+          <hr><br><br>
+          <h4 class="fragment r-fit-text">"Floating-point arithmetic is complicated."</h4><br><br>
+          <h4 class="fragment r-fit-text">"Writing portable code is much more challenging."</h4><br><br>
+          <h4 class="fragment r-fit-text">"Writing good math functions is hard."</h4>
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic</h2>
+          <hr><br><img src="./7-data-types/figs/fp.png" alt="Floating Point Number Line" width="900">
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic</h2>
+          <hr><br><br>
+          <h2>1. Overflow (上溢)</h2><br>
+          <p><code>overflow.c</code></p>
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic</h2>
+          <hr><br><br>
+          <h2>2. Underflow (下溢)</h2><br>
+          <p><code>underflow.c</code></p>
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic</h2><img src="./1-io/figs/bad-news.png" alt="Bad News" width="150">
+          <hr><br><br>
+          <h2>3. Significance Loss (精度丢失)</h2><br>
+          <p><code>significance.c</code></p>
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic (Good News)</h2>
+          <hr><br>
+          <h3 class="fragment">"Many applications don't need floating-point arithmetic at all."</h3><br><br>
+          <h2 class="fragment">Use <mark>math.h</mark></h2>
+        </section>
+        <section>
+          <h2>sqrt, log, pow, floor, ceil</h2>
+        </section>
+        <section>
+          <h2>Books</h2>
+          <hr><br>
+          <p>TAOCP</p>
+          <p>CSAPP</p>
         </section>
       </div>
     </div>

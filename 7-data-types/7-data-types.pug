@@ -1,0 +1,197 @@
+section
+  h1(style="font-variant: small-caps") Recursion; Data Types
+  hr
+
+  br
+  h4 Hengfeng Wei
+  h4 <u>hfwei@nju.edu.cn</u>
+
+  img(src = "./7-data-types/figs/C.png", alt = "The C Programming Language",
+      width = 200, height = auto)
+  p Nov. 22, 2021
+
+section
+  h2 Review
+  hr
+
+  br
+  h3 Recursion
+  img(src = "./6-recursion/figs/recursion-stair.jpg", alt = "Recursion Logo",
+      width = 500, height = auto)
+  p A function that calls itself.
+
+section
+  h2 Recursion
+  hr
+
+  br
+  h2(style = "font-variant: small-caps") Thinking Recursively
+  img(src = "./6-recursion/figs/think-recursively.jpg", alt = "Thinking Recursively",
+      width = 500, height = auto)
+  h4 "有人教你 不一定你全都能够学会"
+  h4 "什么左右你一直向前"
+
+section
+  h2 Overview
+  hr
+
+  br
+  p Recursion (More Examples)
+  br
+  h3 Data Types
+  br
+  p <code>static</code> &emsp; <code>switch/case</code> &emsp; <code>continue</code>
+
+section
+  h2(class = "r-fit-text" style="font-variant: small-caps") "Talk is Cheap. Show me the Code."
+  hr
+
+  br
+  img(src = "./7-data-types/figs/coding.png" alt = "Let's Code"
+    width = 800 height = auto)
+
+section
+  h2 Binary Search
+  hr
+
+  br
+  img(src = "./7-data-types/figs/binary-search-mario.png" alt = "Binary Search Mario"
+    width = 800 height = auto)
+
+  br
+  p <code>bsearch-re.c</code>
+
+section
+  h2 Merge Sort
+  hr
+
+  img(src = "./7-data-types/figs/mergesort-example.png" alt = "MergeSort Example"
+    width = 550 height = auto)
+  p <code>merge-sort.c</code>
+
+section
+  h2 Data Types (<code>int</code>)
+  hr
+
+  br
+  p $a \in $ <code>int</code> &emsp; $b \in $ <code>int</code>
+  br
+  p $a + b \in $ <code>int</code>
+  p $a - b \in $ <code>int</code>
+  p $a \times b \in $ <code>int</code>
+  p <span class = hl>$a \;/\; b \in $ <code>int</code></span>
+  p $a \;\%\; b \in $ <code>int</code>
+
+section
+  h2 Data Types
+  hr
+
+  br
+  br
+  p The <mark>type</mark> of a variable determines
+  br
+  ul
+    li the set of <em>values</em> it may take on and
+    br
+    li what <em>operations</em> can be performed on them.
+
+section
+  h2 Data Types (<code>double</code>)
+  hr
+
+  br
+  p <code>DBL_MIN</code> &emsp; <code>DBL_MAX</code>
+
+  br
+  p(class = "r-fit-text") <code>printf("DBL_MIN = %f \t DBL_MAX = %f\n", DBL_MIN, DBL_MAX);</code>
+
+section
+  h2 Floating-point Arithmetic
+  hr
+
+  br
+  <div class="row">
+    <div class="column">
+      img(src = "./7-data-types/figs/c-std-book.jpg" alt = "The Standard C Library"
+        width = 350 height = auto)
+    </div>
+    <div class="column">
+      br
+      br
+      img(src = "./7-data-types/figs/bad-news.png", alt = "Bad News"
+          width = 400, height = auto)
+    </div>
+  </div>
+
+section
+  h2 Floating-point Arithmetic
+  hr
+
+  br
+  br
+  h4.fragment(class = "r-fit-text") "Floating-point arithmetic is complicated."
+  br
+  br
+  h4.fragment(class = "r-fit-text") "Writing portable code is much more challenging."
+  br
+  br
+  h4.fragment(class = "r-fit-text") "Writing good math functions is hard."
+
+section
+  h2 Floating-point Arithmetic
+  hr
+
+  br
+  img(src = "./7-data-types/figs/fp.png", alt = "Floating Point Number Line"
+      width = 900, height = auto)
+
+section
+  h2 Floating-point Arithmetic
+  hr
+
+  br
+  br
+  h2 1. Overflow (上溢)
+  br
+  p <code>overflow.c</code>
+
+section
+  h2 Floating-point Arithmetic
+  hr
+
+  br
+  br
+  h2 2. Underflow (下溢)
+  br
+  p <code>underflow.c</code>
+
+section
+  h2 Floating-point Arithmetic
+  hr
+
+  br
+  br
+  h2 3. Significance Loss (精度丢失)
+  br
+  p <code>significance.c</code>
+
+section
+  h2 Floating-point Arithmetic (Good News)
+  hr
+
+  br
+  h3.fragment "Many applications don't need floating-point arithmetic at all."
+  br
+  br
+  h2.fragment Use <mark>math.h</mark>
+
+section
+  h2 sqrt, log, pow, floor, ceil
+
+section
+  h2 Books
+  hr
+
+  br
+  p TAOCP
+  p CSAPP
