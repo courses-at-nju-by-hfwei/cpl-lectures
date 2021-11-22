@@ -27,9 +27,7 @@ section
   br
   h2(style = "font-variant: small-caps") Thinking Recursively
   img(src = "./6-recursion/figs/think-recursively.jpg", alt = "Thinking Recursively",
-      width = 500, height = auto)
-  h4 "有人教你 不一定你全都能够学会"
-  h4 "什么左右你一直向前"
+      width = 600, height = auto)
 
 section
   h2 Overview
@@ -40,7 +38,7 @@ section
   br
   h3 Data Types
   br
-  p <code>static</code> &emsp; <code>switch/case</code> &emsp; <code>continue</code>
+  p <code>static</code>
 
 section
   h2(class = "r-fit-text" style="font-variant: small-caps") "Talk is Cheap. Show me the Code."
@@ -70,19 +68,6 @@ section
   p <code>merge-sort.c</code>
 
 section
-  h2 Data Types (<code>int</code>)
-  hr
-
-  br
-  p $a \in $ <code>int</code> &emsp; $b \in $ <code>int</code>
-  br
-  p $a + b \in $ <code>int</code>
-  p $a - b \in $ <code>int</code>
-  p $a \times b \in $ <code>int</code>
-  p <span class = hl>$a \;/\; b \in $ <code>int</code></span>
-  p $a \;\%\; b \in $ <code>int</code>
-
-section
   h2 Data Types
   hr
 
@@ -94,22 +79,99 @@ section
     li the set of <em>values</em> it may take on and
     br
     li what <em>operations</em> can be performed on them.
+  br
+  br
+  p.fragment <code>int</code> &emsp; <code>double</code> &emsp; <code>char</code>
 
 section
-  h2 Data Types (<code>double</code>)
+  h2 Integral Types
   hr
 
   br
-  p <code>DBL_MIN</code> &emsp; <code>DBL_MAX</code>
+  <div class="row">
+    <div class="column">
+      p Signed (有符号数)
+      ul
+        li <code>short int</code>
+        li <code>int</code>
+        li <code>long</code>
+        li <code>long long</code>
+    </div>
+    <div class="column">
+      p Unsigned (无符号数)
+      ul
+        li <code><mark>bool</mark></code> (<code>stdbool.h</code>)
+        li <code>unsigned short int</code>
+        li <code>unsigned int</code>
+        li <code>unsigned long</code>
+        li <code>unsigned long long</code>
+    </div>
+  </div>
+  br
+  p.fragment <code>char</code> (<code>unsigned/signed</code>)
+
+section
+  h2 Overflow (溢出)
+  hr
 
   br
-  p(class = "r-fit-text") <code>printf("DBL_MIN = %f \t DBL_MAX = %f\n", DBL_MIN, DBL_MAX);</code>
+  ul
+    li 有符号整数运算中发生溢出, 程序的行为是<mark>未定义</mark>的。
+    li 无符号整数运算中发生溢出, 程序的行为是有定义的。
+
+
+section
+  h2 Integral Promotion (整型提升)
+  hr
+
+  br
+  br
+  ul
+    li 定义初始化
+    li 赋值操作
+    li 参数传递
+    li 函数返回值
+
+section
+  h2 Integral Promotion (整型提升)
+  hr
+
+  br
+  img(src = "./7-data-types/figs/conversion.png" alt = "Conversion"
+    width = 1500 height = auto)
+  p.fragment "Arithmetic operators do not accept types smaller than <mark><code>int</code></mark> as arguments, and integral promotions are automatically applied."
+
+section
+  h2 Floating-point Numbers
+  hr
+
+  br
+  ul
+    li <code>float y = 5.0<mark>F</mark></code>
+      ul
+        li <code>%f</code>
+        li <code>%f</code>
+    li <code>double x = 5.0</code>
+      ul
+        li <mark><code>%lf</code></mark>
+        li <code>%f</code>
+    li <code>long double z = 5.0L</code>
+      ul
+        li <code>%Lf</code>
+        li <code>%Lf</code>
+
+section
+  h2 Floating-point Numbers
+  hr
+
+  br
+  img(src = "./7-data-types/figs/fp-conversion.png" alt = "FP Conversion"
+    width = 1000 height = auto)
 
 section
   h2 Floating-point Arithmetic
   hr
 
-  br
   <div class="row">
     <div class="column">
       img(src = "./7-data-types/figs/c-std-book.jpg" alt = "The Standard C Library"
@@ -122,28 +184,15 @@ section
           width = 400, height = auto)
     </div>
   </div>
+  h4.fragment(class = "r-fit-text", style = "font-variant: small-caps") <mark>"Floating-point Arithmetic is Hard."</mark>
 
 section
   h2 Floating-point Arithmetic
   hr
 
-  br
-  br
-  h4.fragment(class = "r-fit-text") "Floating-point arithmetic is complicated."
-  br
-  br
-  h4.fragment(class = "r-fit-text") "Writing portable code is much more challenging."
-  br
-  br
-  h4.fragment(class = "r-fit-text") "Writing good math functions is hard."
-
-section
-  h2 Floating-point Arithmetic
-  hr
-
-  br
   img(src = "./7-data-types/figs/fp.png", alt = "Floating Point Number Line"
-      width = 900, height = auto)
+      width = 1000, height = auto)
+  p <code><mark>float.h</mark></code> (Section 23.1)
 
 section
   h2 Floating-point Arithmetic
@@ -151,47 +200,74 @@ section
 
   br
   br
-  h2 1. Overflow (上溢)
-  br
-  p <code>overflow.c</code>
+  ul
+    li Overflow (上溢)
+    br
+    li Underflow (下溢)
+    br
+    li Significance Loss (精度丢失)
+    ul
+      li <code>significance.c</code>
 
 section
   h2 Floating-point Arithmetic
   hr
 
   br
+  p "Many applications don't need floating-point arithmetic at all."
+  img(src = "./7-data-types/figs/good-news.jpg", alt = "Good News"
+      width = 400, height = auto)
   br
-  h2 2. Underflow (下溢)
-  br
-  p <code>underflow.c</code>
+  p.fragment Use <code><mark>math.h</mark></code> (Section 23.3) whenever possible.
 
 section
-  h2 Floating-point Arithmetic
+  h2 C 语言安全编码标准
   hr
 
   br
-  br
-  h2 3. Significance Loss (精度丢失)
-  br
-  p <code>significance.c</code>
+  img(src = "./7-data-types/figs/cert-c.jpeg", alt = "Cert C Book"
+      width = 400, height = auto)
 
 section
-  h2 Floating-point Arithmetic (Good News)
+  h2 整型数安全编码标准 (INT)
   hr
 
   br
-  h3.fragment "Many applications don't need floating-point arithmetic at all."
-  br
-  br
-  h2.fragment Use <mark>math.h</mark>
+  ul
+    li 使用正确的整数类型
+    br
+    li 确保无符号整数运算不产生回绕
+    br
+    li 确保有符号整数运算不造成溢出
+    br
+    li 确保除法与余数运算不造成除0错误
+    br
+    li 确保整数转换不会造成数据丢失或者错误解释
 
 section
-  h2 sqrt, log, pow, floor, ceil
-
-section
-  h2 Books
+  h2 浮点数安全编码标准 (FLP)
   hr
 
   br
-  p TAOCP
-  p CSAPP
+  ul
+    li 不要使用浮点数变量作为循环计数器
+    br
+    li 避免或者检测数学函数中的定义域与值域错误
+    br
+    li 确保浮点数转换在新类型的范围中
+
+section
+  h2 References
+  hr
+
+  br
+  <div class="row">
+    <div class="column">
+      img(src = "./7-data-types/figs/csapp.jpeg" alt = "CSAPP Book"
+        width = 400 height = auto)
+    </div>
+    <div class="column">
+      img(src = "./7-data-types/figs/taocp-2.jpg", alt = "TAOCP Vol2"
+          width = 350, height = auto)
+    </div>
+  </div>

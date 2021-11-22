@@ -104,16 +104,14 @@ li + li {
         <section>
           <h2>Recursion</h2>
           <hr><br>
-          <h2 style="font-variant: small-caps">Thinking Recursively</h2><img src="./6-recursion/figs/think-recursively.jpg" alt="Thinking Recursively" width="500">
-          <h4>"有人教你 不一定你全都能够学会"</h4>
-          <h4>"什么左右你一直向前"</h4>
+          <h2 style="font-variant: small-caps">Thinking Recursively</h2><img src="./6-recursion/figs/think-recursively.jpg" alt="Thinking Recursively" width="600">
         </section>
         <section>
           <h2>Overview</h2>
           <hr><br>
           <p>Recursion (More Examples)</p><br>
           <h3>Data Types</h3><br>
-          <p><code>static</code> &emsp; <code>switch/case</code> &emsp; <code>continue</code></p>
+          <p><code>static</code></p>
         </section>
         <section>
           <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
@@ -130,80 +128,150 @@ li + li {
           <p><code>merge-sort.c</code></p>
         </section>
         <section>
-          <h2>Data Types (<code>int</code>)</h2>
-          <hr><br>
-          <p>$a \in $ <code>int</code> &emsp; $b \in $ <code>int</code></p><br>
-          <p>$a + b \in $ <code>int</code></p>
-          <p>$a - b \in $ <code>int</code></p>
-          <p>$a \times b \in $ <code>int</code></p>
-          <p><span class = hl>$a \;/\; b \in $ <code>int</code></span></p>
-          <p>$a \;\%\; b \in $ <code>int</code></p>
-        </section>
-        <section>
           <h2>Data Types</h2>
           <hr><br><br>
           <p>The <mark>type</mark> of a variable determines</p><br>
           <ul>
             <li>the set of <em>values</em> it may take on and</li><br>
             <li>what <em>operations</em> can be performed on them.</li>
+          </ul><br><br>
+          <p class="fragment"><code>int</code> &emsp; <code>double</code> &emsp; <code>char</code></p>
+        </section>
+        <section>
+          <h2>Integral Types</h2>
+          <hr><br><div class="row">
+<div class="column">
+          <p>Signed (有符号数)</p>
+          <ul>
+            <li><code>short int</code></li>
+            <li><code>int</code></li>
+            <li><code>long</code></li>
+            <li><code>long long</code></li>
+          </ul></div>
+<div class="column">
+          <p>Unsigned (无符号数)</p>
+          <ul>
+            <li><code><mark>bool</mark></code> (<code>stdbool.h</code>)</li>
+            <li><code>unsigned short int</code></li>
+            <li><code>unsigned int</code></li>
+            <li><code>unsigned long</code></li>
+            <li><code>unsigned long long</code></li>
+          </ul></div>
+</div><br>
+          <p class="fragment"><code>char</code> (<code>unsigned/signed</code>)</p>
+        </section>
+        <section>
+          <h2>Overflow (溢出)</h2>
+          <hr><br>
+          <ul>
+            <li>有符号整数运算中发生溢出, 程序的行为是<mark>未定义</mark>的。</li>
+            <li>无符号整数运算中发生溢出, 程序的行为是有定义的。</li>
           </ul>
         </section>
         <section>
-          <h2>Data Types (<code>double</code>)</h2>
+          <h2>Integral Promotion (整型提升)</h2>
+          <hr><br><br>
+          <ul>
+            <li>定义初始化</li>
+            <li>赋值操作</li>
+            <li>参数传递</li>
+            <li>函数返回值</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Integral Promotion (整型提升)</h2>
+          <hr><br><img src="./7-data-types/figs/conversion.png" alt="Conversion" width="1500">
+          <p class="fragment">"Arithmetic operators do not accept types smaller than <mark><code>int</code></mark> as arguments, and integral promotions are automatically applied."</p>
+        </section>
+        <section>
+          <h2>Floating-point Numbers</h2>
           <hr><br>
-          <p><code>DBL_MIN</code> &emsp; <code>DBL_MAX</code></p><br>
-          <p class="r-fit-text"><code>printf("DBL_MIN = %f \t DBL_MAX = %f\n", DBL_MIN, DBL_MAX);</code></p>
+          <ul>
+            <li><code>float y = 5.0<mark>F</mark></code>
+              <ul>
+                <li><code>%f</code></li>
+                <li><code>%f</code></li>
+              </ul>
+            </li>
+            <li><code>double x = 5.0</code>
+              <ul>
+                <li><mark><code>%lf</code></mark></li>
+                <li><code>%f</code></li>
+              </ul>
+            </li>
+            <li><code>long double z = 5.0L</code>
+              <ul>
+                <li><code>%Lf</code></li>
+                <li><code>%Lf</code></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Floating-point Numbers</h2>
+          <hr><br><img src="./7-data-types/figs/fp-conversion.png" alt="FP Conversion" width="1000">
         </section>
         <section>
           <h2>Floating-point Arithmetic</h2>
-          <hr><br><div class="row">
+          <hr><div class="row">
 <div class="column"><img src="./7-data-types/figs/c-std-book.jpg" alt="The Standard C Library" width="350"></div>
 <div class="column"><br><br><img src="./7-data-types/figs/bad-news.png" alt="Bad News" width="400"></div>
 </div>
+          <h4 class="fragment r-fit-text" style="font-variant: small-caps"><mark>"Floating-point Arithmetic is Hard."</mark></h4>
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic</h2>
+          <hr><img src="./7-data-types/figs/fp.png" alt="Floating Point Number Line" width="1000">
+          <p><code><mark>float.h</mark></code> (Section 23.1)</p>
         </section>
         <section>
           <h2>Floating-point Arithmetic</h2>
           <hr><br><br>
-          <h4 class="fragment r-fit-text">"Floating-point arithmetic is complicated."</h4><br><br>
-          <h4 class="fragment r-fit-text">"Writing portable code is much more challenging."</h4><br><br>
-          <h4 class="fragment r-fit-text">"Writing good math functions is hard."</h4>
+          <ul>
+            <li>Overflow (上溢)</li><br>
+            <li>Underflow (下溢)</li><br>
+            <li>Significance Loss (精度丢失)</li>
+            <ul>
+              <li><code>significance.c</code></li>
+            </ul>
+          </ul>
         </section>
         <section>
           <h2>Floating-point Arithmetic</h2>
-          <hr><br><img src="./7-data-types/figs/fp.png" alt="Floating Point Number Line" width="900">
-        </section>
-        <section>
-          <h2>Floating-point Arithmetic</h2>
-          <hr><br><br>
-          <h2>1. Overflow (上溢)</h2><br>
-          <p><code>overflow.c</code></p>
-        </section>
-        <section>
-          <h2>Floating-point Arithmetic</h2>
-          <hr><br><br>
-          <h2>2. Underflow (下溢)</h2><br>
-          <p><code>underflow.c</code></p>
-        </section>
-        <section>
-          <h2>Floating-point Arithmetic</h2><img src="./1-io/figs/bad-news.png" alt="Bad News" width="150">
-          <hr><br><br>
-          <h2>3. Significance Loss (精度丢失)</h2><br>
-          <p><code>significance.c</code></p>
-        </section>
-        <section>
-          <h2>Floating-point Arithmetic (Good News)</h2>
           <hr><br>
-          <h3 class="fragment">"Many applications don't need floating-point arithmetic at all."</h3><br><br>
-          <h2 class="fragment">Use <mark>math.h</mark></h2>
+          <p>"Many applications don't need floating-point arithmetic at all."</p><img src="./7-data-types/figs/good-news.jpg" alt="Good News" width="400"><br>
+          <p class="fragment">Use <code><mark>math.h</mark></code> (Section 23.3) whenever possible.</p>
         </section>
         <section>
-          <h2>sqrt, log, pow, floor, ceil</h2>
+          <h2>C 语言安全编码标准</h2>
+          <hr><br><img src="./7-data-types/figs/cert-c.jpeg" alt="Cert C Book" width="400">
         </section>
         <section>
-          <h2>Books</h2>
+          <h2>整型数安全编码标准 (INT)</h2>
           <hr><br>
-          <p>TAOCP</p>
-          <p>CSAPP</p>
+          <ul>
+            <li>使用正确的整数类型</li><br>
+            <li>确保无符号整数运算不产生回绕</li><br>
+            <li>确保有符号整数运算不造成溢出</li><br>
+            <li>确保除法与余数运算不造成除0错误</li><br>
+            <li>确保整数转换不会造成数据丢失或者错误解释</li>
+          </ul>
+        </section>
+        <section>
+          <h2>浮点数安全编码标准 (FLP)</h2>
+          <hr><br>
+          <ul>
+            <li>不要使用浮点数变量作为循环计数器</li><br>
+            <li>避免或者检测数学函数中的定义域与值域错误</li><br>
+            <li>确保浮点数转换在新类型的范围中</li>
+          </ul>
+        </section>
+        <section>
+          <h2>References</h2>
+          <hr><br><div class="row">
+<div class="column"><img src="./7-data-types/figs/csapp.jpeg" alt="CSAPP Book" width="400"></div>
+<div class="column"><img src="./7-data-types/figs/taocp-2.jpg" alt="TAOCP Vol2" width="350"></div>
+</div>
         </section>
       </div>
     </div>
