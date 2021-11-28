@@ -89,189 +89,152 @@ li + li {
     <div class="reveal">
       <div class="slides">
         <section>
-          <h1 style="font-variant: small-caps">Recursion; Data Types</h1>
+          <h1 style="font-variant: small-caps">Pointers</h1>
           <hr><br>
           <h4>Hengfeng Wei</h4>
-          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./7-data-types/figs/C.png" alt="The C Programming Language" width="200">
-          <p>Nov. 22, 2021</p>
-        </section>
-        <section>
-          <h2>Review</h2>
-          <hr><br>
-          <h3>Recursion</h3><img src="./6-recursion/figs/recursion-stair.jpg" alt="Recursion Logo" width="500">
-          <p>A function that calls itself.</p>
-        </section>
-        <section>
-          <h2>Recursion</h2>
-          <hr><br>
-          <h2 style="font-variant: small-caps">Thinking Recursively</h2><img src="./6-recursion/figs/think-recursively.jpg" alt="Thinking Recursively" width="600">
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./8-pointer/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Nov. 29, 2021</p>
         </section>
         <section>
           <h2>Overview</h2>
+          <hr><br><img src="./8-pointer/figs/C-Pointers.png" alt="C Pointers" width="1200"><br>
+          <p>Pointers and Arrays &emsp; Pointers and C Strings</p>
+        </section>
+        <section>
+          <h2>Overview</h2>
+          <hr><div class="row">
+<div class="column"><br><br><img src="./8-pointer/figs/C++-Pointers.png" alt="C++ Pointers" width="500"></div>
+<div class="column"><br><img class="fragment" src="./8-pointer/figs/Java-Pointers.jpg" alt="Java Pointers" width="500"></div>
+</div>
+        </section>
+        <section>
+          <h2>Pointers</h2>
           <hr><br>
-          <p>Recursion (More Examples)</p><br>
-          <h3>Data Types</h3><br>
-          <p><code>static</code></p>
+          <p>"A <mark>pointer</mark> is a <em>variable</em> that</p>
+          <p>contains the <em>address</em> of a variable."</p><img src="./8-pointer/figs/KR.jpg" alt="C Bible Book" width="300">
         </section>
         <section>
           <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
-          <hr><br><img src="./7-data-types/figs/coding.png" alt="Let's Code" width="800">
+          <hr><br><img src="./8-pointer/figs/coding.png" alt="Let's Code" width="800">
         </section>
         <section>
-          <h2>Binary Search</h2>
-          <hr><br><img src="./7-data-types/figs/binary-search-mario.png" alt="Binary Search Mario" width="800"><br>
-          <p><code>bsearch-re.c</code></p>
-        </section>
-        <section>
-          <h2>Merge Sort</h2>
-          <hr><img src="./7-data-types/figs/mergesort-example.png" alt="MergeSort Example" width="550">
-          <p><code>merge-sort.c</code></p>
-        </section>
-        <section>
-          <h2>Data Types</h2>
-          <hr><br><br>
-          <p>The <mark>type</mark> of a variable determines</p><br>
+          <h2>Variables Revisited</h2>
+          <hr><br>
+          <p><code><mark>int radius = 10;</mark></code></p>
           <ul>
-            <li>the set of <em>values</em> it may take on and</li><br>
-            <li>what <em>operations</em> can be performed on them.</li>
+            <li><code>radius</code> refers to a <em>location</em> (<code>&radius</code>) in memory.</li>
           </ul><br><br>
-          <p class="fragment"><code>int</code> &emsp; <code>double</code> &emsp; <code>char</code></p>
+          <p class="fragment"><code><mark>&</mark></code>: Address-of Operator ("取地址"运算符)</p><br>
+          <p class="fragment"><code>printf("%<mark>p</mark>\n", &radius);</code></p>
         </section>
         <section>
-          <h2>Integral Types</h2>
-          <hr><br><div class="row">
-<div class="column">
-          <p>Signed (有符号数)</p>
-          <ul>
-            <li><code>short int</code></li>
-            <li><code>int</code></li>
-            <li><code>long</code></li>
-            <li><code>long long</code></li>
-          </ul></div>
-<div class="column">
-          <p>Unsigned (无符号数)</p>
-          <ul>
-            <li><code><mark>bool</mark></code> (<code>stdbool.h</code>)</li>
-            <li><code>unsigned short int</code></li>
-            <li><code>unsigned int</code></li>
-            <li><code>unsigned long</code></li>
-            <li><code>unsigned long long</code></li>
-          </ul></div>
-</div><br>
-          <p class="fragment"><code>char</code> (<code>unsigned/signed</code>)</p>
-        </section>
-        <section>
-          <h2>Overflow (溢出)</h2>
+          <h2>Pointers</h2>
           <hr><br>
+          <p><code>int *ptr_radius = &radius;</code></p><br>
           <ul>
-            <li>有符号整数运算中发生溢出, 程序的行为是<mark>未定义</mark>的。</li>
-            <li>无符号整数运算中发生溢出, 程序的行为是有定义的。</li>
+            <li class="fragment">The <mark>type</mark> of <code>ptr_radius</code> is "pointer to <mark>int</mark>".</li>
           </ul>
         </section>
         <section>
-          <h2>Integral Promotion (整型提升)</h2>
+          <h2>Variables Revisited</h2>
+          <hr><br>
+          <p><code>double circumference = 2 * 3.14 * radius;</code></p><br>
+          <p><code>radius = 20;</code></p><br>
+          <p class="fragment">A variable behaves as an <mark><em>lvalue</em></mark> or a <mark><em>rvalue</em></mark>.</p>
+          <p class="fragment">左值 &emsp; 右值</p>
+        </section>
+        <section>
+          <h2>Pointers</h2>
+          <hr><br>
+          <p><code>int *ptr_radius = &radius;</code></p><br>
+          <ul>
+            <li><code>*ptr_radius</code> behaves just like <code>radius</code> does.
+              <ul>
+                <li><code><mark>*</mark></code>: Indirection/Dereferencing ("间接寻址/解引用"运算符)</li>
+              </ul>
+            </li>
+          </ul><br><br>
+          <p class="fragment"><code>double circumference = 2 * 3.14 * (*ptr_radius);</code></p>
+          <p class="fragment"><code>*ptr_radius = 20;</code></p>
+        </section>
+        <section>
+          <h2>Pointers</h2>
+          <hr><br>
+          <p><code>int *ptr_radius = &radius;</code></p><br>
+          <ul>
+            <li><code>ptr_radius</code> is also a variable.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Swap Numbers</h2>
+          <hr><br><img src="./8-pointer/figs/swap.jpeg" alt="Swap" width="500"><br>
+          <p><code>selection-sort.c</code></p>
+        </section>
+        <section>
+          <h2>Min and Max</h2>
+          <hr><br>
+          <p>Compute both the min and the max</p>
+          <p>of an array of integers.</p><br>
+          <p><code>min-max.c</code></p><br>
+          <p class="fragment"><code>scanf.c</code></p>
+        </section>
+        <section>
+          <h2>Dynamic Memory Management</h2>
+          <hr><br>
+          <p class="r-fit-text"><code>int *numbers = malloc(len * sizeof *numbers);</code></p><br><br><a href = "https://en.cppreference.com/w/c/memory/malloc"><code>void *malloc(size_t size);</code></a><br><br><a href = "https://en.cppreference.com/w/c/memory/free"><code>void free(void *ptr);</code></a><br><br><br>
+          <p><code>selection-sort.c</code></p>
+        </section>
+        <section>
+          <h2>Dynamic Memory Management</h2>
+          <hr><img src="./8-pointer/figs/cppref-mm.png" alt="MM at cppreference" width="800">
+          <p><code>stdlib.h</code> &emsp; <del><code>malloc.h</code></del></p>
+        </section>
+        <section>
+          <h2>Pointers and Arrays</h2>
+          <hr><br>
+          <ul>
+            <li class="fragment">The <mark>name</mark> of an array is a synonym for the address of its <mark>first</mark> element.</li><br>
+            <li class="fragment"><code>numbers[i]</code> &emsp; <code>*(numbers + i)</code> &emsp; <del><code>i[numbers]</code></del></li><br>
+            <li class="fragment"><code>&numbers[i]</code> &emsp; <code>numbers + i</code></li><br>
+            <li class="fragment">But an array name is not a variable.
+              <ul>
+                <li><del><code>numbers++</code></del></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Pointers and C Strings</h2>
+          <hr><br>
+          <p><code>char msg[20] = "Hello World!";</code></p>
+          <p><code>char *msg = "Hello World!";</code></p><br>
+          <p><code>strlen.c</code></p><br><a href = "https://en.cppreference.com/w/c/string/byte/strlen"><code>strlen</code> &emsp; <code>strlen_s</code></a>
+        </section>
+        <section>
+          <h2>Pointers and C Strings</h2>
+          <hr><br>
+          <p><code>strcmp.c</code></p><br><br><a href = "https://en.cppreference.com/w/c/string/byte/strcmp"><code>strcmp</code></a><br><br><a href = "https://en.cppreference.com/w/c/string/byte/strncmp"><code>strncmp</code></a>
+        </section>
+        <section>
+          <h2>Pointers and C Strings</h2>
+          <hr><br>
+          <p><code>strcpy.c</code></p><br><br><a href = "https://en.cppreference.com/w/c/string/byte/strcpy"><code>strcpy</code> &emsp; <code>strcpy_s</code></a><br><br><a href = "https://en.cppreference.com/w/c/string/byte/strncpy"><code>strncpy</code> &emsp; <code>strncpy_s</code></a>
+        </section>
+        <section>
+          <h2>Return Pointers from Functions</h2>
           <hr><br><br>
-          <ul>
-            <li>定义初始化</li>
-            <li>赋值操作</li>
-            <li>参数传递</li>
-            <li>函数返回值</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Integral Promotion (整型提升)</h2>
-          <hr><br><img src="./7-data-types/figs/conversion.png" alt="Conversion" width="1500">
-          <p class="fragment">"Arithmetic operators do not accept types smaller than <mark><code>int</code></mark> as arguments, and integral promotions are automatically applied."</p>
-        </section>
-        <section>
-          <h2>Floating-point Numbers</h2>
-          <hr><br>
-          <ul>
-            <li><code>float y = 5.0<mark>F</mark></code>
-              <ul>
-                <li><code>%f</code></li>
-                <li><code>%f</code></li>
-              </ul>
-            </li>
-            <li><code>double x = 5.0</code>
-              <ul>
-                <li><mark><code>%lf</code></mark></li>
-                <li><code>%f</code></li>
-              </ul>
-            </li>
-            <li><code>long double z = 5.0L</code>
-              <ul>
-                <li><code>%Lf</code></li>
-                <li><code>%Lf</code></li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h2>Floating-point Numbers</h2>
-          <hr><br><img src="./7-data-types/figs/fp-conversion.png" alt="FP Conversion" width="1000">
-        </section>
-        <section>
-          <h2>Floating-point Arithmetic</h2>
-          <hr><div class="row">
-<div class="column"><img src="./7-data-types/figs/c-std-book.jpg" alt="The Standard C Library" width="350"></div>
-<div class="column"><br><br><img src="./7-data-types/figs/bad-news.png" alt="Bad News" width="400"></div>
-</div>
-          <h4 class="fragment r-fit-text" style="font-variant: small-caps"><mark>"Floating-point Arithmetic is Hard."</mark></h4>
-        </section>
-        <section>
-          <h2>Floating-point Arithmetic</h2>
-          <hr><img src="./7-data-types/figs/fp.png" alt="Floating Point Number Line" width="1000">
-          <p><code><mark>float.h</mark></code> (Section 23.1)</p>
-        </section>
-        <section>
-          <h2>Floating-point Arithmetic</h2>
-          <hr><br><br>
-          <ul>
-            <li>Overflow (上溢)</li><br>
-            <li>Underflow (下溢)</li><br>
-            <li>Significance Loss (精度丢失)</li>
-            <ul>
-              <li><code>significance.c</code></li>
-            </ul>
-          </ul>
-        </section>
-        <section>
-          <h2>Floating-point Arithmetic</h2>
-          <hr><br>
-          <p>"Many applications don't need floating-point arithmetic at all."</p><img src="./7-data-types/figs/good-news.jpg" alt="Good News" width="400"><br>
-          <p class="fragment">Use <code><mark>math.h</mark></code> (Section 23.3) whenever possible.</p>
-        </section>
-        <section>
-          <h2>C 语言安全编码标准</h2>
-          <hr><br><img src="./7-data-types/figs/cert-c.jpeg" alt="Cert C Book" width="400">
-        </section>
-        <section>
-          <h2>整型数安全编码标准 (INT)</h2>
-          <hr><br>
-          <ul>
-            <li>使用正确的整数类型</li><br>
-            <li>确保无符号整数运算不产生回绕</li><br>
-            <li>确保有符号整数运算不造成溢出</li><br>
-            <li>确保除法与余数运算不造成除0错误</li><br>
-            <li>确保整数转换不会造成数据丢失或者错误解释</li>
-          </ul>
-        </section>
-        <section>
-          <h2>浮点数安全编码标准 (FLP)</h2>
-          <hr><br>
-          <ul>
-            <li>不要使用浮点数变量作为循环计数器</li><br>
-            <li>避免或者检测数学函数中的定义域与值域错误</li><br>
-            <li>确保浮点数转换在新类型的范围中</li>
-          </ul>
+          <h3>Do <mark>not</mark> return pointers to</h3><br>
+          <h3><em>local</em> variables in functions!!!</h3>
         </section>
         <section>
           <h2>References</h2>
-          <hr><br><div class="row">
-<div class="column"><img src="./7-data-types/figs/csapp.jpeg" alt="CSAPP Book" width="400"></div>
-<div class="column"><img src="./7-data-types/figs/taocp-2.jpg" alt="TAOCP Vol2" width="350"></div>
-</div>
+          <hr><img src="./8-pointer/figs/c-std-book.jpg" alt="C Std Book" width="350"><br>
+          <p>Chapter 14: <code>string.h</code></p>
+        </section>
+        <section>
+          <h2>Pointer Arrays</h2>
+          <hr><br><img src="./8-pointer/figs/pointer-array.png" alt="Pointer Array" width="400">
+          <p><code>selection-sort-strings.c</code></p>
         </section>
       </div>
     </div>

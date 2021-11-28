@@ -28,6 +28,7 @@ deploySet = [
   './5-function/figs/*'
   './6-recursion/figs/*'
   './7-data-types/figs/*'
+  './8-pointer/figs/*'
   './node_modules/reveal.js/dist/reveal.js'
   './node_modules/reveal.js/plugin/highlight/highlight.js'
   './node_modules/reveal.js/plugin/highlight/monokai.css'
