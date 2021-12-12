@@ -30,6 +30,7 @@ deploySet = [
   './7-data-types/figs/*'
   './8-pointer/figs/*'
   './9-pointer-more/figs/*'
+  './10-struct/figs/*'
   './node_modules/reveal.js/dist/reveal.js'
   './node_modules/reveal.js/plugin/highlight/highlight.js'
   './node_modules/reveal.js/plugin/highlight/monokai.css'
