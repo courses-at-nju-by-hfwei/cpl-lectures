@@ -89,6 +89,1621 @@ li + li {
     <div class="reveal">
       <div class="slides">
         <section>
+          <h1 style="font-variant: small-caps">Introducing C</h1>
+          <hr><br>
+          <h4>Hengfeng Wei &thinsp; (魏恒峰)</h4>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./0-intro/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Sep. 27, 2021</p>
+        </section>
+        <section>
+          <h2>Questionnaire</h2>
+          <hr><br><img src="./0-intro/figs/25-75.jpg" alt="25% vs. 75%" width="450"><br>
+          <p>$75\%$ of students are new to programming.</p>
+        </section>
+        <section>
+          <h2>To C Beginners</h2>
+          <hr><br><img src="./0-intro/figs/donot-panic.jpg" alt="Do not Panic" width="500">
+        </section>
+        <section>
+          <h2>From Beginners to Masters</h2>
+          <hr><br><br>
+          <h2 style="font-variant: small-caps">Programming</h2><br>
+          <h2 style="font-variant: small-caps">De-programming</h2>
+        </section>
+        <section>
+          <h2>What is C?</h2>
+          <hr><br><br>
+          <p>C is a <em>computer</em> programming language (PL).</p><br>
+          <p>You communicate your <mark>ideas</mark> to computers via PLs.</p>
+        </section>
+        <section>
+          <h2>What is C?</h2>
+          <hr><br>
+          <p>Programming is <em>NOT</em> (only) about languages.</p><br>
+          <p class="fragment">Programming is not about C.</p><br>
+          <p class="fragment">You learn C to express <mark>YOUR IDEAS</mark>.</p>
+        </section>
+        <section>
+          <h2>How to Learn (1)?</h2>
+          <hr><br><img src="./0-intro/figs/code-think.png" alt="Code vs. Think" width="500">
+        </section>
+        <section>
+          <h2>How to Learn (2)?</h2>
+          <hr><br><img src="./0-intro/figs/maiyouweng.jpeg" alt="MaiYouWeng" width="600">
+          <p>"无他, 但手熟尔"</p>
+        </section>
+        <section>
+          <h2>How to Learn (3)?</h2>
+          <hr><br><img src="./0-intro/figs/fail-early-fail-often.png" alt="Fail Early Fail Often" width="700">
+          <p>How many <mark><em>bugs</em></mark> have you ever produced?</p>
+        </section>
+        <section>
+          <h2>C Programming: <br> A Modern Approach</h2>
+          <hr><div class="row">
+<div class="column"><img src="./0-intro/figs/modern-c-ch.png" alt="C Modern Approach Chinese" width="350"></div>
+<div class="column"><img src="./0-intro/figs/modern-c-en.jpg" alt="C Modern Approach English" width="400"></div>
+</div>
+        </section>
+        <section>
+          <h2>C Primer Plus</h2>
+          <hr><div class="row">
+<div class="column"><img src="./0-intro/figs/c-primer-plus-ch.jpg" alt="C Primer Plus Chinese" width="400"></div>
+<div class="column"><img src="./0-intro/figs/c-primer-plus-en.jpg" alt="C Primer Plus English" width="400"></div>
+</div>
+        </section>
+        <section>
+          <h2>K&R C Bible</h2>
+          <hr><br><div class="row">
+<div class="column"><img src="./0-intro/figs/KR.jpg" alt="The C Programming Language K&amp;R" width="360"></div>
+<div class="column"><img src="./0-intro/figs/KandR-answer.jpg" alt="The C Answer Book" width="320"></div>
+</div>
+        </section>
+        <section>
+          <h2>K&R</h2>
+          <hr><br>
+          <p>Brian W. Kernighan (1942 ~)</p><img src="./0-intro/figs/KandR.jpg" alt="KandR" width="600">
+          <p>Dennis M. Ritchie (1941 ~ 2011)</p>
+        </section>
+        <section>
+          <h2>Examination and Scores</h2>
+          <hr><br>
+          <ul>
+            <li class="fragment">
+              <del>考勤</del>
+            </li>
+            <li class="fragment">
+              <del>期中测试</del>
+            </li>
+            <li class="fragment">
+              <del>期末笔试</del>
+            </li>
+            <li class="fragment"><ins>期末机试 (30 分)</ins></li>
+            <li class="fragment"><ins>编程练习 (70 分)</ins></li>
+            <li class="fragment"><ins>奖励</ins></li>
+          </ul><br>
+          <p class="fragment">编程练习: 每周基础训练 (40 分) + 学期项目 (30 分; 2 个)</p>
+        </section>
+        <section>
+          <h2>Q&A</h2>
+          <hr><br><img src="./0-intro/figs/ask-me-anything.png" alt="Ask Me Anything" width="600">
+        </section>
+        <section><br><br><img src="./0-intro/figs/lets-code.jpeg" alt="Let's Code" width="600"></section>
+        <section>
+          <h2>CLion</h2>
+          <hr><br><img src="./0-intro/figs/CLion2021.png" alt="CLion" width="800">
+          <p>"你有你的选择, 而我选择 CLion"</p>
+        </section>
+        <section>
+          <h2>Hello World (K&R C)</h2>
+          <hr><img src="./0-intro/figs/hello-world-kandr.jpg" alt="Hello World in KandR C" width="500">
+        </section>
+        <section>
+          <h2>Hello World (Standard C)</h2>
+          <hr><br>
+          <pre><code class="lang-c">
+              <script type="text/template">#include <stdio.h>
+
+int main() {
+  printf("Hello World\n");
+  return 0;
+}
+
+              </script></code></pre>
+        </section>
+        <section>
+          <h2>Brief History of C</h2>
+          <hr><br><img src="./0-intro/figs/c-history.jpg" alt="History of C" width="1400">
+          <p>You do <em>not</em> have to become a <em>language lawyer</em>.</p>
+        </section>
+        <section>
+          <h2>Brief History of C</h2>
+          <hr><br><img src="./0-intro/figs/thompson-ritchie.jpg" alt="Thompson and Ritchie" width="800">
+          <p>Turing Award (1983)</p>
+        </section>
+        <section>
+          <h2>Game: Guess the Number</h2>
+          <hr><img src="./0-intro/figs/guess-the-number.png" alt="Guess the Number" width="500">
+          <p><a class="button" href="https://www.abcya.com/games/guess_the_number">Guess the Number</a></p>
+        </section>
+        <section>
+          <h2>Game: Guess the Number</h2>
+          <hr><img src="./0-intro/figs/programming-is-thinking.jpg" alt="Quote: Programming is Thinking, not Typing" width="500">
+          <p>You think. I will type it for you.</p>
+        </section>
+        <section>
+          <h2>How to Obtain a Random Number?</h2>
+          <hr><br><img src="./0-intro/figs/random-range.jpg" alt="Generate a Random Number in Given Range" width="800">
+        </section>
+        <section>
+          <h2>How to Obtain a Random Number?</h2>
+          <hr><br><img src="./0-intro/figs/getRandomNumber.jpeg" alt="getRandomNumber" width="800">
+        </section>
+        <section>
+          <h2>How to Obtain a Random Number?</h2>
+          <hr><br>
+          <p>$s \qquad f(s) \qquad f(f(s)) \qquad \ldots$</p><br>
+          <p>pseudo-random number sequence</p>
+        </section>
+        <section>
+          <h2>How to Obtain a Random Number?</h2>
+          <hr><img src="./0-intro/figs/cpp-random.png" alt="rand() on cppreference" width="900">
+          <p><a class="button" href="https://en.cppreference.com/w/c">https://en.cppreference.com/w/c</a></p>
+        </section>
+        <section>
+          <h2>Code Style</h2>
+          <hr><br><div class="row">
+<div class="column"><img src="./0-intro/figs/code-style-braces.png" alt="Code Style: Braces" width="300">
+          <p>Braces</p></div>
+<div class="column">
+          <video width="600" height="400" controls>
+            <source src="./0-intro/videos/tabs-vs-spaces.mp4" type="video/mp4">Your browser does not support the video tag.
+          </video>
+          <p>Tabs vs. Spaces</p></div>
+</div>
+          <p><a class="button" href="https://www.jetbrains.com/help/clion/code-style-c-c.html">Code Style in CLion</a></p>
+        </section>
+        <section>
+          <h2>Programming Style Guide</h2>
+          <hr><br><div class="row">
+<div class="column"><img src="./0-intro/figs/google-styleguide.png" alt="Google C++ Style Guide" width="750">
+          <p><a class="button" href="https://google.github.io/styleguide/">Google Style Guides</a></p></div>
+<div class="column"><img src="./0-intro/figs/huawei-c.png" alt="HuaWei C Programming Style" width="450">
+          <p><a class="button" href="https://github.com/courses-at-nju-by-hfwei/c-pl-resources/blob/main/books/%E5%8D%8E%E4%B8%BAC%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B%E6%8C%87%E5%8D%97.pdf">华为C语言编程指南.pdf</a></p></div>
+</div>
+        </section>
+        <section>
+          <h2>Secure C</h2>
+          <hr><br><div class="row">
+<div class="column"><img src="./0-intro/figs/cert-c.jpeg" alt="Cert C" width="400"></div>
+<div class="column"><img src="./0-intro/figs/c-pitfalls.jpg" alt="C Traps and Pitfalls" width="350"></div>
+</div>
+        </section>
+        <section>
+          <h2>How to Obtain a Random Number (Revisited)?</h2>
+          <hr><br><img src="./0-intro/figs/huawei-rand.png" alt="Huawei Rand()" width="1000">
+        </section>
+        <section>
+          <h2>What is Next?</h2>
+          <hr><br>
+          <ul>
+            <li>Variables and Types (<code>int</code>, <code>double</code>)</li>
+            <li>Math: computer arithmetic</li>
+            <li>Input/Ouput (I/O)</li><br>
+            <li>Branching: "if/else", "switch/case"</li>
+            <li>Looping: "while", "do/while", "for"</li>
+            <li>Jumps: "break", "continue", "goto"</li><br>
+            <li>Functions & Libraries</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Keeping Programming</h2>
+          <hr><br><img src="./0-intro/figs/GitHub-Classroom.png" alt="GitHub Classroom" width="600">
+          <p><a class="button" href="https://www.bilibili.com/video/BV12L41147r7?share_source=copy_web">GitHub Classroom @ Bilibili</a></p>
+        </section>
+        <section>
+          <h2>No Plagiarism!!!</h2>
+          <hr><br><img src="./0-intro/figs/plagiarism.jpg" alt="Plagiarism" width="700">
+          <p>前两次各扣 10 分, 第三次总分降为 60 分 $\;(\times\; 60\%)$</p>
+        </section>
+        <section>
+          <h2>Resources</h2>
+          <hr><br><img src="./0-intro/figs/QQ-2021-C-PL-qrcode.png" alt="QQ Group" width="350">
+          <p>6735 99232 &emsp; 2021-C-PL</p>
+        </section>
+        <section>
+          <h2>Resources</h2>
+          <hr><br><div class="row">
+<div class="column"><br><img src="./0-intro/figs/teaching-square-logo.png" alt="Logo for Teaching Square" width="400"></div>
+<div class="column"><img src="./0-intro/figs/qrcode-teachingsquare-c-pl.jpg" alt="Teaching Square for C Class" width="350"></div>
+</div>
+          <p>发布课件、资料、调查问卷等</p>
+        </section>
+        <section>
+          <h2>Resources</h2>
+          <hr><br><img src="./0-intro/figs/problemoverflow-qa.png" alt="problemoverflow.cn" width="800">
+          <p><a class="button" href="problemoverflow.cn">problemoverflow.cn</a></p>
+        </section>
+        <section>
+          <h2></h2><br><br><img src="./0-intro/figs/see-you.jpeg" alt="See you Next Week" width="500">
+        </section>
+        <section>
+          <h1 style="font-variant: small-caps">Variables, Types, IO</h1>
+          <hr><br>
+          <h4>Hengfeng Wei</h4>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./1-io/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Oct. 11, 2021</p>
+        </section>
+        <section>
+          <h2>Overview</h2>
+          <hr><br>
+          <p>Variables (变量) &emsp; Constants (常量)</p>
+          <p>Data Types (数据类型)</p><br>
+          <p>Operators (运算符) &emsp; Expressions (表达式)</p>
+          <p>Assignment Statements (赋值语句)</p><br>
+          <p>I/O (Input/Output; 输入输出)</p>
+        </section>
+        <section>
+          <h2>"Talk is Cheap. Show me the Code."</h2>
+          <hr><br><img src="./0-intro/figs/lets-code.jpeg" alt="Let's Code" width="600"><br>
+          <p><code>circle.c sphere.c mol.c admin.c</code></p>
+        </section>
+        <section>
+          <h2>Circle</h2>
+          <hr><br>
+          <p>Given a radius ($10$) of a circle,</p>
+          <p>to compute its circumference and area.</p>
+          <p>$L = 2\pi r$ &emsp; $S = \pi r^2$</p><br>
+          <ul>
+            <li>每个结果各占一行</li>
+            <li>小数点后保留两位</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Declaration (声明)</h2>
+          <hr><br>
+          <p><code><mark>int radius = 10;</mark></code></p><br>
+          <ul>
+            <li class="fragment">Introduce a <em>variable</em> called <code>radius</code>.</li>
+            <li class="fragment">You can use <code>radius</code> later.</li>
+            <li class="fragment">The type of <code>radius</code> is <code>int</code> (integer).</li>
+            <li class="fragment"><code>radius</code> is <em>initialized</em> (初始化) to <code>10</code>.</li>
+            <li class="fragment">You can <em>assign</em> (赋值) other values to <code>radius</code>.</li>
+            <li class="fragment"><code>radius</code> refers to a <em>location</em> (<code>&radius</code>) in memory.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Definition (定义)</h2>
+          <hr><br>
+          <p><code><mark>int radius = 10;</mark></code> is also a <em>definition</em>.</p><br>
+          <p class="fragment">Any definitions are declarations.</p>
+          <p class="fragment"><del>All declarations are definitions</del> (at least for now).</p>
+        </section>
+        <section>
+          <h2>Identifiers (标识符)</h2>
+          <hr><br>
+          <p><code><mark>int radius = 10;</mark></code></p><br>
+          <p>The name <code>radius</code> is an <em>identifier</em>.</p><br>
+          <ul>
+            <li>made up of letters, numbers, and underscores</li>
+            <li>do <em>not</em> start with a number</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Identifiers</h2>
+          <hr><br><br>
+          <ul>
+            <li>Use meaningful identifiers</li>
+            <li><code>surface_area</code> <em>vs.</em> <code>surfaceArea</code></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Operators and Expressions</h2>
+          <hr><br>
+          <p><code>double circumference = <mark>2 * PI * radius</mark>;</code></p>
+        </section>
+        <section>
+          <h2>Assignment Statements</h2>
+          <hr><br>
+          <p><code>double circumference = 0;</code></p><br>
+          <p><code><mark>circumference = 2 * PI * radius</mark>;</code></p>
+        </section>
+        <section>
+          <h2>Sphere</h2>
+          <hr>
+          <p>Given a radius ($100$) of a sphere,</p>
+          <p>to compute its surface area and volume.</p>
+          <p>$A = 4 \pi r^2$ &emsp; $V = \frac{4}{3} \pi r^3$</p><br>
+          <ul>
+            <li>每个结果各占一行</li>
+            <li>小数点后保留四位</li>
+            <li>每个结果至少占$15$字符, 左对齐
+              <ul>
+                <li><code>_______________ : surface_area</code></li>
+                <li><code>_______________ : volume</code></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>mol</h2>
+          <hr><br>
+          <p>$6$ 克氧气的物质的量是多少?</p><br>
+          <p>$Q = 6 / 32 \times 6.02 \times 10^{23}$</p><br>
+          <p>两种格式输出, 结果均使用科学计数法表示</p>
+          <ul>
+            <li>第一行结果, 小数点后保留三位</li>
+            <li>第二行结果, 保留五位有效数字</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Data Types</h2>
+          <hr><br>
+          <ul>
+            <li><code>int</code> ($\approx \mathbb{Z}$)</li>
+            <li><code>double</code> ($\approx \mathbb{R}$)</li>
+            <li><code>char</code> (Character; 字符)</li>
+            <li><code>C string</code> (char array; 字符数组)</li>
+          </ul>
+        </section>
+        <section>
+          <h2><code>int</code> $\approx \mathbb{Z}$</h2>
+          <hr><br>
+          <p><code>INT_MIN</code> &emsp; <code>INT_MAX</code></p><br>
+          <p class="r-fit-text"><code>printf("INT_MIN = %d \t INT_MAX = %d\n", INT_MIN, INT_MAX);</code></p>
+        </section>
+        <section>
+          <h2>A (Naive) Administration System</h2>
+          <hr><br><div class="row">
+<div class="column">
+          <ul>
+            <li>Name (EN)</li>
+            <li>Gender (F/M)</li>
+            <li>Birthday (mm-dd-yyyy)</li>
+            <li>Weekday (Xyz.)</li>
+          </ul></div>
+<div class="column">
+          <ul>
+            <li>C</li>
+            <li>Music</li>
+            <li>Medicine</li>
+            <li>Mean (.d)</li>
+            <li>Standard Deviation (.dd)</li>
+            <li>Ranking ($\%$)</li>
+          </ul></div>
+</div>
+        </section>
+        <section>
+          <h2>A (Naive) Administration System</h2>
+          <hr><br><br>
+          <ul>
+            <li>每组信息占一行</li>
+            <li>各项信息使用 "TAB" 间隔</li>
+            <li>各项信息要遵循特定格式要求</li>
+          </ul>
+        </section>
+        <section>
+          <h2>罗大佑</h2>
+          <hr><br><img src="./1-io/figs/Luo.jpeg" alt="Dayou Luo" width="500">
+        </section>
+        <section>
+          <h2>Data Types: <code>char</code></h2>
+          <hr><img src="./1-io/figs/ASCII.png" alt="ASCII Table" width="600">
+          <ul>
+            <li><code>isdigit isalpha isalnum</code></li>
+            <li><code>islower isupper tolower toupper</code></li>
+            <li><code>isspace</code> (including <code> , \n, \t</code>)</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Data Types: <code>C string</code></h2>
+          <hr><br>
+          <p><code><mark>char first_name[] = "Tayu";</mark></code></p>
+          <p>A C string is an array of characters.</p>
+          <p>'\0': terminating null character</p>
+          <p>'T', 'a', 'y', 'u', '\0'</p>
+          <p class="fragment"><code>char first_name[5] = "Tayu";</code></p>
+          <p class="fragment"><code>char first_name[10] = "Tayu";</code></p>
+          <p class="fragment"><del><code>char first_name[2] = "Tayu";</code></del></p>
+        </section>
+        <section>
+          <h2><code>printf</code></h2>
+          <hr><br><code><mark>int printf(const char *format, ...);</mark></code><br><br>
+          <ul>
+            <li><code>format</code>: format string (格式串)</li>
+            <li><code>...</code>: variable argument list (可变长参数列表)</li>
+          </ul>
+        </section>
+        <section>
+          <h2><code>printf</code></h2>
+          <hr><br><code><mark>int printf(const char *format, ...);</mark></code><br><br>
+          <p>The <code>format</code> string consists of</p>
+          <ul>
+            <li>ordinary characters (not %)</li>
+            <li>conversion specifications (转换说明)
+              <ul>
+                <li>each of which is introduced by %</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2><code>printf</code></h2>
+          <hr><code><mark>int printf(const char *format, ...);</mark></code>
+          <p>Escape sequence (转义序列)</p>
+          <ul>
+            <li class="fragment"><code>\n</code>: Newline</li>
+            <li class="fragment"><code>\t</code>: Horizontal Tab</li>
+            <li class="fragment"><code>\"</code>: Double quotation mark</li>
+            <li class="fragment"><code>\'</code>: Single quotation mark</li>
+            <li class="fragment"><code>\\</code>: Backslash</li>
+            <li class="fragment"><code>\b</code>: Backspace</li>
+          </ul>
+        </section>
+        <section>
+          <h2><code>printf</code></h2>
+          <hr><br><code><mark>int printf(const char *format, ...);</mark></code><br><br>
+          <table>
+            <thead>
+              <tr>
+                <th>%specifier</th>
+                <th>Argument</th>
+                <th>Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>%d (%i)</td>
+                <td>int</td>
+                <td>decimal ([-]dddd)</td>
+              </tr>
+              <tr>
+                <td>%f</td>
+                <td>double</td>
+                <td>decimal ([-]ddd.ddd)</td>
+              </tr>
+              <tr>
+                <td>%e (%E)</td>
+                <td>double</td>
+                <td>decimal ([-]d.ddde[+-]dd)</td>
+              </tr>
+              <tr>
+                <td>%g (%G)</td>
+                <td>double</td>
+                <td>%f or %e</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2><code>printf</code></h2>
+          <hr><br><code><mark>int printf(const char *format, ...);</mark></code><br><br>
+          <table>
+            <thead>
+              <tr>
+                <th>%specifier</th>
+                <th>Argument</th>
+                <th>Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>%c</td>
+                <td>int</td>
+                <td>character</td>
+              </tr>
+              <tr>
+                <td>%s</td>
+                <td>pointer to a char array</td>
+                <td>string</td>
+              </tr>
+              <tr>
+                <td>%%</td>
+                <td></td>
+                <td>%</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2><code>printf</code></h2>
+          <hr><br>
+          <p>"It is <mark>up to you</mark> to ensure that</p>
+          <p>the type of the actual argument</p>
+          <p><mark><em>matches</em></mark> the type expected by conversion specifiers."</p>
+        </section>
+        <section>
+          <h2><code>printf</code></h2>
+          <hr>
+          <p><code>%[<mark>flags</mark>][width][.precision]specifier</code></p><code><mark>int printf(const char *format, ...);</mark></code><br><br>
+          <ul>
+            <li><code>flags</code>
+              <ul>
+                <li><code>-</code>: left-justified (otherwise, right-justified)</li>
+                <li><code>+</code>: always begin with a plus or minus <em>sign</em></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2><code>printf</code></h2>
+          <hr>
+          <p><code>%[flags][<mark>width</mark>][.precision]specifier</code></p><code><mark>int printf(const char *format, ...);</mark></code><br><br>
+          <ul>
+            <li><code>width</code>
+              <ul>
+                <li><em>minimum</em> field width</li>
+                <li>padded with spaces if it has fewer characters</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2><code>printf</code></h2>
+          <hr>
+          <p><code>%[flags][width][<mark>.precision</mark>]specifier</code></p><code><mark>int printf(const char *format, ...);</mark></code><br><br>
+          <ul>
+            <li class="fragment">%d, %i: <em>minimum</em> number of digits
+              <ul>
+                <li>expanded with leading zeros when needed</li>
+              </ul>
+            </li>
+            <li class="fragment">%f, %e, %E: <em>number</em> of digits after '.'
+              <ul>
+                <li>default is $6$</li>
+              </ul>
+            </li>
+            <li class="fragment">%g, %G: <em>maximum</em> number of significant digits</li>
+            <li class="fragment">%s: <em>maximum</em> number of characters</li>
+          </ul>
+        </section>
+        <section>
+          <h2><code>scanf</code></h2>
+          <hr><br><code><mark>int scanf(const char *format, ...);</mark></code><br><br>
+          <ul>
+            <li><code>format</code>: format string (格式串)</li>
+            <li><code>...</code>: variable argument list (可变长参数列表)</li>
+          </ul>
+        </section>
+        <section>
+          <h2><code>scanf</code></h2>
+          <hr><br><code><mark>int scanf(const char *format, ...);</mark></code><br><br>
+          <p>The <code>format</code> string consists of</p>
+          <ul>
+            <li>white-space characters</li>
+            <li>ordinary characters
+              <ul>
+                <li>neither % nor white-spaces</li>
+              </ul>
+            </li>
+            <li>conversion specifications
+              <ul>
+                <li>each of which is introduced by %</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2><code>scanf</code></h2>
+          <hr><br><code><mark>int scanf(const char *format, ...);</mark></code><br><br>
+          <ul>
+            <li>Scan the input stream from left to right</li>
+            <li>Identify expected items as long as possible</li>
+          </ul>
+        </section>
+        <section>
+          <h2><code>scanf</code></h2>
+          <hr><br><code><mark>int scanf(const char *format, ...);</mark></code><br><br>
+          <table>
+            <thead>
+              <tr>
+                <th>%specifier</th>
+                <th>Matched Item</th>
+                <th>Argument</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="fragment">
+                <td>%d</td>
+                <td>skip white-spaces; matches an <code>int</code></td>
+                <td>pointer to <code>int</code></td>
+              </tr>
+              <tr class="fragment">
+                <td>%le, %lf, %lg</td>
+                <td>skip white-spaces; matches a <code>double</code></td>
+                <td>pointer to <code>double</code></td>
+              </tr>
+              <tr class="fragment">
+                <td>%e, %f, %g</td>
+                <td>skip white-spaces; matches a <code>float</code></td>
+                <td>pointer to <code>float</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2><code>scanf</code></h2>
+          <hr>
+          <table>
+            <thead>
+              <tr>
+                <th>%specifier</th>
+                <th>Matched Item</th>
+                <th>Argument</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="fragment">
+                <td>%c</td>
+                <td>a character</td>
+                <td>pointer to a <code>char</code></td>
+              </tr>
+              <tr class="fragment">
+                <td>%s</td>
+                <td>a sequence of non-white-spaces</td>
+                <td>pointer to a <code>char</code> array</td>
+              </tr>
+              <tr class="fragment">
+                <td>%[abc]</td>
+                <td>scanlist</td>
+                <td>pointer to a <code>char</code> array</td>
+              </tr>
+              <tr class="fragment">
+                <td>%[^abc]</td>
+                <td>not in scanlist</td>
+                <td>pointer to a <code>char</code> array</td>
+              </tr>
+              <tr class="fragment">
+                <td>%%</td>
+                <td>%</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2><code>scanf</code></h2>
+          <hr><br>
+          <p>%[$\star$][width]specifier</p><code><mark>int scanf(const char *format, ...);</mark></code><br><br>
+          <ul>
+            <li class="fragment">$\star$: assignment-suppressing</li>
+            <li class="fragment">width: <em>maximum</em> field width</li>
+          </ul>
+        </section>
+        <section>
+          <h2><code>scanf</code></h2>
+          <hr><br>
+          <p>"It is <mark>up to you</mark> to ensure that</p>
+          <p>the type of each actual argument pointer</p>
+          <p><mark><em>matches</em></mark> the type expected by conversion specifiers."</p>
+        </section>
+        <section>
+          <h2>References</h2>
+          <hr><br><br><a href = "https://en.cppreference.com/w/c/io/fprintf">printf @ cppreference</a><br><br><a href = "https://en.cppreference.com/w/c/io/fscanf">scanf @ cppreference</a>
+        </section>
+        <section>
+          <h2>References</h2>
+          <hr><br><br>
+          <p class="r-fit-text">Do not use <code>scanf</code>.</p>
+          <p class="r-fit-text">Use $\dots$ instead.</p>
+        </section>
+        <section>
+          <h1 style="font-variant: small-caps">If, For, Array</h1>
+          <hr><br>
+          <h4>Hengfeng Wei</h4>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./2-if-for-array/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Oct. 18, 2021</p>
+        </section>
+        <section>
+          <h2>Review</h2>
+          <hr><br>
+          <p>Variables &emsp; <mark>Constants</mark> &emsp; Data Types</p><br>
+          <p>Operators &emsp; Expressions &emsp; Assignment Statements</p><br>
+          <p>I/O (Input/Output)</p>
+        </section>
+        <section>
+          <h2>Constants</h2>
+          <hr><br>
+          <ul>
+            <li><code>int</code>: <code>42</code></li>
+            <li><code>double</code>: <code>3.14</code></li>
+            <li><code>char</code>: <code>'c'</code></li>
+            <li><code>string</code>: <code>"Hello World"</code></li>
+          </ul><br>
+          <p>Literal constants (字面常量)</p><br>
+          <p class="fragment"><code><mark>const double PI = 3.14159;</mark></code></p>
+          <p class="fragment"><code>PI</code> is still a <em>variable</em>.</p>
+        </section>
+        <section>
+          <h2>Overview</h2>
+          <hr><br>
+          <h3>If Statement (If 语句)</h3><br>
+          <h3>For Statement (For 语句)</h3><br>
+          <h3>Logical Expressions (逻辑表达式)</h3><br>
+          <h3>Array (数组)</h3>
+        </section>
+        <section>
+          <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
+          <hr><img src="./2-if-for-array/figs/lets-code.jpeg" alt="Let's Code" width="600"><br>
+          <p><code>min leap</code></p>
+          <p><code>sum.c min.c</code></p>
+        </section>
+        <section>
+          <h2>Min</h2>
+          <hr><br><img src="./2-if-for-array/figs/minimum.jpg" alt="Minimum Logo" width="600">
+        </section>
+        <section>
+          <h2>Min of Two</h2>
+          <hr><br>
+          <p>Given two integers $a$ and $b$,</p>
+          <p>to compute their minimum.</p><br>
+          <p>$\mathit{min} = \min\{a, b\}$</p>
+        </section>
+        <section>
+          <h2><code>if</code></h2>
+          <hr><br><img src="./2-if-for-array/figs/if-syntax.png" alt="if-else" width="400">
+          <p>The <code>else</code> part is <em>optional</em>.</p>
+        </section>
+        <section>
+          <h2><code>if</code></h2>
+          <hr>
+          <p class="r-fit-text">Multiple declarations and statements surrounded by <code>{}</code></p><div class="row">
+<div class="column"><img src="./2-if-for-array/figs/if-syntax-with-braces.png" alt="if-else with braces" width="360"></div>
+<div class="column"><img class="fragment" src="./2-if-for-array/figs/if-syntax-no-braces.png" alt="if-else without braces" width="400"></div>
+</div>
+          <h3 class="fragment">Always Use <code>{}</code>!</h3>
+        </section>
+        <section>
+          <h2 class="r-fit-text">Relational Operators (关系运算符)</h2>
+          <hr><br><div class="row">
+<div class="column"><img src="./2-if-for-array/figs/relational-operator.png" alt="Relational Operator" width="400"></div>
+<div class="column">
+          <ul>
+            <li><code>>=</code></li>
+            <li><code><=</code></li>
+            <li><code>></code></li>
+            <li><code><</code></li>
+            <li><code><mark>==</mark></code> (equal to)</li>
+            <li><code>!=</code> (not equal to)</li>
+          </ul></div>
+</div>
+        </section>
+        <section>
+          <h2 class="r-fit-text">Relational Expressions (关系表达式)</h2>
+          <hr><img src="./2-if-for-array/figs/relational-expression.png" alt="Relational Expression" width="400">
+          <p class="r-fit-text">Relational expressions have values 0 (<code>false</code>) or 1 (<code>true</code>).</p><br>
+          <p class="fragment"><mark>In C, non-zero numbers are treated as 1 (<code>true</code>).</mark></p>
+        </section>
+        <section>
+          <h2><code>?:</code></h2>
+          <hr><br>
+          <p><code><mark>min = a >= b ? b : a;</mark></code></p><br>
+          <p>Conditional Expression (条件表达式)</p>
+          <p>Ternary Operator (三目运算符)</p><br>
+          <h2 class="fragment">Do Not Use it Too Much!</h2>
+        </section>
+        <section>
+          <h2>Min of Three</h2>
+          <hr><br>
+          <p>Given three integers $a$, $b$, and $c$,</p>
+          <p>to compute their minimum.</p><br>
+          <p>$\mathit{min} = \min\{a, b, c\}$</p>
+        </section>
+        <section>
+          <h2>Nested <code>if</code></h2>
+          <hr><img src="./2-if-for-array/figs/nested-if.png" alt="Nested if" width="300">
+        </section>
+        <section>
+          <h2>Min of a Set of Numbers</h2>
+          <hr><br>
+          <p>Given a set $A$ of integers,</p>
+          <p>to compute their minimum.</p><br>
+          <p>$\mathit{min} = \min A$</p><img class="fragment" src="./2-if-for-array/figs/loop.jpg" alt="Loop Logo" width="400">
+        </section>
+        <section>
+          <h2>Leap Year</h2>
+          <hr><br><img src="./2-if-for-array/figs/leap-year.jpeg" alt="Leap Year" width="650">
+        </section>
+        <section>
+          <h2>Leap Year (1): Nested <code>if</code></h2>
+          <hr><img src="./2-if-for-array/figs/leap-year-flowchart.png" alt="Leap Year Flowchart" width="800">
+        </section>
+        <section>
+          <h2>Leap Year (2): Nested <code>if</code></h2>
+          <hr><br><img src="./2-if-for-array/figs/leap-year-wiki.png" alt="Leap Year using Else-If" width="1200">
+        </section>
+        <section>
+          <h2>Leap Year (3): <code>else-if</code></h2>
+          <hr><br><img src="./2-if-for-array/figs/leap-year-elseif.png" alt="Leap Year using elseif" width="1000">
+        </section>
+        <section>
+          <h2 class="r-fit-text">Leap Year (4): The Ultimate Version</h2>
+          <hr><br>
+          <p>A year is a leap year <em>if</em></p><br>
+          <ul>
+            <li>it is divisible by 4 but not by 100,</li>
+            <li>except that years divisible by 400 are leap years.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Logical Operators (逻辑运算符)</h2>
+          <hr><img src="./2-if-for-array/figs/logical-operator.png" alt="Logical Operator" width="1000"><img src="./2-if-for-array/figs/logical-operators.png" alt="Logical Operators Table" width="300">
+        </section>
+        <section>
+          <h2>Logical Expressions (逻辑表达式)</h2>
+          <hr><br><img src="./2-if-for-array/figs/logical-expression.png" alt="Logical Expression" width="1000">
+          <p class="r-fit-text">Logical expressions have values <code>0</code> (<code>false</code>) or <code>1</code> (<code>true</code>).</p>
+        </section>
+        <section>
+          <h2>Short-circuit Evaluation</h2>
+          <hr><br><img src="./2-if-for-array/figs/logical-expression.png" alt="Logical Expressions" width="1000"><br>
+          <ul>
+            <li class="fragment"><code>year = 25</code></li>
+            <li class="fragment"><code>year = 80</code></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Sum</h2>
+          <hr><br>
+          <p>Given an integer $n \ge 0$, to compute $\sum\limits_{i = 1}^{n} i$.</p>
+        </section>
+        <section>
+          <h2>Increment/Decrement Operators (<code>++</code>, <code>--</code>)</h2>
+          <hr><br>
+          <ul>
+            <li><code>i++</code>
+              <ul>
+                <li>increment <code>i</code> <em>after</em> its value has been used</li>
+              </ul>
+            </li>
+            <li><code>++i</code>
+              <ul>
+                <li>increment <code>i</code> <em>before</em> its value is used</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Increment/Decrement Operators (<code>++</code>, <code>--</code>)</h2>
+          <hr><br>
+          <p><code>i = 2;</code></p>
+          <p><code>j = i * i++;</code></p><br>
+          <p class="fragment">Undefined Behavior (未定义行为)</p>
+        </section>
+        <section>
+          <h2>For Statement</h2>
+          <hr><br><img src="./2-if-for-array/figs/for-general.png" alt="General Structure of For Loops" width="900"><br><img class="fragment" src="./2-if-for-array/figs/for-special.png" alt="Common Structure of For Loops" width="900"><br><img class="fragment" src="./2-if-for-array/figs/for-sum.png" alt="For Statement in Sum" width="600">
+        </section>
+        <section>
+          <h2>Min of a Set of Numbers</h2>
+          <hr><br>
+          <p>Given a set $A$ of integers,</p>
+          <p>to compute their minimum.</p><br>
+          <p>$\mathit{min} = \min A$</p>
+        </section>
+        <section>
+          <h2><code>#define NUM 5</code></h2>
+          <hr><br>
+          <p>Symbolic Constants (符号常量)</p><br>
+          <p class="fragment"><code>#define</code> is a <em>pre-processing directive</em> (预处理指令).</p><br>
+          <p class="fragment"><mark><code>int numbers[NUM] = {0};</code></mark> has a <em>constant</em> size.</p>
+          <ul>
+            <li class="fragment"><code>NUM</code> is known at <em>compiler</em> time.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Array Initializer</h2>
+          <hr><br>
+          <p><code><mark>int numbers[NUM] = {0};</mark></code></p>
+          <ul>
+            <li class="fragment"><code>int numbers[NUM] = {1};</code>
+              <ul>
+                <li><code>{1, 0, 0, 0, 0}</code></li>
+              </ul>
+            </li>
+            <li class="fragment"><code>int numbers[] = {0};</code>
+              <ul>
+                <li><code>{0}</code></li>
+              </ul>
+            </li>
+            <li class="fragment"><code>int numbers[NUM] = {[2] = 1};</code>
+              <ul>
+                <li><code>{0, 0, 1, 0, 0}</code></li>
+                <li>See Section 8.1.3</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Array Initializer</h2>
+          <hr><br>
+          <p><code><mark>int numbers[NUM] = {0};</mark></code></p>
+          <ul>
+            <li class="fragment"><del><code>int numbers[NUM] = {};</code></del>
+              <ul>
+                <li>Forbidden in <code>C99</code> (Unfortunately)</li>
+                <li>Allowed by GCC by default (Unfortunately)</li>
+              </ul>
+            </li>
+            <li class="fragment"><del><code>int numbers[NUM];</code></del>
+              <ul>
+                <li>May contain garbage values</li>
+              </ul>
+            </li>
+            <li class="fragment"><del><code>int numbers[];</code></del>
+              <ul>
+                <li>You must specify the size so that the compiler can allocate memory for it.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Array Members</h2>
+          <hr><br><img src="./2-if-for-array/figs/array-members.png" alt="Array Members" width="800">
+          <p><code>[]</code>: <em>subscript</em> operator (下标运算符)</p>
+        </section>
+        <section>
+          <h1 style="font-variant: small-caps">For a While</h1>
+          <hr><br>
+          <h4>Hengfeng Wei</h4>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./3-for-a-while/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Oct. 25, 2021</p>
+        </section>
+        <section>
+          <h2>Review</h2>
+          <hr><br>
+          <h3>If Statement</h3><br>
+          <h3>For Statement</h3><br>
+          <h3>Logical Expressions</h3><br>
+          <h3>Array</h3>
+        </section>
+        <section>
+          <h2>Overview</h2>
+          <hr><br>
+          <h3>For Statement (More Examples)</h3><br>
+          <h3>While (Do-While) Statement</h3><br>
+          <h3><code>break</code> Statement</h3>
+        </section>
+        <section>
+          <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
+          <hr><br><img src="./3-for-a-while/figs/lets-code.jpeg" alt="Let's Code" width="600">
+        </section>
+        <section>
+          <h2>Stars Pyramid</h2>
+          <hr><br><img src="./3-for-a-while/figs/stars.jpg" alt="Stars Pyramid" width="900">
+          <p><code>stars.c</code></p>
+        </section>
+        <section>
+          <h2>Prime Numbers</h2>
+          <hr><img src="./3-for-a-while/figs/prime.jpg" alt="Prime Numbers" width="400">
+          <p><code>prime.c &emsp; primes.c</code></p>
+        </section>
+        <section>
+          <h2>Selection Sort</h2>
+          <hr><img src="./3-for-a-while/figs/selection-sort.png" alt="Selection Sort" width="400">
+          <p><code>selection-sort.c</code></p>
+        </section>
+        <section>
+          <h2>Palindrome</h2>
+          <hr><br><img src="./3-for-a-while/figs/palindrome.png" alt="Palindrome" width="700"><br>
+          <p><code>palindrome.c</code></p>
+        </section>
+        <section>
+          <h2>Binary Search</h2>
+          <hr><br><img src="./3-for-a-while/figs/binary-search-mario.png" alt="Binary Search Super Mario" width="800"><br>
+          <p><code>binary-search.c</code></p>
+        </section>
+        <section>
+          <h2>Number of Digits</h2>
+          <hr><br><img src="./3-for-a-while/figs/digits.jpg" alt="Number of Digits" width="600"><br>
+          <p><code>digits-while.c &emsp; digits-do-while.c</code></p>
+        </section>
+        <section>
+          <h2>Counting</h2>
+          <hr><br><img src="./3-for-a-while/figs/counting.jpg" alt="Counting" width="700"><br>
+          <p><code>counting-if.c &emsp; counting-switch.c</code></p>
+        </section>
+        <section>
+          <h1 style="font-variant: small-caps">Loops</h1>
+          <hr><br>
+          <h4>Hengfeng Wei</h4>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./4-loops/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Nov. 01, 2021</p>
+        </section>
+        <section>
+          <h2>No Plagiarism!!!</h2>
+          <hr><br><img src="./4-loops/figs/plagiarism.jpg" alt="Plagiarism" width="800">
+        </section>
+        <section>
+          <h2>No Plagiarism!!!</h2>
+          <hr><br>
+          <p>第一次作业抄袭现象<mark>触目惊心</mark></p><br>
+          <p class="fragment">助教们敦促蚂老师召开了<mark>紧急磋商会议</mark></p><br>
+          <p class="fragment">会上大家对作业进行了<mark>反思</mark>, 并制定了<mark>严厉的抄袭处罚措施</mark></p>
+        </section>
+        <section>
+          <h2>No Plagiarism!!!</h2>
+          <hr><br><br>
+          <ul>
+            <li>当次作业计 $0$ 分</li><br>
+            <li class="fragment">前两次抄袭<mark>总评</mark>各扣 $10$ 分</li><br>
+            <li class="fragment">第三次抄袭总评直接判为<mark>不及格</mark> $\;(\times\; 60\%)$</li>
+          </ul>
+        </section>
+        <section>
+          <h2>No Plagiarism!!!</h2>
+          <hr><br><br>
+          <p>助教与第一次作业(疑似)抄袭的同学进行了<mark>亲切友好的交谈</mark></p><br>
+          <p class="fragment">口头警告, 算作一次抄袭记录, 不作总评扣分处理</p>
+        </section>
+        <section>
+          <h2>Review</h2>
+          <hr><br><br>
+          <h3>For Statement (More Examples)</h3><br>
+          <h3>While (Do-While) Statement</h3><br>
+          <h3><code>break</code></h3>
+        </section>
+        <section>
+          <h2>Overview</h2>
+          <hr><br><br>
+          <h3>Loops (More Examples)</h3><br>
+          <h3>Multidimensional Arrays (多维数组)</h3><br>
+          <h3><code>continue, goto</code></h3>
+        </section>
+        <section>
+          <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
+          <hr><br><img src="./4-loops/figs/coding.png" alt="Let's Code" width="800">
+        </section>
+        <section>
+          <h2>Merge</h2>
+          <hr><br><img src="./4-loops/figs/merge-arrays.png" alt="Merge Two Sorted Arrays" width="900">
+          <p><code>merge.c</code></p>
+        </section>
+        <section>
+          <h2>Bubble Sort</h2>
+          <hr><br><img src="./4-loops/figs/bubble-sort-wiki.gif" alt="Bubble Sort" width="700">
+          <p><code>bubble-sort.c</code></p>
+        </section>
+        <section>
+          <h2>Conway's Game of Life</h2>
+          <hr>
+          <p>John Horton Conway ($1937 \sim 2020$)</p><img src="./4-loops/figs/Conway.jpg" alt="Conway" width="500">
+          <p><a class="button" href="https://playgameoflife.com/">playgameoflife.com</a></p>
+        </section>
+        <section>
+          <h2>Conway's Game of Life</h2>
+          <hr><br>
+          <ul class="fragment">
+            <li>Any <mark>live</mark> cell with two or three live neighbours survives.</li>
+            <li>All other live cells die in the next generation.</li>
+          </ul><br><br>
+          <ul class="fragment">
+            <li>Any <mark>dead</mark> cell with three live neighbours becomes a live cell.</li>
+            <li>All other dead cells stay dead.</li>
+          </ul><br><br>
+          <p><a class="button" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life @ wiki</a></p>
+        </section>
+        <section>
+          <h2>Conway's Game of Life</h2>
+          <hr>
+          <video width="700" height="500" controls>
+            <source src="./4-loops/videos/Conway-Game-of-Life.mp4#t=63" type="video/mp4">Your browser does not support the video tag.
+          </video>
+          <p><code>game-of-life.c</code></p>
+        </section>
+        <section>
+          <h2>Counting</h2>
+          <hr><br><img src="./4-loops/figs/counting.jpg" alt="Counting" width="700"><br>
+          <p><code>counting-if.c &emsp; counting-switch.c</code></p>
+        </section>
+        <section>
+          <h2>Jump Statements</h2>
+          <hr><br><img src="./4-loops/figs/goto-harmful.png" alt="Goto" width="300"><br>
+          <p><code>break &emsp; continue &emsp; goto</code></p>
+          <p><code>common.c &emsp; continue.c</code></p>
+        </section>
+        <section>
+          <h1 style="font-variant: small-caps">Function</h1>
+          <hr><br>
+          <h4>Hengfeng Wei</h4>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./5-function/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Nov. 08, 2021</p>
+        </section>
+        <section>
+          <h2>Review</h2>
+          <hr><br><br>
+          <h3>Loops (More Examples)</h3><br>
+          <h3>Multidimensional Arrays</h3>
+        </section>
+        <section>
+          <h2>Overview</h2>
+          <hr><br><br>
+          <h1>Functions</h1>
+        </section>
+        <section>
+          <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
+          <hr><br><img src="./5-function/figs/coding.png" alt="Let's Code" width="800">
+        </section>
+        <section><br><img src="./5-function/figs/transformers.png" alt="Transformers" width="800"><br>
+          <p class="r-fit-text" style="font-variant: small-caps">Re-writing Programs using Functions</p>
+        </section>
+        <section>
+          <h1 style="font-variant: small-caps">Recursion</h1>
+          <hr><br>
+          <h4>Hengfeng Wei</h4>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./6-recursion/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Nov. 15, 2021</p>
+        </section>
+        <section>
+          <h2>Review</h2>
+          <hr><br>
+          <h2>Functions</h2><br>
+          <ul>
+            <li>Function Declaration</li>
+            <li>Function Definition</li>
+            <li>Arrays as Parameters</li>
+            <li>Pass by Value</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Overview</h2>
+          <hr><br>
+          <h3 class="r-fit-text">Recursive Functions (Recursion)</h3><img src="./6-recursion/figs/recursion-stair.jpg" alt="Recursion Logo" width="500">
+          <p>A function that calls (调用) itself.</p>
+        </section>
+        <section>
+          <h2>Recursion</h2>
+          <hr><br>
+          <h2 style="font-variant: small-caps">Thinking Recursively</h2><img src="./6-recursion/figs/think-recursively.jpg" alt="Thinking Recursively" width="600">
+          <p class="fragment">It is a looooooog way to go to master recursion!!!</p>
+        </section>
+        <section>
+          <h2>Recursion: Systems Implementation</h2>
+          <hr><br>
+          <ul>
+            <li>Programs run in <mark>memory</mark> (内存; 記憶體).</li><br>
+            <li class="fragment">Memory = <mark>Stack</mark> (栈区) + Heap (堆区) + $\cdots$</li><br>
+            <li class="fragment">Each <mark>function call</mark> has its own <mark>stack frame</mark> (栈帧).</li><br>
+            <li class="fragment">Stack grows/shrinks with function calls and returns.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Recursion: Systems Implementation</h2>
+          <hr><br><br>
+          <p><a class="button" href="https://pythontutor.com/c.html#code=%23include%20%3Cstdio.h%3E%0A%0Aint%20Min%28int%20a,%20int%20b%29%3B%0A%0Aint%20main%28%29%20%7B%0A%20%20int%20a%20%3D%2025%3B%0A%20%20int%20b%20%3D%2037%3B%0A%20%20%0A%20%20int%20min%20%3D%20Min%28a,%20b%29%3B%0A%20%20printf%28%22%25d%22,%20min%29%3B%0A%0A%20%20return%200%3B%0A%7D%0A%0Aint%20Min%28int%20a,%20int%20b%29%20%7B%0A%20%20return%20a%20%3E%20b%20%3F%20b%20%3A%20a%3B%0A%7D&amp;curInstr=9&amp;mode=display&amp;origin=opt-frontend.js&amp;py=c_gcc9.3.0&amp;rawInputLstJSON=%5B%5D">Visualization of Function Calls @ C Tutor</a></p>
+        </section>
+        <section>
+          <h2>Recursion: Mathematical Induction</h2>
+          <hr><br>
+          <ul>
+            <li>Base Case (基础情况)</li><br>
+            <li>Inductive Step (归纳步骤)</li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
+          <hr><br><img src="./6-recursion/figs/coding.png" alt="Let's Code" width="800">
+        </section>
+        <section>
+          <h2>Min</h2>
+          <hr><br><img class="fragment" src="./6-recursion/figs/Min.png" alt="Min" width="800"><br>
+          <p><code>min-re.c</code></p>
+        </section>
+        <section>
+          <h2>Sum</h2>
+          <hr><br><img class="fragment" src="./6-recursion/figs/Sum.png" alt="Sum" width="800"><br>
+          <p><code>sum-re.c</code></p>
+        </section>
+        <section>
+          <h2>Fibonacci Sequence</h2>
+          <hr><br>
+          <p>$0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, \ldots$</p><br>
+          <ul class="fragment">
+            <li>$F_{0} = 0$</li>
+            <li>$F_{1} = 1$</li>
+            <li>$F_{n} = F(n - 1) + F(n - 2) \qquad (n > 1)$</li>
+          </ul><br><br>
+          <p class="fragment"><code>fib-re.c &emsp; fib-array.c &emsp; fib-iter.c</code></p>
+        </section>
+        <section>
+          <h2>Greatest Common Divisor</h2>
+          <hr>
+          <ul>
+            <li>$a > b \implies \text{gcd}(a, b) = \text{gcd}(a - b, b)$</li>
+            <li>$a < b \implies \text{gcd}(a, b) = \text{gcd}(a, b - a)$</li>
+          </ul><img src="./6-recursion/figs/euclid.jpeg" alt="Euclid" width="300"><br>
+          <p class="fragment"><code>gcd-euclid-re.c &emsp; gcd-euclid-iter.c</code></p>
+        </section>
+        <section>
+          <h2>Greatest Common Divisor</h2>
+          <hr><br>
+          <p>$\text{gcd}(a, b) = \text{gcd}(b, a \;\%\; b)$</p><img src="./6-recursion/figs/euclid.jpeg" alt="Euclid" width="300"><br>
+          <p><code>gcd-euclidean-re.c &emsp; gcd-euclidean-iter.c</code></p>
+        </section>
+        <section>
+          <h2>Binary Search</h2>
+          <hr><br><img src="./6-recursion/figs/binary-search-mario.png" alt="Binary Search Mario" width="800"><br>
+          <p><code>bsearch-re.c</code></p>
+        </section>
+        <section>
+          <h1 style="font-variant: small-caps">Recursion; Data Types</h1>
+          <hr><br>
+          <h4>Hengfeng Wei</h4>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./7-data-types/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Nov. 22, 2021</p>
+        </section>
+        <section>
+          <h2>Review</h2>
+          <hr><br>
+          <h3>Recursion</h3><img src="./6-recursion/figs/recursion-stair.jpg" alt="Recursion Logo" width="500">
+          <p>A function that calls itself.</p>
+        </section>
+        <section>
+          <h2>Recursion</h2>
+          <hr><br>
+          <h2 style="font-variant: small-caps">Thinking Recursively</h2><img src="./6-recursion/figs/think-recursively.jpg" alt="Thinking Recursively" width="600">
+        </section>
+        <section>
+          <h2>Overview</h2>
+          <hr><br>
+          <p>Recursion (More Examples)</p><br>
+          <h3>Data Types</h3><br>
+          <p><code>static</code></p>
+        </section>
+        <section>
+          <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
+          <hr><br><img src="./7-data-types/figs/coding.png" alt="Let's Code" width="800">
+        </section>
+        <section>
+          <h2>Binary Search</h2>
+          <hr><br><img src="./7-data-types/figs/binary-search-mario.png" alt="Binary Search Mario" width="800"><br>
+          <p><code>bsearch-re.c</code></p>
+        </section>
+        <section>
+          <h2>Merge Sort</h2>
+          <hr><img src="./7-data-types/figs/mergesort-example.png" alt="MergeSort Example" width="550">
+          <p><code>merge-sort.c</code></p>
+        </section>
+        <section>
+          <h2>Data Types</h2>
+          <hr><br><br>
+          <p>The <mark>type</mark> of a variable determines</p><br>
+          <ul>
+            <li>the set of <em>values</em> it may take on and</li><br>
+            <li>what <em>operations</em> can be performed on them.</li>
+          </ul><br><br>
+          <p class="fragment"><code>int</code> &emsp; <code>double</code> &emsp; <code>char</code></p>
+        </section>
+        <section>
+          <h2>Integral Types</h2>
+          <hr><br><div class="row">
+<div class="column">
+          <p>Signed (有符号数)</p>
+          <ul>
+            <li><code>short int</code></li>
+            <li><code>int</code></li>
+            <li><code>long</code></li>
+            <li><code>long long</code></li>
+          </ul></div>
+<div class="column">
+          <p>Unsigned (无符号数)</p>
+          <ul>
+            <li><code><mark>bool</mark></code> (<code>stdbool.h</code>)</li>
+            <li><code>unsigned short int</code></li>
+            <li><code>unsigned int</code></li>
+            <li><code>unsigned long</code></li>
+            <li><code>unsigned long long</code></li>
+          </ul></div>
+</div><br>
+          <p class="fragment"><code>char</code> (<code>unsigned/signed</code>)</p>
+        </section>
+        <section>
+          <h2>Overflow (溢出)</h2>
+          <hr><br>
+          <ul>
+            <li>有符号整数运算中发生溢出, 程序的行为是<mark>未定义</mark>的。</li>
+            <li>无符号整数运算中发生溢出, 程序的行为是有定义的。</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Integral Promotion (整型提升)</h2>
+          <hr><br><br>
+          <ul>
+            <li>定义初始化</li>
+            <li>赋值操作</li>
+            <li>参数传递</li>
+            <li>函数返回值</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Integral Promotion (整型提升)</h2>
+          <hr><br><img src="./7-data-types/figs/conversion.png" alt="Conversion" width="1500">
+          <p class="fragment">"Arithmetic operators do not accept types smaller than <mark><code>int</code></mark> as arguments, and integral promotions are automatically applied."</p>
+        </section>
+        <section>
+          <h2>Floating-point Numbers</h2>
+          <hr><br>
+          <ul>
+            <li><code>float y = 5.0<mark>F</mark></code>
+              <ul>
+                <li><code>%f</code></li>
+                <li><code>%f</code></li>
+              </ul>
+            </li>
+            <li><code>double x = 5.0</code>
+              <ul>
+                <li><mark><code>%lf</code></mark></li>
+                <li><code>%f</code></li>
+              </ul>
+            </li>
+            <li><code>long double z = 5.0L</code>
+              <ul>
+                <li><code>%Lf</code></li>
+                <li><code>%Lf</code></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Floating-point Numbers</h2>
+          <hr><br><img src="./7-data-types/figs/fp-conversion.png" alt="FP Conversion" width="1000">
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic</h2>
+          <hr><div class="row">
+<div class="column"><img src="./7-data-types/figs/c-std-book.jpg" alt="The Standard C Library" width="350"></div>
+<div class="column"><br><br><img src="./7-data-types/figs/bad-news.png" alt="Bad News" width="400"></div>
+</div>
+          <h4 class="fragment r-fit-text" style="font-variant: small-caps"><mark>"Floating-point Arithmetic is Hard."</mark></h4>
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic</h2>
+          <hr><img src="./7-data-types/figs/fp.png" alt="Floating Point Number Line" width="1000">
+          <p><code><mark>float.h</mark></code> (Section 23.1)</p>
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic</h2>
+          <hr><br><br>
+          <ul>
+            <li>Overflow (上溢)</li><br>
+            <li>Underflow (下溢)</li><br>
+            <li>Significance Loss (精度丢失)</li>
+            <ul>
+              <li><code>significance.c</code></li>
+            </ul>
+          </ul>
+        </section>
+        <section>
+          <h2>Floating-point Arithmetic</h2>
+          <hr><br>
+          <p>"Many applications don't need floating-point arithmetic at all."</p><img src="./7-data-types/figs/good-news.jpg" alt="Good News" width="400"><br>
+          <p class="fragment">Use <code><mark>math.h</mark></code> (Section 23.3) whenever possible.</p>
+        </section>
+        <section>
+          <h2>C 语言安全编码标准</h2>
+          <hr><br><img src="./7-data-types/figs/cert-c.jpeg" alt="Cert C Book" width="400">
+        </section>
+        <section>
+          <h2>整型数安全编码标准 (INT)</h2>
+          <hr><br>
+          <ul>
+            <li>使用正确的整数类型</li><br>
+            <li>确保无符号整数运算不产生回绕</li><br>
+            <li>确保有符号整数运算不造成溢出</li><br>
+            <li>确保除法与余数运算不造成除0错误</li><br>
+            <li>确保整数转换不会造成数据丢失或者错误解释</li>
+          </ul>
+        </section>
+        <section>
+          <h2>浮点数安全编码标准 (FLP)</h2>
+          <hr><br>
+          <ul>
+            <li>不要使用浮点数变量作为循环计数器</li><br>
+            <li>避免或者检测数学函数中的定义域与值域错误</li><br>
+            <li>确保浮点数转换在新类型的范围中</li>
+          </ul>
+        </section>
+        <section>
+          <h2>References</h2>
+          <hr><br><div class="row">
+<div class="column"><img src="./7-data-types/figs/csapp.jpeg" alt="CSAPP Book" width="400"></div>
+<div class="column"><img src="./7-data-types/figs/taocp-2.jpg" alt="TAOCP Vol2" width="350"></div>
+</div>
+        </section>
+        <section>
+          <h1 style="font-variant: small-caps">Pointers</h1>
+          <hr><br>
+          <h4>Hengfeng Wei</h4>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./8-pointer/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Nov. 29, 2021</p>
+        </section>
+        <section>
+          <h2>Overview</h2>
+          <hr><br><img src="./8-pointer/figs/C-Pointers.png" alt="C Pointers" width="1200"><br>
+          <p>Pointers and Arrays &emsp; Pointers and C Strings</p>
+        </section>
+        <section>
+          <h2>Overview</h2>
+          <hr><div class="row">
+<div class="column"><br><br><img src="./8-pointer/figs/C++-Pointers.png" alt="C++ Pointers" width="500"></div>
+<div class="column"><br><img class="fragment" src="./8-pointer/figs/Java-Pointers.jpg" alt="Java Pointers" width="500"></div>
+</div>
+        </section>
+        <section>
+          <h2>Pointers</h2>
+          <hr><br>
+          <p>"A <mark>pointer</mark> is a <em>variable</em> that</p>
+          <p>contains the <em>address</em> of a variable."</p><img src="./8-pointer/figs/KR.jpg" alt="C Bible Book" width="300">
+        </section>
+        <section>
+          <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
+          <hr><br><img src="./8-pointer/figs/coding.png" alt="Let's Code" width="800">
+        </section>
+        <section>
+          <h2>Variables Revisited</h2>
+          <hr><br>
+          <p><code><mark>int radius = 10;</mark></code></p>
+          <ul>
+            <li><code>radius</code> refers to a <em>location</em> (<code>&radius</code>) in memory.</li>
+          </ul><br><br>
+          <p class="fragment"><code><mark>&</mark></code>: Address-of Operator ("取地址"运算符)</p><br>
+          <p class="fragment"><code>printf("%<mark>p</mark>\n", &radius);</code></p>
+        </section>
+        <section>
+          <h2>Pointers</h2>
+          <hr><br>
+          <p><code>int *ptr_radius = &radius;</code></p><br>
+          <ul>
+            <li class="fragment">The <mark>type</mark> of <code>ptr_radius</code> is "pointer to <mark>int</mark>".</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Variables Revisited</h2>
+          <hr><br>
+          <p><code>double circumference = 2 * 3.14 * radius;</code></p><br>
+          <p><code>radius = 20;</code></p><br>
+          <p class="fragment">A variable behaves as an <mark><em>lvalue</em></mark> or a <mark><em>rvalue</em></mark>.</p>
+          <p class="fragment">左值 &emsp; 右值</p>
+        </section>
+        <section>
+          <h2>Pointers</h2>
+          <hr><br>
+          <p><code>int *ptr_radius = &radius;</code></p><br>
+          <ul>
+            <li><code>*ptr_radius</code> behaves just like <code>radius</code> does.
+              <ul>
+                <li><code><mark>*</mark></code>: Indirection/Dereferencing ("间接寻址/解引用"运算符)</li>
+              </ul>
+            </li>
+          </ul><br><br>
+          <p class="fragment"><code>double circumference = 2 * 3.14 * (*ptr_radius);</code></p>
+          <p class="fragment"><code>*ptr_radius = 20;</code></p>
+        </section>
+        <section>
+          <h2>Pointers</h2>
+          <hr><br>
+          <p><code>int *ptr_radius = &radius;</code></p><br>
+          <ul>
+            <li><code>ptr_radius</code> is also a variable.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Swap Numbers</h2>
+          <hr><br><img src="./8-pointer/figs/swap.jpeg" alt="Swap" width="500"><br>
+          <p><code>selection-sort.c</code></p>
+        </section>
+        <section>
+          <h2>Min and Max</h2>
+          <hr><br>
+          <p>Compute both the min and the max</p>
+          <p>of an array of integers.</p><br>
+          <p><code>min-max.c</code></p><br>
+          <p class="fragment"><code>scanf.c</code></p>
+        </section>
+        <section>
+          <h2>Dynamic Memory Management</h2>
+          <hr><br>
+          <p class="r-fit-text"><code>int *numbers = malloc(len * sizeof *numbers);</code></p><br><br><a href = "https://en.cppreference.com/w/c/memory/malloc"><code>void *malloc(size_t size);</code></a><br><br><a href = "https://en.cppreference.com/w/c/memory/free"><code>void free(void *ptr);</code></a><br><br><br>
+          <p><code>selection-sort.c</code></p>
+        </section>
+        <section>
+          <h2>Dynamic Memory Management</h2>
+          <hr><img src="./8-pointer/figs/cppref-mm.png" alt="MM at cppreference" width="800">
+          <p><code>stdlib.h</code> &emsp; <del><code>malloc.h</code></del></p>
+        </section>
+        <section>
+          <h2>Pointers and Arrays</h2>
+          <hr><br>
+          <ul>
+            <li class="fragment">The <mark>name</mark> of an array is a synonym for the address of its <mark>first</mark> element.</li><br>
+            <li class="fragment"><code>numbers[i]</code> &emsp; <code>*(numbers + i)</code> &emsp; <del><code>i[numbers]</code></del></li><br>
+            <li class="fragment"><code>&numbers[i]</code> &emsp; <code>numbers + i</code></li><br>
+            <li class="fragment">But an array name is not a variable.
+              <ul>
+                <li><del><code>numbers++</code></del></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Pointers and C Strings</h2>
+          <hr><br>
+          <p><code>char msg[20] = "Hello World!";</code></p>
+          <p><code>char *msg = "Hello World!";</code></p><br>
+          <p><code>strlen.c</code></p><br><a href = "https://en.cppreference.com/w/c/string/byte/strlen"><code>strlen</code> &emsp; <code>strlen_s</code></a>
+        </section>
+        <section>
+          <h2>Pointers and C Strings</h2>
+          <hr><br>
+          <p><code>strcmp.c</code></p><br><br><a href = "https://en.cppreference.com/w/c/string/byte/strcmp"><code>strcmp</code></a><br><br><a href = "https://en.cppreference.com/w/c/string/byte/strncmp"><code>strncmp</code></a>
+        </section>
+        <section>
+          <h2>Pointers and C Strings</h2>
+          <hr><br>
+          <p><code>strcpy.c</code></p><br><br><a href = "https://en.cppreference.com/w/c/string/byte/strcpy"><code>strcpy</code> &emsp; <code>strcpy_s</code></a><br><br><a href = "https://en.cppreference.com/w/c/string/byte/strncpy"><code>strncpy</code> &emsp; <code>strncpy_s</code></a>
+        </section>
+        <section>
+          <h2>Return Pointers from Functions</h2>
+          <hr><br><br>
+          <h3>Do <mark>not</mark> return pointers to</h3><br>
+          <h3><em>local</em> variables in functions!!!</h3>
+        </section>
+        <section>
+          <h2>References</h2>
+          <hr><img src="./8-pointer/figs/c-std-book.jpg" alt="C Std Book" width="350"><br>
+          <p>Chapter 14: <code>string.h</code></p>
+        </section>
+        <section>
+          <h2>Pointer Arrays</h2>
+          <hr><br><img src="./8-pointer/figs/pointer-array.png" alt="Pointer Array" width="400">
+          <p><code>selection-sort-strings.c</code></p>
+        </section>
+        <section>
+          <h1 style="font-variant: small-caps">Pointers (More)</h1>
+          <hr><br>
+          <h4>Hengfeng Wei</h4>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./9-pointer-more/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Dec. 06, 2021</p>
+        </section>
+        <section>
+          <h2>Review</h2>
+          <hr><img src="./9-pointer-more/figs/C-Pointers.png" alt="C Pointers" width="1200">
+          <p>Pointers and Arrays &emsp; Pointers and C Strings</p>
+        </section>
+        <section>
+          <h2>Overview</h2>
+          <hr><img src="./9-pointer-more/figs/C-Pointers.png" alt="C Pointers" width="1200">
+          <p><code>string.h</code></p>
+          <p>Pointer Arrays &emsp; Pointers and 2D Arrays</p>
+          <p>Function Pointers</p>
+        </section>
+        <section>
+          <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
+          <hr><br><img src="./9-pointer-more/figs/coding.png" alt="Let's Code" width="800">
+        </section>
+        <section>
+          <h1 style="font-variant: small-caps">Pointers; Structures</h1>
+          <hr><br>
+          <h4>Hengfeng Wei</h4>
+          <h4><u>hfwei@nju.edu.cn</u></h4><img src="./10-struct/figs/C.png" alt="The C Programming Language" width="200">
+          <p>Dec. 13, 2021</p>
+        </section>
+        <section>
+          <h2>Review</h2>
+          <hr><img src="./10-struct/figs/C-Pointers.png" alt="C Pointers" width="1200">
+          <p><code>string.h</code></p>
+          <p>Pointer Arrays &emsp; Pointers and 2D Arrays</p>
+        </section>
+        <section>
+          <h2>Overview</h2>
+          <hr>
+          <p>Program Arguments &emsp; Function Pointer</p><img src="./10-struct/figs/c-struct.png" alt="C Struct" width="600">
+          <p><code>struct</code> &emsp; <code>union</code> &emsp; <code>enum</code></p>
+        </section>
+        <section>
+          <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
+          <hr><br><img src="./10-struct/figs/coding.png" alt="Let's Code" width="800">
+        </section>
+        <section>
           <h1 style="font-variant: small-caps">Linked Lists</h1>
           <hr><br>
           <h4>Hengfeng Wei</h4>
