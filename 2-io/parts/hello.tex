@@ -1,0 +1,32 @@
+% hello.tex
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{}
+  \begin{center}
+    \begin{minipage}{0.7\textwidth}
+	  \inputminted[bgcolor=black, linenos]{c}{code/hello.c}
+    \end{minipage}
+  \end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{}
+  \begin{error}
+    Use only uppercase letters in the names of enumeration constants to make these
+    constants stand out in a program and to indicate that enumeration constants
+    are variables.
+  \end{error}
+
+  \renewcommand\bcStyleTitre[1]{\centering\tikz\node[starburst, draw]{\large\textsc{\red{#1}}};}
+  \begin{bclogo}[
+    couleur = red!20,
+    arrondi=0,
+    logo=\bcbombe,
+    % barre=none,
+    % noborder,
+    ]{Pitfalls}
+    test test test
+  \end{bclogo}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
