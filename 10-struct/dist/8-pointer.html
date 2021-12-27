@@ -1,0 +1,149 @@
+
+<section>
+  <h1 style="font-variant: small-caps">Pointers</h1>
+  <hr/><br/>
+  <h4>Hengfeng Wei</h4>
+  <h4><u>hfwei@nju.edu.cn</u></h4><img src="./8-pointer/figs/C.png" alt="The C Programming Language" width="200"/>
+  <p>Nov. 29, 2021</p>
+</section>
+<section>
+  <h2>Overview</h2>
+  <hr/><br/><img src="./8-pointer/figs/C-Pointers.png" alt="C Pointers" width="1200"/><br/>
+  <p>Pointers and Arrays &emsp; Pointers and C Strings</p>
+</section>
+<section>
+  <h2>Overview</h2>
+  <hr/><div class="row">
+<div class="column"><br/><br/><img src="./8-pointer/figs/C++-Pointers.png" alt="C++ Pointers" width="500"/></div>
+<div class="column"><br/><img class="fragment" src="./8-pointer/figs/Java-Pointers.jpg" alt="Java Pointers" width="500"/></div>
+</div>
+</section>
+<section>
+  <h2>Pointers</h2>
+  <hr/><br/>
+  <p>"A <mark>pointer</mark> is a <em>variable</em> that</p>
+  <p>contains the <em>address</em> of a variable."</p><img src="./8-pointer/figs/KR.jpg" alt="C Bible Book" width="300"/>
+</section>
+<section>
+  <h2 class="r-fit-text" style="font-variant: small-caps">"Talk is Cheap. Show me the Code."</h2>
+  <hr/><br/><img src="./8-pointer/figs/coding.png" alt="Let's Code" width="800"/>
+</section>
+<section>
+  <h2>Variables Revisited</h2>
+  <hr/><br/>
+  <p><code><mark>int radius = 10;</mark></code></p>
+  <ul>
+    <li><code>radius</code> refers to a <em>location</em> (<code>&radius</code>) in memory.</li>
+  </ul><br/><br/>
+  <p class="fragment"><code><mark>&</mark></code>: Address-of Operator ("取地址"运算符)</p><br/>
+  <p class="fragment"><code>printf("%<mark>p</mark>\n", &radius);</code></p>
+</section>
+<section>
+  <h2>Pointers</h2>
+  <hr/><br/>
+  <p><code>int *ptr_radius = &radius;</code></p><br/>
+  <ul>
+    <li class="fragment">The <mark>type</mark> of <code>ptr_radius</code> is "pointer to <mark>int</mark>".</li>
+  </ul>
+</section>
+<section>
+  <h2>Variables Revisited</h2>
+  <hr/><br/>
+  <p><code>double circumference = 2 * 3.14 * radius;</code></p><br/>
+  <p><code>radius = 20;</code></p><br/>
+  <p class="fragment">A variable behaves as an <mark><em>lvalue</em></mark> or a <mark><em>rvalue</em></mark>.</p>
+  <p class="fragment">左值 &emsp; 右值</p>
+</section>
+<section>
+  <h2>Pointers</h2>
+  <hr/><br/>
+  <p><code>int *ptr_radius = &radius;</code></p><br/>
+  <ul>
+    <li><code>*ptr_radius</code> behaves just like <code>radius</code> does.
+      <ul>
+        <li><code><mark>*</mark></code>: Indirection/Dereferencing ("间接寻址/解引用"运算符)</li>
+      </ul>
+    </li>
+  </ul><br/><br/>
+  <p class="fragment"><code>double circumference = 2 * 3.14 * (*ptr_radius);</code></p>
+  <p class="fragment"><code>*ptr_radius = 20;</code></p>
+</section>
+<section>
+  <h2>Pointers</h2>
+  <hr/><br/>
+  <p><code>int *ptr_radius = &radius;</code></p><br/>
+  <ul>
+    <li><code>ptr_radius</code> is also a variable.</li>
+  </ul>
+</section>
+<section>
+  <h2>Swap Numbers</h2>
+  <hr/><br/><img src="./8-pointer/figs/swap.jpeg" alt="Swap" width="500"/><br/>
+  <p><code>selection-sort.c</code></p>
+</section>
+<section>
+  <h2>Min and Max</h2>
+  <hr/><br/>
+  <p>Compute both the min and the max</p>
+  <p>of an array of integers.</p><br/>
+  <p><code>min-max.c</code></p><br/>
+  <p class="fragment"><code>scanf.c</code></p>
+</section>
+<section>
+  <h2>Dynamic Memory Management</h2>
+  <hr/><br/>
+  <p class="r-fit-text"><code>int *numbers = malloc(len * sizeof *numbers);</code></p><br/><br/><a href = "https://en.cppreference.com/w/c/memory/malloc"><code>void *malloc(size_t size);</code></a><br/><br/><a href = "https://en.cppreference.com/w/c/memory/free"><code>void free(void *ptr);</code></a><br/><br/><br/>
+  <p><code>selection-sort.c</code></p>
+</section>
+<section>
+  <h2>Dynamic Memory Management</h2>
+  <hr/><img src="./8-pointer/figs/cppref-mm.png" alt="MM at cppreference" width="800"/>
+  <p><code>stdlib.h</code> &emsp; <del><code>malloc.h</code></del></p>
+</section>
+<section>
+  <h2>Pointers and Arrays</h2>
+  <hr/><br/>
+  <ul>
+    <li class="fragment">The <mark>name</mark> of an array is a synonym for the address of its <mark>first</mark> element.</li><br/>
+    <li class="fragment"><code>numbers[i]</code> &emsp; <code>*(numbers + i)</code> &emsp; <del><code>i[numbers]</code></del></li><br/>
+    <li class="fragment"><code>&numbers[i]</code> &emsp; <code>numbers + i</code></li><br/>
+    <li class="fragment">But an array name is not a variable.
+      <ul>
+        <li><del><code>numbers++</code></del></li>
+      </ul>
+    </li>
+  </ul>
+</section>
+<section>
+  <h2>Pointers and C Strings</h2>
+  <hr/><br/>
+  <p><code>char msg[20] = "Hello World!";</code></p>
+  <p><code>char *msg = "Hello World!";</code></p><br/>
+  <p><code>strlen.c</code></p><br/><a href = "https://en.cppreference.com/w/c/string/byte/strlen"><code>strlen</code> &emsp; <code>strlen_s</code></a>
+</section>
+<section>
+  <h2>Pointers and C Strings</h2>
+  <hr/><br/>
+  <p><code>strcmp.c</code></p><br/><br/><a href = "https://en.cppreference.com/w/c/string/byte/strcmp"><code>strcmp</code></a><br/><br/><a href = "https://en.cppreference.com/w/c/string/byte/strncmp"><code>strncmp</code></a>
+</section>
+<section>
+  <h2>Pointers and C Strings</h2>
+  <hr/><br/>
+  <p><code>strcpy.c</code></p><br/><br/><a href = "https://en.cppreference.com/w/c/string/byte/strcpy"><code>strcpy</code> &emsp; <code>strcpy_s</code></a><br/><br/><a href = "https://en.cppreference.com/w/c/string/byte/strncpy"><code>strncpy</code> &emsp; <code>strncpy_s</code></a>
+</section>
+<section>
+  <h2>Return Pointers from Functions</h2>
+  <hr/><br/><br/>
+  <h3>Do <mark>not</mark> return pointers to</h3><br/>
+  <h3><em>local</em> variables in functions!!!</h3>
+</section>
+<section>
+  <h2>References</h2>
+  <hr/><img src="./8-pointer/figs/c-std-book.jpg" alt="C Std Book" width="350"/><br/>
+  <p>Chapter 14: <code>string.h</code></p>
+</section>
+<section>
+  <h2>Pointer Arrays</h2>
+  <hr/><br/><img src="./8-pointer/figs/pointer-array.png" alt="Pointer Array" width="400"/>
+  <p><code>selection-sort-strings.c</code></p>
+</section>

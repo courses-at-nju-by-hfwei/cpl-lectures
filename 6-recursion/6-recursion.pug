@@ -1,0 +1,174 @@
+section
+  h1(style="font-variant: small-caps") Recursion
+  hr
+
+  br
+  h4 Hengfeng Wei
+  h4 <u>hfwei@nju.edu.cn</u>
+
+  img(src = "./6-recursion/figs/C.png", alt = "The C Programming Language",
+      width = 200, height = auto)
+  p Nov. 15, 2021
+
+section
+  h2 Review
+  hr
+
+  br
+  h2 Functions
+  br
+  ul
+    li Function Declaration
+    li Function Definition
+    li Arrays as Parameters
+    li Pass by Value
+
+section
+  h2 Overview
+  hr
+
+  br
+  h3(class = "r-fit-text") Recursive Functions (Recursion)
+  img(src = "./6-recursion/figs/recursion-stair.jpg", alt = "Recursion Logo",
+      width = 500, height = auto)
+  p A function that calls (调用) itself.
+
+section
+  h2 Recursion
+  hr
+
+  br
+  h2(style = "font-variant: small-caps") Thinking Recursively
+  img(src = "./6-recursion/figs/think-recursively.jpg", alt = "Thinking Recursively",
+      width = 600, height = auto)
+  p.fragment It is a looooooog way to go to master recursion!!!
+
+section
+  h2 Recursion: Systems Implementation
+  hr
+
+  br
+  ul
+    li Programs run in <mark>memory</mark> (内存; 記憶體).
+    br
+    li.fragment Memory = <mark>Stack</mark> (栈区) + Heap (堆区) + $\cdots$
+    br
+    li.fragment Each <mark>function call</mark> has its own <mark>stack frame</mark> (栈帧).
+    br
+    li.fragment Stack grows/shrinks with function calls and returns.
+
+section
+  h2 Recursion: Systems Implementation
+  hr
+
+  br
+  br
+  p
+    a(class = "button" href = "https://pythontutor.com/c.html#code=%23include%20%3Cstdio.h%3E%0A%0Aint%20Min%28int%20a,%20int%20b%29%3B%0A%0Aint%20main%28%29%20%7B%0A%20%20int%20a%20%3D%2025%3B%0A%20%20int%20b%20%3D%2037%3B%0A%20%20%0A%20%20int%20min%20%3D%20Min%28a,%20b%29%3B%0A%20%20printf%28%22%25d%22,%20min%29%3B%0A%0A%20%20return%200%3B%0A%7D%0A%0Aint%20Min%28int%20a,%20int%20b%29%20%7B%0A%20%20return%20a%20%3E%20b%20%3F%20b%20%3A%20a%3B%0A%7D&curInstr=9&mode=display&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D") Visualization of Function Calls @ C Tutor
+
+section
+  h2 Recursion: Mathematical Induction
+  hr
+
+  br
+  ul
+    li Base Case (基础情况)
+    br
+    li Inductive Step (归纳步骤)
+
+section
+  h2(class = "r-fit-text" style="font-variant: small-caps") "Talk is Cheap. Show me the Code."
+  hr
+
+  br
+  img(src = "./6-recursion/figs/coding.png" alt = "Let's Code"
+    width = 800 height = auto)
+
+section
+  h2 Min
+  hr
+
+  br
+  img.fragment(src = "./6-recursion/figs/Min.png" alt = "Min"
+    width = 800 height = auto)
+  br
+  p <code>min-re.c</code>
+
+//- \begin{align*}
+//- \text{Min}(3, 5, 2, 7) &= \min(7, \text{Min}(3, 5, 2)) \\
+//-                        &= \min(7, \min(2, \text{Min}(3, 5))) \\
+//-                        &= \min(7, \min(2, \min(5, \text{Min}(3)))) \\
+//-                        &= \min(7, \min(2, \min(5, 3))) \\
+//-                        &= \min(7, \min(2, 3)) \\
+//-                        &= \min(7, 2) \\
+//-                        &= 2
+//- \end{align*}
+
+section
+  h2 Sum
+  hr
+
+  br
+  img.fragment(src = "./6-recursion/figs/Sum.png" alt = "Sum"
+    width = 800 height = auto)
+  br
+  p <code>sum-re.c</code>
+
+//- \begin{align*}
+//- \text{Sum}(1, 3, 5, 7) &= 7 + \text{Sum}(1, 3, 5) \\
+//-                        &= 7 + (5 + \text{Sum}(1, 3)) \\
+//-                        &= 7 + (5 + (3 + \text{Sum}(1))) \\
+//-                        &= 7 + (5 + (3 + 1)) \\
+//-                        &= 7 + (5 + 4) \\
+//-                        &= 7 + 9 \\
+//-                        &= 16
+//- \end{align*}
+
+section
+  h2 Fibonacci Sequence
+  hr
+
+  br
+  p $0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, \ldots$
+  br
+  ul.fragment
+    li $F_{0} = 0$
+    li $F_{1} = 1$
+    li $F_{n} = F(n - 1) + F(n - 2) \qquad (n > 1)$
+  br
+  br
+  p.fragment <code>fib-re.c &emsp; fib-array.c &emsp; fib-iter.c</code>
+
+section
+  h2 Greatest Common Divisor
+  hr
+
+  ul
+    li $a > b \implies \text{gcd}(a, b) = \text{gcd}(a - b, b)$
+    li $a < b \implies \text{gcd}(a, b) = \text{gcd}(a, b - a)$
+  img(src = "./6-recursion/figs/euclid.jpeg" alt = "Euclid"
+    width = 300 height = auto)
+  br
+  p.fragment <code>gcd-euclid-re.c &emsp; gcd-euclid-iter.c</code>
+
+section
+  h2 Greatest Common Divisor
+  hr
+
+  br
+  p $\text{gcd}(a, b) = \text{gcd}(b, a \;\%\; b)$
+  img(src = "./6-recursion/figs/euclid.jpeg" alt = "Euclid"
+    width = 300 height = auto)
+  br
+  p <code>gcd-euclidean-re.c &emsp; gcd-euclidean-iter.c</code>
+
+section
+  h2 Binary Search
+  hr
+
+  br
+  img(src = "./6-recursion/figs/binary-search-mario.png" alt = "Binary Search Mario"
+    width = 800 height = auto)
+
+  br
+  p <code>bsearch-re.c</code>

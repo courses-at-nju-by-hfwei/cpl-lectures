@@ -1,0 +1,242 @@
+section
+  h1(style="font-variant: small-caps") Pointers
+  hr
+
+  br
+  h4 Hengfeng Wei
+  h4 <u>hfwei@nju.edu.cn</u>
+
+  img(src = "./8-pointer/figs/C.png", alt = "The C Programming Language",
+      width = 200, height = auto)
+  p Nov. 29, 2021
+
+section
+  h2 Overview
+  hr
+
+  br
+  img(src = "./8-pointer/figs/C-Pointers.png", alt = "C Pointers",
+      width = 1200, height = auto)
+  br
+  p Pointers and Arrays &emsp; Pointers and C Strings
+
+section
+  h2 Overview
+  hr
+
+  <div class="row">
+    <div class="column">
+      br
+      br
+      img(src = "./8-pointer/figs/C++-Pointers.png", alt = "C++ Pointers",
+          width = 500, height = auto)
+    </div>
+    <div class="column">
+      br
+      img.fragment(src = "./8-pointer/figs/Java-Pointers.jpg", alt = "Java Pointers",
+          width = 500, height = auto)
+    </div>
+  </div>
+
+section
+  h2 Pointers
+  hr
+
+  br
+  p "A <mark>pointer</mark> is a <em>variable</em> that
+  p contains the <em>address</em> of a variable."
+  img(src = "./8-pointer/figs/KR.jpg" alt = "C Bible Book" width = 300 height = auto)
+
+section
+  h2(class = "r-fit-text" style="font-variant: small-caps") "Talk is Cheap. Show me the Code."
+  hr
+
+  br
+  img(src = "./8-pointer/figs/coding.png" alt = "Let's Code" width = 800 height = auto)
+
+section
+  h2 Variables Revisited
+  hr
+
+  br
+  p <code><mark>int radius = 10;</mark></code>
+  ul
+    li <code>radius</code> refers to a <em>location</em> (<code>&radius</code>) in memory.
+  br
+  br
+  p.fragment <code><mark>&</mark></code>: Address-of Operator ("取地址"运算符)
+  br
+  p.fragment <code>printf("%<mark>p</mark>\n", &radius);</code>
+
+section
+  h2 Pointers
+  hr
+
+  br
+  p <code>int *ptr_radius = &radius;</code>
+  br
+  ul
+    li.fragment The <mark>type</mark> of <code>ptr_radius</code> is "pointer to <mark>int</mark>".
+
+section
+  h2 Variables Revisited
+  hr
+
+  br
+  p <code>double circumference = 2 * 3.14 * radius;</code>
+  br
+  p <code>radius = 20;</code>
+  br
+  p.fragment A variable behaves as an <mark><em>lvalue</em></mark> or a <mark><em>rvalue</em></mark>.
+  p.fragment 左值 &emsp; 右值
+
+section
+  h2 Pointers
+  hr
+
+  br
+  p <code>int *ptr_radius = &radius;</code>
+  br
+  ul
+    li <code>*ptr_radius</code> behaves just like <code>radius</code> does.
+      ul
+        li <code><mark>*</mark></code>: Indirection/Dereferencing ("间接寻址/解引用"运算符)
+  br
+  br
+  p.fragment <code>double circumference = 2 * 3.14 * (*ptr_radius);</code>
+  p.fragment <code>*ptr_radius = 20;</code>
+
+section
+  h2 Pointers
+  hr
+
+  br
+  p <code>int *ptr_radius = &radius;</code>
+  br
+  ul
+    li <code>ptr_radius</code> is also a variable.
+
+section
+  h2 Swap Numbers
+  hr
+
+  br
+  img(src = "./8-pointer/figs/swap.jpeg" alt = "Swap" width = 500 height = auto)
+  br
+  p <code>selection-sort.c</code>
+
+section
+  h2 Min and Max
+  hr
+
+  br
+  p Compute both the min and the max
+  p of an array of integers.
+  br
+  p <code>min-max.c</code>
+  br
+  p.fragment <code>scanf.c</code>
+
+section
+  h2 Dynamic Memory Management
+  hr
+
+  br
+  p(class = "r-fit-text") <code>int *numbers = malloc(len * sizeof *numbers);</code>
+  br
+  br
+  <a href = "https://en.cppreference.com/w/c/memory/malloc"><code>void *malloc(size_t size);</code></a>
+  br
+  br
+  <a href = "https://en.cppreference.com/w/c/memory/free"><code>void free(void *ptr);</code></a>
+  br
+  br
+  br
+  p <code>selection-sort.c</code>
+
+section
+  h2 Dynamic Memory Management
+  hr
+
+  img(src = "./8-pointer/figs/cppref-mm.png" alt = "MM at cppreference" width = 800 height = auto)
+  p <code>stdlib.h</code> &emsp; <del><code>malloc.h</code></del>
+
+section
+  h2 Pointers and Arrays
+  hr
+
+  br
+  ul
+    li.fragment The <mark>name</mark> of an array is a synonym for the address of its <mark>first</mark> element.
+    br
+    li.fragment <code>numbers[i]</code> &emsp; <code>*(numbers + i)</code> &emsp; <del><code>i[numbers]</code></del>
+    br
+    li.fragment <code>&numbers[i]</code> &emsp; <code>numbers + i</code>
+    br
+    li.fragment But an array name is not a variable.
+      ul
+        li <del><code>numbers++</code></del>
+
+section
+  h2 Pointers and C Strings
+  hr
+
+  br
+  p <code>char msg[20] = "Hello World!";</code>
+  p <code>char *msg = "Hello World!";</code>
+  br
+  p <code>strlen.c</code>
+  br
+  <a href = "https://en.cppreference.com/w/c/string/byte/strlen"><code>strlen</code> &emsp; <code>strlen_s</code></a>
+
+section
+  h2 Pointers and C Strings
+  hr
+
+  br
+  p <code>strcmp.c</code>
+  br
+  br
+  <a href = "https://en.cppreference.com/w/c/string/byte/strcmp"><code>strcmp</code></a>
+  br
+  br
+  <a href = "https://en.cppreference.com/w/c/string/byte/strncmp"><code>strncmp</code></a>
+
+section
+  h2 Pointers and C Strings
+  hr
+
+  br
+  p <code>strcpy.c</code>
+  br
+  br
+  <a href = "https://en.cppreference.com/w/c/string/byte/strcpy"><code>strcpy</code> &emsp; <code>strcpy_s</code></a>
+  br
+  br
+  <a href = "https://en.cppreference.com/w/c/string/byte/strncpy"><code>strncpy</code> &emsp; <code>strncpy_s</code></a>
+
+section
+  h2 Return Pointers from Functions
+  hr
+
+  br
+  br
+  h3 Do <mark>not</mark> return pointers to
+  br
+  h3 <em>local</em> variables in functions!!!
+
+section
+  h2 References
+  hr
+
+  img(src = "./8-pointer/figs/c-std-book.jpg" alt = "C Std Book" width = 350 height = auto)
+  br
+  p Chapter 14: <code>string.h</code>
+
+section
+  h2 Pointer Arrays
+  hr
+
+  br
+  img(src = "./8-pointer/figs/pointer-array.png" alt = "Pointer Array" width = 400 height = auto)
+  p <code>selection-sort-strings.c</code>

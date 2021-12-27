@@ -1,0 +1,41 @@
+{
+  "name": "vinyl-contents",
+  "version": "1.0.0",
+  "description": "Utility to read the contents of a vinyl file.",
+  "author": "Gulp Team <team@gulpjs.com> (https://gulpjs.com/)",
+  "contributors": [
+    "Blaine Bublitz <blaine.bublitz@gmail.com>"
+  ],
+  "repository": "gulpjs/vinyl-contents",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 6"
+  },
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "nyc mocha --async-only",
+    "azure-pipelines": "nyc mocha --async-only --reporter xunit -O output=test.xunit",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "dependencies": {
+    "bl": "^3.0.0",
+    "readable-stream": "^3.3.0",
+    "vinyl": "^2.2.0"
+  },
+  "devDependencies": {
+    "coveralls": "github:phated/node-coveralls#2.x",
+    "eslint": "^5.16.0",
+    "eslint-config-gulp": "^3.0.1",
+    "expect": "^24.8.0",
+    "from2": "^2.3.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
+  },
+  "keywords": []
+}
