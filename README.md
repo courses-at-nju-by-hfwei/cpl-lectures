@@ -13,14 +13,3 @@ For better display, in either mode, please [make sure](https://www.howtogeek.com
 
 ## How to Play with it?
 Please refer to [edemaine / reveal-pug-talk](https://github.com/edemaine/reveal-pug-talk).
-
-## Help Me!!!
-
-> It has been resolved; see [this issue](https://github.com/courses-at-nju-by-hfwei/c-pl-lectures/issues/1).
-Thanks [@52871299hzy](https://github.com/52871299hzy).
-
-I failed to run `npm run dist` and `npm run deploy`, and got
-
-![Error Message](help.png)
-
-Please let me know if you are able to resolve it.
