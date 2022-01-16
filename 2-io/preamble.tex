@@ -1,0 +1,129 @@
+% preamble.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{lmodern}
+\usepackage{xeCJK}
+
+\usetheme{CambridgeUS} % try Madrid, Pittsburgh
+\usecolortheme{beaver}
+\usefonttheme[]{serif} % try "professionalfonts"
+
+% to download and install the Merriweather font:
+% https://fonts.google.com/specimen/Merriweather
+\setmainfont{Merriweather} % use xelatex
+% \renewcommand{\today}{\number\year 年\number\month 月\number\day 日}
+
+\setbeamertemplate{itemize items}[default]
+\setbeamertemplate{enumerate items}[default]
+
+\usepackage{amsmath, amsfonts, latexsym, mathtools, centernot, wasysym, pifont}
+\usepackage{dingbat}%\eye and \leftpointright
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\set}[1]{\{#1\}}
+\newcommand{\bset}[1]{\big\{#1\big\}}
+\newcommand{\Bset}[1]{\Big\{#1\Big\}}
+
+\usepackage{ulem}
+\usepackage{savesym}
+\savesymbol{checkmark} % checkmark defined in dingbat
+\usepackage{dingbat}
+\newcommand{\cmark}{\green{\ding{51}}}
+\newcommand{\xmark}{\red{\ding{55}}}
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\newcommand{\hStatex}[0]{\vspace{5pt}}
+
+\usepackage{multirow}
+\newcommand{\incell}[2]{\begin{tabular}[c]{@{}c@{}}#1\\ #2\end{tabular}}
+
+\usepackage{xcolor}
+% color
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\redoverlay}[2]{\textcolor<#2>{red}{#1}}
+\newcommand{\gray}[1]{\textcolor{gray}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\blueoverlay}[2]{\textcolor<#2>{blue}{#1}}
+\newcommand{\teal}[1]{\textcolor{teal}{#1}}
+\newcommand{\purple}[1]{\textcolor{purple}{#1}}
+\newcommand{\cyan}[1]{\textcolor{cyan}{#1}}
+\newcommand{\brown}[1]{\textcolor{brown}{#1}}
+\newcommand{\yellow}[1]{\textcolor{yellow}{#1}}
+\newcommand{\violet}[1]{\textcolor{violet}{#1}}
+% color box
+\newcommand{\rbox}[1]{\red{\boxed{#1}}}
+\newcommand{\gbox}[1]{\green{\boxed{#1}}}
+\newcommand{\bbox}[1]{\blue{\boxed{#1}}}
+\newcommand{\pbox}[1]{\purple{\boxed{#1}}}
+
+\usepackage{minted} % code formatting and highlighting
+\usemintedstyle{vim}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% for fig without caption: #1: width/size; #2: fig file
+\newcommand{\fig}[2]{
+  \begin{figure}[htp]
+    \centering
+    \includegraphics[#1]{#2}
+  \end{figure}
+}
+
+% for fig with caption: #1: width/size; #2: fig file; #3: caption
+\newcommand{\figcap}[3]{
+  \begin{figure}[htp]
+    \centering
+    \includegraphics[#1]{#2}
+    \caption{#3}
+  \end{figure}
+}
+
+% for fig with caption and label: #1: width/size; #2: fig file; #3: caption; #4: label
+\newcommand{\figcaplbl}[4]{
+  \begin{figure}[htp]
+    \centering
+    \includegraphics[#1]{#2}
+    \caption{#3}
+    \label{#4}
+  \end{figure}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\thankyou}{
+\begin{frame}[noframenumbering]{}
+  \fig{width = 0.50\textwidth}{figs/thankyou.png}
+\end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usetikzlibrary{calc, shapes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[tikz]{bclogo}
+\usepackage[framemethod=tikz]{mdframed}
+
+\tikzset{errorsymbol/.style = {scale = 2}}
+
+\tikzset{lampsymbol/.style={
+  scale = 2, overlay}}
+
+\newmdenv[hidealllines = true, backgroundcolor = red!20,
+  frametitle = {\textsc{Pitfalls}},
+  frametitlefont = \color{red}\serif,
+  skipabove = \topsep, skipbelow = \topsep, nobreak,
+  leftmargin=.2cm, rightmargin=.2cm,
+  singleextra={\path let \p1=(P), \p2=(O) in ($(\x2,0) + 0.5*(2,\y1)$)
+    node (eye) [errorsymbol] {\eye};},
+  innerleftmargin = 1.8cm,
+]{error}
+
+\newmdenv[nobreak,
+  middlelinewidth=.8pt,
+  frametitlefont=\bfseries,
+  leftmargin=.2cm, rightmargin=.2cm,
+  innerleftmargin=2cm,
+  skipabove=\topsep,skipbelow=\topsep,
+  singleextra={\path let \p1=(P), \p2=(O) in ($(\x2,0)+0.5*(2,\y1)$)
+    node (lamp) [lampsymbol] {\leftpointright};},
+]{lamp}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

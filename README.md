@@ -1,5 +1,6 @@
 # c-pl-lectures
-Lectures on the C Programming Language
+
+Lectures on the C Programming Language (CPL for short)
 
 ## How to View it?
 ### "Online" Mode
@@ -13,3 +14,5 @@ For better display, in either mode, please [make sure](https://www.howtogeek.com
 
 ## How to Play with it?
 Please refer to [edemaine / reveal-pug-talk](https://github.com/edemaine/reveal-pug-talk).
+
+## [notes.md](notes.md)

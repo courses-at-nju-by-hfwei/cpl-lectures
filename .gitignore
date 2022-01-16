@@ -274,5 +274,8 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+<<<<<<< HEAD
+=======
 
+>>>>>>> 2cb2374129835b4665f5e01414c394d6cf4df6b4
 .history/
