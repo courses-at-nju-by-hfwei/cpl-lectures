@@ -22,8 +22,8 @@ hfwei@nju.edu.cn
 
 ---
 
-<!-- ![bg w:500](figs/QQ-2021-C-PL-qrcode.png)
-![bg w:500](figs/teaching-square-logo.png) -->
+![bg w:350](figs/2022cpl-qq.jpg)
+![bg w:500](figs/2022cpl-square.jpg)
 
 ---
 # Questionnaire
