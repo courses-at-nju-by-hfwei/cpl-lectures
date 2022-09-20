@@ -51,15 +51,25 @@ $75\%$ of students are new to programming.
 ---
 # Scores
 
-* ~~考勤~~
-* ~~期中测试~~
-* ~~期末笔试~~
-* 编程练习 ($40$ 分)
-* 期中项目 ($20$ 分)
-* 期末项目 ($10$ 分)
-* 期末机试 ($30$ 分)
+* <font color = "red">~~考勤~~</font>
+* <font color = "red">~~期中测试~~</font>
+* <font color = "red">~~期末笔试~~</font>
+* <font color = "blue">编程练习 ($40$ 分)</font>
+* <font color = "blue">期中项目 ($20$ 分)</font>
+* <font color = "blue">期末项目 ($10$ 分)</font>
+* <font color = "blue">期末机试 ($30$ 分)</font>
 
 ![bg right 90%](figs/score.jpg)
+
+---
+# No Plagiarism!!!
+
+![w:400](figs/plagiarism.jpg)
+
+<br>
+
+前两次<mark>总评</mark>各扣 $10$ 分, 第三次<font color = "red">直接判为不及格</font>
+
 
 ---
 
@@ -68,16 +78,27 @@ $75\%$ of students are new to programming.
 
 ---
 
-<br>
+# K&R C Bible (1978; 1988)
 
 ![w:350](figs/KR.jpg) ![w:400](figs/KandR.jpg "K&R") ![w:300](figs/KandR-answer.jpg)
 
 <!-- #### Not for Beginners -->
 
 ---
+# A Brief History of C
+
+![w:1000](figs/c-history.jpg)
+
+You do *NOT* have to become a **language lawyer**.
+
+---
 
 ![bg 70%](figs/c-primer-plus-ch.jpg)
 ![bg 72%](figs/c-primer-plus-en.jpg)
+
+---
+
+![bg 50%](figs/pilao-book.jpg)
 
 ---
 
@@ -87,9 +108,13 @@ $75\%$ of students are new to programming.
 
 ![bg 50%](figs/talk-cheap.jpg)
 
+<!-- ---
+
+![bg 80%](figs/CLion2021.png) -->
+
 ---
 
-![bg 80%](figs/CLion2021.png)
+![bg 50%](figs/hello-world-logo.jpg)
 
 ---
 
@@ -99,6 +124,22 @@ $75\%$ of students are new to programming.
 # [Game: Guess the Number](https://www.abcya.com/games/guess_the_number)
 
 ![w:500](figs/guess-the-number.png)
+
+---
+# [Game: Guess the Number](https://www.abcya.com/games/guess_the_number)
+
+<br>
+
+Programming is *NOT* (only) about languages.
+
+You learn C to express **YOUR IDEAS** with **COMPUTERS**.
+
+---
+# [Game: Guess the Number](https://www.abcya.com/games/guess_the_number)
+
+<br>
+
+**Program = Input + Data + Operations + Output**
 
 ---
 # [c reference](https://en.cppreference.com/w/c)

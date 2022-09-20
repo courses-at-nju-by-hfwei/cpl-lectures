@@ -8,13 +8,13 @@ section {
 
 del {
   text-decoration: line-through;
-  background-color: #fbb;
+  background-color: rgb(255, 0, 0);
   color: #555;
 }
 
 ins {
   text-decoration: none;
-  background-color: #d4fcbc;
+  background-color: #bcecfc;
 }
 
 /* from https://gist.github.com/jdbrice/3478cbf98acfd936f9e32d645376ebe5 */
