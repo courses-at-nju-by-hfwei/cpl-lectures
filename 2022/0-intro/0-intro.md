@@ -13,8 +13,6 @@ size: 16:9
 ---
 # <p id = "small-caps">Introducing C</p>
 
-<br>
-
 [Hengfeng Wei (魏恒峰)](https://hengxin.github.io/)
 hfwei@nju.edu.cn
 
@@ -22,8 +20,8 @@ hfwei@nju.edu.cn
 
 ---
 
-![bg w:350](figs/2022cpl-qq.jpg)
-![bg w:500](figs/2022cpl-square.jpg)
+![bg w:300](figs/2022cpl-qq.jpg)
+![bg w:450](figs/2022cpl-square.jpg)
 
 ---
 # Questionnaire
@@ -134,12 +132,18 @@ More Books in the Class $\ldots$
 
 <br>
 
+<br>
+
 Programming is *NOT* (only) about languages.
 
 You learn C to express **YOUR IDEAS** with **COMPUTERS**.
 
 ---
 # [Game: Guess the Number](https://www.abcya.com/games/guess_the_number)
+
+<br>
+
+<br>
 
 <br>
 
@@ -155,7 +159,7 @@ You learn C to express **YOUR IDEAS** with **COMPUTERS**.
 
 ![w:300](figs/code-style-braces.png) &nbsp;&nbsp;&nbsp;&nbsp; <video control width = "450"> <source src="videos/tabs-vs-spaces.mp4" type = "video/mp4"> </video>
 
-The WAR between Tabs and Spaces
+Watch the WAR between Tabs and Spaces
 
 ---
 # Code Style
