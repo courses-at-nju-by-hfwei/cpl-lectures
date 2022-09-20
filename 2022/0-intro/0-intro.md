@@ -11,7 +11,7 @@ size: 16:9
 
 # header: <mark>'**Introducing C**'</mark>
 ---
-# Introducing C
+# <p id = "small-caps">Introducing C</p>
 
 <br>
 
@@ -64,9 +64,7 @@ $75\%$ of students are new to programming.
 ---
 # No Plagiarism!!!
 
-![w:400](figs/plagiarism.jpg)
-
-<br>
+![w:800](figs/plagiarism.jpg)
 
 前两次<mark>总评</mark>各扣 $10$ 分, 第三次<font color = "red">直接判为不及格</font>
 
@@ -74,7 +72,7 @@ $75\%$ of students are new to programming.
 ---
 
 ![bg w:450](figs/modern-c-ch.png)
-![bg w:490](figs/modern-c-en.jpg)
+![bg w:600](figs/modern-c-solution.jpg)
 
 ---
 
@@ -87,14 +85,20 @@ $75\%$ of students are new to programming.
 ---
 # A Brief History of C
 
+[History of C @ cppreference](https://en.cppreference.com/w/c/language/history)
+
 ![w:1000](figs/c-history.jpg)
 
-You do *NOT* have to become a **language lawyer**.
+Do *NOT* become a **language lawyer**!
+
+<!-- --- -->
+
+<!-- ![bg 70%](figs/c-primer-plus-ch.jpg) -->
+<!-- ![bg 72%](figs/c-primer-plus-en.jpg) -->
 
 ---
-
-![bg 70%](figs/c-primer-plus-ch.jpg)
-![bg 72%](figs/c-primer-plus-en.jpg)
+![w:800](figs/more-books.jpg)
+More Books in the Class $\ldots$
 
 ---
 
@@ -114,7 +118,7 @@ You do *NOT* have to become a **language lawyer**.
 
 ---
 
-![bg 50%](figs/hello-world-logo.jpg)
+![bg 80%](figs/hello-world-logo.jpg)
 
 ---
 
@@ -139,7 +143,7 @@ You learn C to express **YOUR IDEAS** with **COMPUTERS**.
 
 <br>
 
-**Program = Input + Data + Operations + Output**
+**<font color = "green">Program</font> = <font color = "purple">Input</font> + <font color = "blue"  size = "8">Data </font> + <font color = "red" size = "8">Operations</font> + <font color = "purple">Output</font>**
 
 ---
 # [c reference](https://en.cppreference.com/w/c)
@@ -147,7 +151,22 @@ You learn C to express **YOUR IDEAS** with **COMPUTERS**.
 ![w:1200](figs/cpp-random.png)
 
 ---
+# Code Style
+
+![w:300](figs/code-style-braces.png) &nbsp;&nbsp;&nbsp;&nbsp; <video control width = "450"> <source src="videos/tabs-vs-spaces.mp4" type = "video/mp4"> </video>
+
+The WAR between Tabs and Spaces
 
 ---
+# Code Style
+
+![w:650](figs/google-styleguide.png) &nbsp;&nbsp;&nbsp;&nbsp; ![w:400](figs/huawei-c.png)
+
+[Code Style @ CLion](https://www.jetbrains.com/help/clion/code-style-c-c.html)
 
 ---
+# Code Style (More Importantly!)
+
+![w:1000](figs/huawei-rand.png)
+
+Writing <mark>Secure</mark> C Code

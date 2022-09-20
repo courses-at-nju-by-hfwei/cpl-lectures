@@ -30,3 +30,7 @@ figure figcaption {
   /* border: 1px dotted blue; */
   text-align: center;
 }
+
+#small-caps {
+  font-variant-caps: small-caps;
+}
