@@ -11,7 +11,7 @@ size: 16:9
 
 # header: <mark>'**Introducing C**'</mark>
 ---
-# <p id = "small-caps">Introducing C</p>
+# <p id = "small-caps">0: &nbsp; Introducing C</p>
 
 [Hengfeng Wei (魏恒峰)](https://hengxin.github.io/)
 hfwei@nju.edu.cn
@@ -19,16 +19,28 @@ hfwei@nju.edu.cn
 ![w:200](figs/C.png)
 
 ---
-
 ![bg w:300](figs/2022cpl-qq.jpg)
 ![bg w:450](figs/2022cpl-square.jpg)
 
 ---
-# Questionnaire
+## [cpl-docs: docs.cpl.icu, http://47.122.3.40/](http://docs.cpl.icu)</font>
+
+![w:250](figs/cpl-docs.png)
+
+
+---
+# Questionnaire (1)
 
 ![w:400](figs/25-75.jpg)
 
-$75\%$ of students are new to programming.
+<mark>$75\%$</mark> of students are new to programming.
+
+---
+# Questionnaire (2)
+
+![w:700](figs/90-10-blackboard.webp)
+
+<font color = "red">$10\%$</font> of students attended in some programming contests.
 
 ---
 # To C Beginners
