@@ -164,7 +164,7 @@ You learn C to express **YOUR IDEAS** with **COMPUTERS**.
 ---
 # [c reference](https://en.cppreference.com/w/c)
 
-![w:1200](figs/cpp-random.png)
+![w:1100](figs/cpp-random.png)
 
 ---
 # Code Style
@@ -186,3 +186,6 @@ Watch the WAR between Tabs and Spaces
 ![w:1000](figs/huawei-rand.png)
 
 Writing <mark>Secure</mark> C Code
+
+---
+![bg 60%](figs/thankyou.png)
