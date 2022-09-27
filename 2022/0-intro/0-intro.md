@@ -11,12 +11,13 @@ size: 16:9
 
 # header: <mark>'**Introducing C**'</mark>
 ---
-# <p id = "small-caps">0: &nbsp; Introducing C</p>
+# <p id = "small-caps">0. &nbsp; Introducing C</p>
 
 [Hengfeng Wei (魏恒峰)](https://hengxin.github.io/)
 hfwei@nju.edu.cn
 
 ![w:200](figs/C.png)
+Sep. 23, 2022
 
 ---
 ![bg w:300](figs/2022cpl-qq.jpg)
