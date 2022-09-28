@@ -186,18 +186,13 @@ A `char` is an `int`.
 
 
 ---
-# Conversion Specification (转换说明)
+# <!--fit--> <code><font color = yellow><font color = red>%</font>[flags][width][.[precision]]<font color = red>specifier</font></font></code>
 
 - <code><font color = yellow size = 7>%d</font></code>: decimal `int`
-
 - <code><font color = yellow size = 7>%f</font></code>: `double`
-
 - <code><font color = yellow size = 7>%e %E</font></code>: `double` ($-d.ddd \;\text{e} \pm dd$)
-
 - <code><font color = yellow size = 7>%c</font></code>: `char`
-
 - <code><font color = yellow size = 7>%s</font></code>: `C string`
-
 - <code><font color = yellow size = 7>%%</font></code>: `%`
 
 ---
@@ -208,3 +203,18 @@ A `char` is an `int`.
 
 <font size = 8>
 It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>matches</ins> the type expected by conversion specifiers.</font>
+
+---
+# <!--fit--> <code><font color = yellow>%[<font color = red>flags</font>][width][.[precision]]specifier</font></code>
+
+---
+# <!--fit--> <code><font color = yellow>%[flags][<font color = red>width</font>][.[precision]]specifier</font></code>
+
+---
+# <!--fit--> <code><font color = yellow>%[flags][width][<font color = red>.[precision]</font>]specifier</font></code>
+
+---
+### [https://en.cppreference.com/w/c/io/fprintf](https://en.cppreference.com/w/c/io/fprintf)
+
+![w:350](figs/c-lib.webp)
+### Chapter 12: `<stdio.h>`, P260
