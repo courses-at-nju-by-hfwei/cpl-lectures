@@ -199,10 +199,11 @@ A `char` is an `int`.
 ![bg left w:450](figs/ub.jpg)
 
 <br>
-<br>
 
 <font size = 8>
 It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>matches</ins> the type expected by conversion specifiers.</font>
+
+[Undefined Behavior (UB)](https://en.cppreference.com/w/c/language/behavior)
 
 ---
 # <!--fit--> <code><font color = yellow>%[<font color = red>flags</font>][width][.[precision]]specifier</font></code>
@@ -217,4 +218,32 @@ It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>m
 ### [https://en.cppreference.com/w/c/io/fprintf](https://en.cppreference.com/w/c/io/fprintf)
 
 ![w:350](figs/c-lib.webp)
-### Chapter 12: `<stdio.h>`, P260
+### Chapter 12: `<stdio.h>`, P257--262
+
+---
+# <!--fit--> <code><font color = yellow><font color = red>%</font>[$\ast$][width]<font color = red>specifier</font></font></code>
+
+---
+# <!--fit--> <code><font color = yellow>%[<font color = red>$\ast$</font>][width]specifier</font></code>
+
+---
+# <!--fit--> <code><font color = yellow>%[$\ast$][<font color = red>width</font>]specifier</font></code>
+
+---
+### [https://en.cppreference.com/w/c/io/fscanf](https://en.cppreference.com/w/c/io/fscanf)
+
+![w:350](figs/c-lib.webp)
+### Chapter 12: `<stdio.h>`, P263--P268
+
+---
+<br>
+
+### [A beginners' guide away from `scanf`](http://sekrit.de/webdocs/c/beginners-guide-away-from-scanf.html)
+
+<br>
+
+# <!--fit--> <font color = red>Do NOT use `scanf`.</font>
+
+<br>
+
+### [Why does everyone say not to use `scanf`? What should I use instead?](https://c-faq.com/stdio/scanfprobs.html)
