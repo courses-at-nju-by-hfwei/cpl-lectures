@@ -21,15 +21,15 @@ Sep. 30, 2022
 # Overview
 
 <br>
-<br>
 
 **<font color = "green">Program</font> = <font color = "purple">Input</font> + <font color = "blue"  size = "8">Data </font> + <font color = "red" size = "8">Operations</font> + <font color = "purple">Output</font>**
+
+![w:900](figs/io-process.png)
 
 ---
 # Overview
 
-### <font color = "blue">Variables (变量) &emsp; Constants (常量)
-### Data Types (类型)</font>
+### <font color = "blue">Variables (变量) &emsp; Data Types (数据类型)</font>
 
 <br>
 
@@ -61,29 +61,16 @@ $L = 2\pi r$ &emsp; $S = \pi r^2$
 - 小数点后保留两位
 
 ---
-# Declaration (声明)
-
-<code><font color = "yellow" size = "7">int radius = 10;</font></code>
-
-* Introduce a *variable* called `radius`.
-* You can use `radius` later.
-* The type of `radius` is `int` (integer).
-* `radius` is initialized to $10$.
-* You can assign (赋值) other integers to `radius`.
-* `radis` refers to a *location* (`&radius`) in memory.
-
----
-# Definition (定义)
-
+# Declaration/Definition (声明/定义)
 <code><font color = "yellow" size = "7">int radius = 10;</font></code>
 
 <br>
 
-This is also a *definition*.
-
-All definitions are declarations.
-
-<del>All declarations are definitions</del> (at least for now).
+* <mark>Declare/Define</mark> a *variable* called `radius`.
+* The <mark>type</mark> of `radius` is `int` (integer).
+* `radius` is <mark>initialized</mark> to $10$.
+* You can <mark>assign</mark> other integers to `radius`.
+* `radis` refers to a <mark>location</mark> (`&radius`) in memory.
 
 ---
 # Identifiers (标识符)
@@ -112,22 +99,20 @@ All definitions are declarations.
 ---
 # Sphere
 
-<font size = "8">Given a **radius** (say $100$) of a sphere,
-to compute its **surface area** and **volume**.</font>
+<font size = "7">Given a <mark>radius</mark> (say $100$) of a sphere,
+to compute its <mark>surface area</mark> and <mark>volume</mark>.</font>
 
-<br>
+$A = 4 \pi r^2\quad V = \frac{4}{3} \pi r^3$
 
-$A = 4 \pi r^2$ &emsp; $V = \frac{4}{3} \pi r^3$
-
-- 每个结果各占 $1$ 行
+- 每个结果占 $1$ 行
 - 小数点后保留 $4$ 位
 - 每个结果至少占 $15$ 字符, 左对齐
-  - <code>_______________ : surface_area</code>
-  - <code>_______________ : volume</code>
+  - `_______________ : surface_area`
+  - `_______________ : volume`
 
 ---
 # mol
-<font size = "8">$6$ 克氧气的物质的量是多少?</font>
+<font size = "7">$6$ 克氧气的物质的量是多少?</font>
 
 <br>
 
@@ -137,56 +122,78 @@ $Q = 6 / 32 \times 6.02 \times 10^{23}$
 
 两种格式输出, 结果均使用<mark>科学计数法</mark>表示
 
-- 第一行结果, 小数点后保留三位
-- 第二行结果, 保留五位有效数字
+- 第一行结果, 小数点后保留 $3$ 位
+- 第二行结果, 保留 $5$ 位有效数字
 
 ---
 # A (Naive) Administration System
 
-<div class="row">
-   <div class="column">
-       - Name (EN)
-       - Gender (F/M)
-       - Birthday (mm-dd-yyyy)
-       - Weekday (Xyz.)
-   </div>
-   <div class="column">
-       - C
-       - Music
-       - Medicine
-       - Mean (.d)
-       - Standard Deviation (.dd)
-       - Ranking ($\%$)
-   </div>
+<div class="columns">
+
+<div>
+<br>
+<br>
+
+- Name (EN)
+
+- Gender (F/M)
+
+- Birthday (mm-dd-yyyy)
+
+- Weekday (Xyz.)
+</div>
+
+<div>
+<br>
+
+- C
+- Music
+- Medicine
+<br>
+- Mean (.d)
+- Standard Deviation (.dd)
+- Ranking ($\%$)
+</div>
+
 </div>
 
 ---
-# A (Naive) Administration System
+![bg left w:500](figs/Luo.jpeg)
 
 <br>
 
+### For 罗大佑 only:
+<br>
+
 - 每组信息占一行
-
 - 各项信息使用 `\t` 间隔
-
-- 各项信息要遵循特定格式要求
-
----
-![w:600](figs/Luo.jpeg)
+- 各项信息遵循特定格式要求
 
 ---
 # <code><font color = yellow>char</font></code> and <code><font color = yellow><ctype.h></font></code>
 
 ![w:650](figs/ASCII.png)
 
-A `char` is an `int`.
+A `char` is actually an `int`.
 
 ---
 # <code><font color = yellow>C string</font></code>
+<code><font color = yellow size = 8>char first_name[] = "Tayu";</code></font>
 
+A C string is a null-terminated (`\0`) sequence of characters.
+
+String literal: 'T', 'a', 'y', 'u', '\0'
+
+<br>
+
+* char first_name[5] = "Tayu";
+* char first_name[10] = "Tayu";
+* <del>char first_name[2] = "Tayu";</del>
 
 ---
 # <!--fit--> <code><font color = yellow><font color = red>%</font>[flags][width][.[precision]]<font color = red>specifier</font></font></code>
+
+<br>
 
 - <code><font color = yellow size = 7>%d</font></code>: decimal `int`
 - <code><font color = yellow size = 7>%f</font></code>: `double`
@@ -208,11 +215,33 @@ It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>m
 ---
 # <!--fit--> <code><font color = yellow>%[<font color = red>flags</font>][width][.[precision]]specifier</font></code>
 
+<br>
+<br>
+<br>
+
+- $-$: left-justified (otherwise, right-justified)
+- $+$: always begin with a plus or minus sign
+
 ---
 # <!--fit--> <code><font color = yellow>%[flags][<font color = red>width</font>][.[precision]]specifier</font></code>
 
+<br>
+<br>
+
+- minimum field width
+- padded with spaces if it has fewer characters
+
 ---
 # <!--fit--> <code><font color = yellow>%[flags][width][<font color = red>.[precision]</font>]specifier</font></code>
+
+<br>
+<br>
+
+* `%d`, `%i`: <mark>minimum number</mark> of digits
+  - expanded with leading zeros when needed
+* `%f`, `%e`, `%E`: <mark>number</mark> of digits after `.`
+  - default is 6
+* `%s`: <mark>maximum number</mark> of characters
 
 ---
 ### [https://en.cppreference.com/w/c/io/fprintf](https://en.cppreference.com/w/c/io/fprintf)
@@ -221,13 +250,31 @@ It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>m
 ### Chapter 12: `<stdio.h>`, P257--262
 
 ---
-# <!--fit--> <code><font color = yellow><font color = red>%</font>[$\ast$][width]<font color = red>specifier</font></font></code>
+![bg w:600](figs/Luo.jpeg)
 
 ---
-# <!--fit--> <code><font color = yellow>%[<font color = red>$\ast$</font>][width]specifier</font></code>
+<!-- # <code><font color = yellow><font color = red>%</font>[$\ast$][width]<font color = red>specifier</font></font></code> -->
+# <code><font color = yellow><font color = red>%</font>[width]<font color = red>specifier</font></font></code>
+<br>
+
+- <code><font color = yellow size = 7>%d</font></code>: skip white-spaces; match a decimal `int`
+- <code><font color = yellow size = 7>%lf</font></code>: skip white-spaces; match a `double`
+- <code><font color = yellow size = 7>%c</font></code>: match a `char` (do not skip white-spaces)
+- <code><font color = yellow size = 7>%s</font></code>: match a sequence of non-white-spaces
+- <code><font color = yellow size = 7>%%</font></code>: mathch a `%`
+
+<!-- --- -->
+<!-- # <code><font color = yellow>%[<font color = red>$\ast$</font>][width]specifier</font></code> -->
 
 ---
-# <!--fit--> <code><font color = yellow>%[$\ast$][<font color = red>width</font>]specifier</font></code>
+<!-- # <code><font color = yellow>%[$\ast$][<font color = red>width</font>]specifier</font></code> -->
+
+# <code><font color = yellow>%[<font color = red>width</font>]specifier</font></code>
+
+<br>
+<br>
+
+- <mark>maximum</mark> field width to scan
 
 ---
 ### [https://en.cppreference.com/w/c/io/fscanf](https://en.cppreference.com/w/c/io/fscanf)
@@ -247,3 +294,6 @@ It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>m
 <br>
 
 ### [Why does everyone say not to use `scanf`? What should I use instead?](https://c-faq.com/stdio/scanfprobs.html)
+
+---
+![bg w:600](figs/see-you.jpeg)

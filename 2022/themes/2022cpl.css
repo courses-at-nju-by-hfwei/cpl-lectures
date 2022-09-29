@@ -35,3 +35,16 @@ figure figcaption {
   font-variant-caps: small-caps;
   font-size: 130%;
 }
+
+/* from https://stackoverflow.com/questions/19443013/how-to-center-an-unordered-list */
+ul {
+  display: table;
+  margin: 0 auto;
+}
+
+/* from https://github.com/orgs/marp-team/discussions/192 */
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
