@@ -3,7 +3,6 @@ marp: true
 theme: 2022cpl
 class:
   - lead
-#   - invert
 
 backgroundColor: #FED8B1
 paginate: true
@@ -18,13 +17,11 @@ hfwei@nju.edu.cn
 Sep. 30, 2022
 
 ---
-# Overview
+# Review
 
-<br>
+**<font color = green size = 8>Program = <font color = purple>Input</font> + <font color = blue>Data </font> + <font color = red>Operations</font> + <font color = purple>Output</font>**</font>
 
-**<font color = "green">Program</font> = <font color = "purple">Input</font> + <font color = "blue"  size = "8">Data </font> + <font color = "red" size = "8">Operations</font> + <font color = "purple">Output</font>**
-
-![w:900](figs/io-process.png)
+![w:950](figs/io-process.png)
 
 ---
 # Overview
@@ -253,8 +250,8 @@ It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>m
 ![bg w:600](figs/Luo.jpeg)
 
 ---
-<!-- # <code><font color = yellow><font color = red>%</font>[$\ast$][width]<font color = red>specifier</font></font></code> -->
-# <code><font color = yellow><font color = red>%</font>[width]<font color = red>specifier</font></font></code>
+# <code><font color = yellow><font color = red>%</font>[$\ast$][width]<font color = red>specifier</font></font></code>
+
 <br>
 
 - <code><font color = yellow size = 7>%d</font></code>: skip white-spaces; match a decimal `int`
@@ -263,13 +260,16 @@ It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>m
 - <code><font color = yellow size = 7>%s</font></code>: match a sequence of non-white-spaces
 - <code><font color = yellow size = 7>%%</font></code>: mathch a `%`
 
-<!-- --- -->
-<!-- # <code><font color = yellow>%[<font color = red>$\ast$</font>][width]specifier</font></code> -->
+---
+# <code><font color = yellow>%[<font color = red>$\ast$</font>][width]specifier</font></code>
+
+<br>
+<br>
+
+- $\ast$: assignment-suppressing
 
 ---
-<!-- # <code><font color = yellow>%[$\ast$][<font color = red>width</font>]specifier</font></code> -->
-
-# <code><font color = yellow>%[<font color = red>width</font>]specifier</font></code>
+# <code><font color = yellow>%[$\ast$][<font color = red>width</font>]specifier</font></code>
 
 <br>
 <br>
