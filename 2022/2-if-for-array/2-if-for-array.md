@@ -16,15 +16,18 @@ hfwei@nju.edu.cn
 ![w:200](figs/C.png)
 Oct. 07, 2022
 
----
-# Feedback
+<!-- ---
+# Feedback -->
 
 ---
 <br>
 <br>
 <br>
+<br>
 
-# 好原料 + 好工艺 = 好产品
+# <!--fit--> <font color = blue>好原料 + 好工艺 = 好产品</font>
+
+![bg w:1000](figs/ziyan.jpg)
 
 ---
 # Review
@@ -53,7 +56,7 @@ Oct. 07, 2022
 ---
 ![w:700](figs/lets-code.jpeg)
 
-## <mark>min.c &ensp; leap.c &ensp; sum.c &ensp; min.c</mark>
+## <mark>min.c &ensp; leap.c &ensp; min-array.c</mark>
 
 ---
 # Min
@@ -159,9 +162,121 @@ A year is a <mark>**leap year**</mark> if
 * year = 80
 
 ---
-# Sum
+<!-- # Sum
 
 Given an integer $n \ge 0$, to compute $\sum\limits_{i = 1}^{n} i$.
+
+$\sum\limits_{i=1}^{n} = \frac{n(n-1)}{2}$
+
+![w:250](figs/sum.jpg) -->
+
+---
+# Min of a Set of Numbers
+<br>
+
+Given a set $A$ of integers, to compute their minimum.
+<br>
+
+$\mathit{min} = \min_{i} A_{i}$
+
+---
+# `For` Statement
+<br>
+
+![w:1200](figs/for-general.png)
+<br>
+
+![w:1200](figs/for-special.png)
+
+---
+# <!--fit--> Increment/Decrement Operators (`++`, `--`)
+<br>
+<br>
+<br>
+
+<font color = yellow size = 50>
+
+    i = 2;
+    j = i * i++;
+</font>
+
+---
+# [Undefined Behavior (UB)](https://en.cppreference.com/w/c/language/behavior)
+
+![w:500](figs/ub.jpg)
+
+## Avoid UBs!!!
+
+---
+![bg left w:450](figs/ub.jpg)
+
+<br>
+<br>
+
+<font size = 8>
+It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>matches</ins> the type expected by conversion specifiers.</font>
+
+---
+# <code><font color = yellow>#define NUM 5</font></code>
+<br>
+
+### Symbolic Constants (符号常量)
+<br>
+
+## <code><font color = yellow>int numbers[NUM] = {0};</font></code> has a <mark>*constant*</mark> size.
+<br>
+
+## `NUM` is known at <mark>*compiler*</mark> time.
+
+---
+# Array Initializer
+<br>
+
+* <code><font color = yellow size = 8>int numbers[NUM] = {1};</font></code>
+<br>
+
+* <code><font color = yellow size = 8>int numbers[] = {0};</font></code>
+<br>
+
+* <code><font color = yellow size = 8>int numbers[NUM] = {[2] = 1};</font></code>
+
+---
+# Array Initializer (DON'T)
+<br>
+
+<code><font color = yellow size = 8>int numbers[NUM] = {};</font></code>
+<br>
+
+## Forbidden in C99 (Unfortunately!)
+## Allowed by GCC by default (Unfortunately!!)
+
+---
+# Array Initializer (DON'T)
+<br>
+
+<code><font color = yellow size = 8>int numbers[NUM];</font></code>
+<br>
+
+## `numbers` may contain garbage values;
+## always initialize it
+
+---
+# Array Initializer (DON'T)
+<br>
+
+<code><font color = yellow size = 8>int numbers[];</font></code>
+<br>
+
+## You <mark>must</mark> specify the size so that the compiler/runtime can allocate memory for it.
+
+---
+# Min of a Set of Numbers
+<br>
+
+<mark>**Input**</mark> a set $A$ of <mark>**$n \ge 1$**</mark> integers, to compute their minimum.
+<br>
+
+$\mathit{min} = \min_{i} A_{i}$
 
 ---
 ![bg w:600](figs/see-you.jpeg)
