@@ -47,12 +47,15 @@ Oct. 07, 2022
 # Overview
 <br>
 
+<font color = red>
+
 ### If Statement (`if` 语句)
 ### For Statement (`for` 语句)
 ### Logical Expressions (逻辑表达式)
+</font>
 <br>
 
-### Array (数组)
+### <font color = blue>Array (数组)</font>
 ---
 ![w:700](figs/lets-code.jpeg)
 
@@ -270,7 +273,7 @@ It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>m
 ## You <mark>must</mark> specify the size so that the compiler/runtime can allocate memory for it.
 
 ---
-# Min of a Set of Numbers
+# Min of a Set of <mark>Input</mark> Numbers
 <br>
 
 <mark>**Input**</mark> a set $A$ of <mark>**$n \ge 1$**</mark> integers, to compute their minimum.
