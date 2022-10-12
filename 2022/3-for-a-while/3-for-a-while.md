@@ -16,11 +16,6 @@ hfwei@nju.edu.cn
 ![w:200](figs/C.png)
 Oct. 14, 2022
 
-<!-- ---
-# Feedback -->
-
----
-
 ---
 # Review
 <br>
@@ -34,32 +29,61 @@ Oct. 14, 2022
 <br>
 
 ### <font color = blue>Array (数组)</font>
----
 
 ---
 # Overview
+<br>
+
+<font color = red>
+
+### For Statement (More Examples)
+<br>
+
+### While (Do-While) Statement
+<br>
+
+### `break` Statement
+</font>
 
 ---
 ![w:700](figs/lets-code.jpeg)
 
-## <mark>min.c &ensp; leap.c &ensp; min-array.c</mark>
+## <mark>star.c &ensp; prime(s).c &ensp; selection-sort.c &ensp; palindrome.c &ensp; binary-search.c &ensp; digits.c</mark>
 
 ---
-# Min
+# Stars Pyramid (`stars.c`)
 
-![w:800](figs/minimum.jpg)
+![w:1000](figs/stars.jpg)
 
+---
+# Prime Numbers (`prime.c`, `primes.c`)
+
+![w:400](figs/prime.jpg)
+
+---
+# Selection Sort (`selection-sort.c`)
+
+![w:430](figs/selection-sort.png)
+
+---
+# Palindrome (`palindrome.c`)
+<br>
+
+![w:800](figs/palindrome.png)
+
+---
+# Binary Search (`binary-search.c`)
+
+![w:900](figs/binary-search-mario.png)
+
+---
+# <!-- fit --> Number of Digits (`digits-while.c`, `digits-do-while.c`)
+
+![w:750](figs/digits.jpg)
 ---
 
 ---
-
----
-
----
-
----
-
----
+# Counting
 
 ---
 ![bg w:600](figs/see-you.jpeg)
