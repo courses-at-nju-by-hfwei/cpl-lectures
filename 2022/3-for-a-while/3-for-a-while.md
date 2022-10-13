@@ -8,7 +8,7 @@ backgroundColor: #FED8B1
 paginate: true
 size: 16:9
 ---
-# <p id = "small-caps">2. &nbsp; For a While</p>
+# <p id = "small-caps">3. &nbsp; For a While</p>
 
 [Hengfeng Wei (魏恒峰)](https://hengxin.github.io/)
 hfwei@nju.edu.cn
