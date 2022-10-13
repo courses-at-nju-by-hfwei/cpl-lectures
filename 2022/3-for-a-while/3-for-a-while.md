@@ -48,7 +48,7 @@ Oct. 14, 2022
 ---
 ![w:700](figs/lets-code.jpeg)
 
-## <mark>star.c &ensp; prime(s).c &ensp; selection-sort.c &ensp; palindrome.c &ensp; binary-search.c &ensp; digits.c</mark>
+## <mark>stars.c &ensp; primes.c &ensp; binary-search.c &ensp; digits.c &ensp; palindrome.c &ensp; selection-sort.c</mark>
 
 ---
 # Stars Pyramid (`stars.c`)
@@ -56,20 +56,9 @@ Oct. 14, 2022
 ![w:1000](figs/stars.jpg)
 
 ---
-# Prime Numbers (`prime.c`, `primes.c`)
+# Prime Numbers (`primes.c`)
 
 ![w:400](figs/prime.jpg)
-
----
-# Selection Sort (`selection-sort.c`)
-
-![w:430](figs/selection-sort.png)
-
----
-# Palindrome (`palindrome.c`)
-<br>
-
-![w:800](figs/palindrome.png)
 
 ---
 # Binary Search (`binary-search.c`)
@@ -77,13 +66,24 @@ Oct. 14, 2022
 ![w:900](figs/binary-search-mario.png)
 
 ---
-# <!-- fit --> Number of Digits (`digits-while.c`, `digits-do-while.c`)
+# <!-- fit --> Digits (`digits-while.c`, `digits-do-while.c`)
 
 ![w:750](figs/digits.jpg)
----
 
 ---
-# Counting
+# Palindrome (`palindrome.c`)
+
+![w:900](figs/palindrome.png)
+
+
+---
+# Selection Sort (`selection-sort.c`)
+
+![w:430](figs/selection-sort.png)
+
+
+<!-- ---
+# Counting -->
 
 ---
 ![bg w:600](figs/see-you.jpeg)
