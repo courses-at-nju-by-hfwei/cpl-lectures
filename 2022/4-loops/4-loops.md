@@ -34,12 +34,57 @@ Oct. 21, 2022
 ---
 # Overview
 
+<br>
+
+### <font color = red>Loops (More Examples)</font>
+<br>
+
+### <font color = blue>Multidimensional Arrays (多维数组)</font>
+
 ---
 ![w:700](figs/lets-code.jpeg)
 
-## <mark>game-of-lifes.c &ensp; merge.c &ensp; counting.c</mark>
+## <mark>game-of-life.c &ensp; merge.c &ensp; counting.c</mark>
 
 ---
+# [Conway's Game of Life @ wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+
+##### John Horton Conway ($1937 \sim 2020$)
+![w:550](figs/Conway.jpg)
+##### [playgameoflife.com](https://playgameoflife.com/)
+
+---
+# [Conway's Game of Life @ wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+<br>
+<br>
+
+* Any <font color = blue>**live**</font> cell with two or three live neighbours survives.
+* All other <font color = blue>**live**</font> cells die in the next generation.
+<br>
+
+* Any <font color = red>**dead**</font> cell with three live neighbours becomes a live cell.
+* All other <font color = red>**dead**</font> cells stay dead.
+
+---
+<!-- ![w:600](videos/video-logo.jpg) -->
+&nbsp;&nbsp;&nbsp;&nbsp;
+<video control width = "1000"> <source src="videos/Conway-Game-of-Life.mp4" type = "video/mp4"> </video>
+## <mark>game-of-life.c</mark>
+
+---
+# Merge (<mark>merge.c</mark>)
+
+![w:1200](figs/merge-arrays.png)
+
+---
+# Bubble Sort (<mark>bubble-sort.c</mark>)
+
+![w:1000](figs/bubble-sort.png)
+
+---
+# Bubble Sort (<mark>bubble-sort.c</mark>)
+
+![w:950](figs/bubble-sort-wiki.gif)
 
 ---
 ![bg w:600](figs/see-you.jpeg)
