@@ -2,6 +2,12 @@
 
 @import 'gaia';
 
+header {
+  top: 10px;
+  color: rgb(60, 112, 198);
+  font-weight: bold;
+}
+
 section {
   justify-content: start;
 }
