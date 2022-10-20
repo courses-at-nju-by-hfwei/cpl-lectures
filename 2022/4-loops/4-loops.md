@@ -49,14 +49,14 @@ Oct. 21, 2022
 ---
 # [Conway's Game of Life @ wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
+![w:500](figs/Conway.jpg)
 #### John Horton Conway ($1937 \sim 2020$)
 
-![w:450](figs/Conway.jpg)
-
-#### [playgameoflife.com (Cellular Automata; 元胞自动机)](https://playgameoflife.com/)
 ---
 # [Conway's Game of Life @ wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 <br>
+
+#### [playgameoflife.com (Cellular Automata; 元胞自动机)](https://playgameoflife.com/)
 
 * Any <font color = blue>**live**</font> cell with two or three live neighbours survives.
 * All other <font color = blue>**live**</font> cells die in the next generation.
@@ -66,7 +66,9 @@ Oct. 21, 2022
 * All other <font color = red>**dead**</font> cells stay dead.
 
 ---
-<!-- ![w:600](videos/video-logo.jpg) -->
+![left w:500](figs/Gospers-glider-gun.gif) &ensp; ![right w:600](figs/breeder.gif)
+
+---
 <video control width = "950"> <source src="videos/Conway-Game-of-Life.mp4" type = "video/mp4"> </video>
 
 ## <mark>game-of-life.c</mark>
