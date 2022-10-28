@@ -20,7 +20,13 @@
     - remove `is_prime` (indicator variables)
   - actual arguments
   - pass by values
-- scopes
+- storage duration (存储期)
+  - automatic (not initialized automatically)
+  - static (initialized automatically)
+- scopes (lifetime; 作用域, 生命周期)
+  - block scopes
+  - file scopes
+- variables
   - local variables
   - global variables
   - hidden (avoid this!!!)

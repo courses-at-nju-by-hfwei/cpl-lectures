@@ -31,10 +31,10 @@ Oct. 28, 2022
 
 # <font color = red>Functions</font>
 
-### Function Declaration
 ### Function Definition
+### Function Declaration
 ### Arrays as Parameters
-### Pass by Value
+### <mark>Pass by Value</mark>
 
 ---
 ![w:750](figs/lets-code.jpeg)
