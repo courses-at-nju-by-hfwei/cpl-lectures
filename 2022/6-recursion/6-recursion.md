@@ -23,37 +23,61 @@ Nov. 04, 2022
 
 ### Function Definition
 ### Function Declaration
-### Arrays as Parameters
+### <mark>Arrays as Parameters</mark>
 ### <mark>Pass by Value</mark>
 
 ---
 # Overview
 
 ### <font color = red>Recursive Functions (Recursion)</font>
-![w:600](figs/recursion-stair.jpg)
+![w:520](figs/recursion-stair.jpg)
 
 ### A function that calls itself.
 
 ---
-<p id = "small-caps"><mark>Thinking Recursively</mark></p>
+# <mark>Thinking Recursively</mark>
 
-![w:800](figs/think-recursively.jpg)
+![w:750](figs/think-recursively.jpg)
 
-### It is a looooooog way to go to master recursion!!!
+### It is a <font color = red>loooong</font> way to go to master recursion!!!
 
 ---
+# <mark>Thinking Recursively</mark>
+
 You want to solve a task and suppose you have the <mark>Mirror</mark>.
 
-![w:600](figs/mirror.jpg)
-
-* What is a smaller task?
-* How to solve the task given the solution to the smaller one?
-* What is the smallest task?
+![w:550](figs/mirror.jpg)
+### <mark>Ask the Mirror Right Questions</mark>
 
 ---
-![w:750](figs/lets-code.jpeg)
+# <mark>Thinking Recursively</mark>
+<br>
+<br>
 
-## <mark>min-re.c &ensp; sum-re.c &ensp; fib-re.c &ensp; gcd-re.c &ensp; bsearch-re.c</mark>
+* What is a smaller task? &ensp; (<font color = red>$\star\star\star\star\star$</font>)
+
+* How to solve the task given the solution to the smaller one? (<font color = red>$\star\star\star$</font>)
+
+* What is the smallest task?&ensp; (<font color = red>$\star$</font>)
+
+---
+
+# <mark>Thinking like a Computer</mark>
+
+![w:700](figs/think-computer.png)
+
+## <mark>min.c</mark>
+
+---
+![w:700](figs/lets-code.jpeg)
+
+## <mark>min-re.c &ensp; sum-re.c &ensp; fib-re.c &ensp; gcd-re.c &ensp; bsearch-re.c &ensp; <del>mergesort.c</del></mark>
+
+---
+# Min (<mark>min-re.c</mark>)
+
+![w:700](figs/mirror.jpg)
+### <mark>Ask the Mirror Right Questions</mark>
 
 ---
 # Min (<mark>min-re.c</mark>)
@@ -63,10 +87,23 @@ You want to solve a task and suppose you have the <mark>Mirror</mark>.
 ---
 # Sum (<mark>sum-re.c</mark>)
 
+![w:700](figs/mirror.jpg)
+### <mark>Ask the Mirror Right Questions</mark>
+
+---
+# Sum (<mark>sum-re.c</mark>)
+
 ![w:900](figs/sum.png)
 
 ---
 # Fibonacci Sequence (<mark>fib-re.c</mark>)
+<br>
+
+$F_{0} = 1$
+
+$F_{1} = 1$
+
+$F_{n} = F_{n-1} + F_{n-2} \quad (n > 1)$
 
 <!-- ![w:900](figs/fib) -->
 
@@ -74,13 +111,24 @@ You want to solve a task and suppose you have the <mark>Mirror</mark>.
 # Greatest Common Divisor (<mark>gcd-re.c</mark>)
 
 ![w:400](figs/euclid.jpeg)
-
 $\text{gcd}(a, b) = \text{gcd}(b, a \;\%\; b)$
 
 ---
 # Binary Search (<mark>bsearch-re.c</mark>)
 
-![w:800](figs/binary-search-mario.png)
+![w:700](figs/binary-search-mario.png)
+
+You should do sth. first to obtain the smaller task.
+
+---
+# MergeSort (<mark>mergesort.c</mark>)
+
+![w:550](figs/mergesort.png)
+
+---
+# MergeSort (<mark>mergesort.c</mark>)
+
+![w:800](figs/mergesort-animation.gif)
 
 ---
 ![bg w:600](figs/see-you.jpeg)
