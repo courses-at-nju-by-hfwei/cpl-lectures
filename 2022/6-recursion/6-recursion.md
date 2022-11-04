@@ -37,9 +37,11 @@ Nov. 04, 2022
 ---
 # <mark>Thinking Recursively</mark>
 
-![w:750](figs/think-recursively.jpg)
+#### Solving a task by first solving its smaller subtasks
 
-### It is a <font color = red>loooong</font> way to go to master recursion!!!
+![w:650](figs/think-recursively.jpg)
+
+#### It will be a <font color = red>loooong</font> way to go to master recursion!!!
 
 ---
 # <mark>Thinking Recursively</mark>
