@@ -62,6 +62,9 @@ The <mark>**type**</mark> of a variable determines
 - what **operations** can be performed on them.
 
 ---
+<br>
+<br>
+
 ## <mark>int &ensp;&ensp; double &ensp;&ensp; char &ensp;&ensp; bool</mark>
 <br>
 
@@ -83,6 +86,7 @@ The <mark>**type**</mark> of a variable determines
 <br>
 
 - 有符号整数运算中发生溢出, 程序的行为是<font color = red>**未定义的**</font>。
+<br>
 
 - 无符号整数运算中发生溢出, 则发生<font color = blue>**回绕**</font>现象。
 
@@ -169,10 +173,10 @@ The <mark>**type**</mark> of a variable determines
 <mark>**sum-product.c &ensp; loop.c &ensp; compare.c**</mark>
 
 ---
-![w:500](figs/csapp.jpeg)
+![w:450](figs/csapp.jpeg)
 
 ---
-![w:500](figs/cert-c.jpeg)
+![w:450](figs/cert-c.jpeg)
 
 ---
 ![bg w:600](figs/see-you.jpeg)
