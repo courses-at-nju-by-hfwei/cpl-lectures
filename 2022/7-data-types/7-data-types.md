@@ -28,7 +28,7 @@ Nov. 11, 2022
 # Overview
 </br>
 
-### <font color = red>Recursion</font>(<mark>mergesort.c</mark>)
+### <font color = red>Recursion</font> (<mark>mergesort.c</mark>)
 <br>
 
 ### <font color = blue>Data Types</font>
@@ -44,9 +44,13 @@ Nov. 11, 2022
 ![w:550](figs/mergesort.png)
 
 ---
-# Merge Sort (<mark>mergesort.c</mark>)
+<!-- # Merge Sort (<mark>mergesort.c</mark>) -->
 
-![w:800](figs/mergesort-animation.gif)
+![w:850](figs/chen.png)
+
+## DO YOU WANNA DANCE TONIGHT?
+
+<!-- ![w:800](figs/mergesort-animation.gif) -->
 
 ---
 # Data Types
@@ -71,7 +75,6 @@ The <mark>**type**</mark> of a variable determines
 - int
 - long (int)
 - long long (int)
-<br>
 
 <mark>signed</mark> *vs.* <mark>unsigned</mark>
 
