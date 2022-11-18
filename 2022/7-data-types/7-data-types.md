@@ -65,10 +65,13 @@ The <mark>**type**</mark> of a variable determines
 <br>
 <br>
 
-## <mark>int &ensp;&ensp; double &ensp;&ensp; char &ensp;&ensp; bool</mark>
+## <mark>int &ensp;&ensp; <font color = red>double</font> &ensp;&ensp; char &ensp;&ensp; bool</mark>
 <br>
 
 ## <mark>[ ]</mark>
+
+---
+![w:700](figs/trap.jfif)
 
 ---
 # Integral Types (<mark>int-limits.c</mark>)
