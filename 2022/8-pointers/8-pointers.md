@@ -41,7 +41,7 @@ Nov. 18, 2022
 ---
 ![w:700](figs/lets-code.jpeg)
 
-## <mark>radius.c &emsp; selection.c &emsp; merge.c</mark>
+## <mark>radius.c &emsp; selection-sort.c &emsp; merge.c</mark>
 
 ---
 # Variables (<mark>radius.c</mark>)
@@ -51,7 +51,7 @@ Nov. 18, 2022
 ### A <font color = red>variable</font> has its <mark>*type*</mark>, <mark>*value*</mark>, and <mark>*address*</mark>.
 <br>
 
-### A <font color = red>variable</font> can be used as a <mark>*rvalue*</mark> or a <mark>*lvalue*</mark>.
+### A <font color = red>variable</font> can be used as a <mark>*lvalue*</mark> or a <mark>*rvalue*</mark>.
 
 ---
 <font size = 12>
