@@ -19,6 +19,7 @@ Dec. 02, 2022
 ---
 # Review
 <br>
+<br>
 
 ## <mark>Pointers and C Strings</mark>
 
@@ -35,6 +36,9 @@ Dec. 02, 2022
 
 ## <mark>selection-sort-strings.c &emsp; sort.c &emsp; decl.c</mark>
 ## <mark>echo.c &emsp; echo-escaped.c &emsp; scores.c</mark>
+
+---
+![w:800](figs/luo-cui-zhang.jpeg)
 
 ---
 ![bg w:600](figs/see-you.jpeg)
