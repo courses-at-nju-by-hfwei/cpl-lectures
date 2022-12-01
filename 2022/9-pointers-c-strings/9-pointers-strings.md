@@ -31,9 +31,10 @@ Nov. 26, 2022
 ## <mark>C String Arrays</mark>
 
 ---
-![w:700](figs/lets-code.jpeg)
+![w:600](figs/lets-code.jpeg)
 
-## <mark>strlen.c &emsp; strcmp.c &emsp; strcpy.c &emsp; selection-sort-strings.c</mark>
+## <mark>strlen.c &emsp; strcmp.c &emsp; strcpy.c</mark>
+## <mark>selection-sort-strings.c</mark>
 
 ---
 ![bg w:600](figs/see-you.jpeg)
