@@ -41,4 +41,16 @@ Dec. 02, 2022
 ![w:800](figs/luo-cui-zhang.jpeg)
 
 ---
+![w:700](figs/lets-code.jpeg)
+
+## <mark>sort.c &emsp; integrate.c</mark>
+
+---
+![w:420](figs/fp-simplied.jpg)
+
+---
+![w:700](figs/sha.jfif)
+## <mark>decl.c</mark>
+
+---
 ![bg w:600](figs/see-you.jpeg)
