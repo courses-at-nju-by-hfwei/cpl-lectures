@@ -34,8 +34,8 @@ Dec. 02, 2022
 ---
 ![w:600](figs/lets-code.jpeg)
 
-## <mark>selection-sort-strings.c &emsp; sort.c &emsp; decl.c</mark>
-## <mark>echo.c &emsp; echo-escaped.c &emsp; scores.c</mark>
+## <mark>selection-sort-strings.c</mark>
+## <mark>echo.c &emsp; scores.c</mark>
 
 ---
 ![w:800](figs/luo-cui-zhang.jpeg)
@@ -43,8 +43,14 @@ Dec. 02, 2022
 ---
 ![w:700](figs/lets-code.jpeg)
 
-## <mark>sort.c &emsp; integrate.c</mark>
+## <mark>integrate.c &emsp; sort.c</mark>
 
+---
+# $\int_{a}^{b}f(x)\text{d}x = \sum\limits_{i=0}^{n-1}f(x_{i})(\frac{b-a}{n} \cdot i)$
+<br>
+
+### $a = x_{0} < x_{1} < \cdots x_{i} < \cdots < x_{n-1} < x_{n} = b$
+## $x_{i} = a + \frac{b-a}{n} \cdot i$
 ---
 ![w:420](figs/fp-simplied.jpg)
 
