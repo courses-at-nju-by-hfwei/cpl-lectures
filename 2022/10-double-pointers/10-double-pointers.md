@@ -46,7 +46,7 @@ Dec. 02, 2022
 ## <mark>integrate.c &emsp; sort.c</mark>
 
 ---
-# $\int_{a}^{b}f(x)\text{d}x = \sum\limits_{i=0}^{n-1}f(x_{i})(\frac{b-a}{n} \cdot i)$
+# $\int_{a}^{b}f(x)\text{d}x = \sum\limits_{i=0}^{n-1}f(x_{i})(\frac{b-a}{n})$
 <br>
 
 ### $a = x_{0} < x_{1} < \cdots x_{i} < \cdots < x_{n-1} < x_{n} = b$
