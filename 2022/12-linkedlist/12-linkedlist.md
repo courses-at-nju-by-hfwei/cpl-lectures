@@ -62,6 +62,12 @@ Dec. 17, 2022
 
 ---
 
+![w:800](figs/J.jpg)
+
+## $J(2^m + l) = 2l + 1 \quad {\small (m \ge 0 \land 0 \le l < 2^m)}$
+
+---
+
 ![left w:380](figs/algorithms-in-c.jfif)
 
 ![bg right w:450](figs/ds-alg-in-c.jfif)
