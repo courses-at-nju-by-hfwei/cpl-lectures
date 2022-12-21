@@ -50,7 +50,13 @@ hfwei@nju.edu.cn -->
 <!-- ![w:500](figs/stay-tuned-tv.jfif) -->
 
 ---
-![bg](figs/elon-code-review.webp)
+![bg](figs/where-to-go.jfif)
+
+---
+![bg](figs/icpc.jpg)
+
+---
+![w:600](figs/zhurenweng.jfif)
 
 ---
 ![bg](figs/book-review.jpg)
@@ -63,15 +69,6 @@ hfwei@nju.edu.cn -->
 
 ---
 ![w:400](figs/the-c.webp)
-
----
-![w:600](figs/zhurenweng.jfif)
-
----
-![bg](figs/icpc.jpg)
-
----
-![bg](figs/where-to-go.jfif)
 
 ---
 ![bg](figs/learning-is-fun.jfif)
@@ -88,3 +85,6 @@ hfwei@nju.edu.cn -->
 
 ---
 ![bg](figs/see-you-next-year.jfif)
+
+---
+![bg](figs/elon-code-review.webp)
