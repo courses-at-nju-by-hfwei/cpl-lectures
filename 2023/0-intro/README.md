@@ -8,29 +8,63 @@
 
 ## `git/github`
 - git/github
-- clion project from svn
+- `New` => `Project...` (Demo)
+- `New` => `Project from Version Control...`
+- licence
+- `.gitignore`
 
 ## `hello.c`
-- cmake (just make it working)
 - hello world
-- comment, preprocessor, function, statement
-- `main`, `printf`, `string`
-- `return 0`, `int`, `void`
-- cmake (explained line by line)
-- clion live template
+- `gcc`
+  - `clang`
+- comment
+  - `//`: single-line comments
+  - `/* */`: multiple-line comments
+  - `/** */`: docs comments
+- preprocessor directives
+  - `gcc -E hello.c`
+- function
+  - `main`
+    - `return 0`
+    - `int`
+    - `void`
+  - `printf`
+    - `string` literal
+- statement
+  - `;`
 
-## `guess.c`
-- play with it
-- programming with natural language in comments
-- input
-  - `printf` long string
-- data
-- operation
-- output
-- clion code style (google)
-- Action on Save (CLion)
+## cmake
+- cmake (just make it working)
+- cmake (explained line by line)
 
 ## `git/github` (again)
 - `cmake.gitignore`
 - `jetbrains.gitignore`
 - `add, commit, push`
+
+## `guess.c`
+- play with it
+- programming with natural language in comments
+- input
+  - `printf`
+    - long string concatenation
+- `if`
+- `while`
+- data
+- operation
+- output
+
+## `git/github` (again)
+- `add, commit, push`
+
+## Clion Plugin
+- SonarLint
+- tabnine
+- IdeaVim
+- wakatime
+
+## Code Style (Highly Recommended!!!)
+- Clion Code Style (google)
+  - `Settings` => `Code Style` => `C/C++`
+- Action on Save (CLion)
+  - `Settings` => `Action on Save`
