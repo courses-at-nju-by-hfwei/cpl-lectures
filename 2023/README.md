@@ -2,3 +2,4 @@
 
 - [ ] Newton's Iteration for Computing Square Roots
 - [ ] SDL2
+- [ ] Recursion: Tromino Tiling Puzzle

@@ -1,0 +1,56 @@
+/* @theme 2022cpl */
+
+@import 'gaia';
+
+header {
+  top: 10px;
+  color: rgb(60, 112, 198);
+  font-weight: bold;
+}
+
+section {
+  justify-content: start;
+}
+
+del {
+  text-decoration: line-through;
+  background-color: rgb(255, 0, 0);
+  color: #555;
+}
+
+ins {
+  text-decoration: none;
+  background-color: #bcecfc;
+}
+
+/* from https://gist.github.com/jdbrice/3478cbf98acfd936f9e32d645376ebe5 */
+figure {
+  display: inline-block;
+  /* border: 1px dotted gray; */
+  margin: 20px; /* adjust as needed */
+}
+figure img {
+  vertical-align: top;
+}
+figure figcaption {
+  /* border: 1px dotted blue; */
+  text-align: center;
+}
+
+#small-caps {
+  font-variant-caps: small-caps;
+  font-size: 130%;
+}
+
+/* from https://stackoverflow.com/questions/19443013/how-to-center-an-unordered-list */
+ul {
+  display: table;
+  margin: 0 auto;
+}
+
+/* from https://github.com/orgs/marp-team/discussions/192 */
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
