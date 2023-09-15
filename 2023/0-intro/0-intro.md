@@ -69,8 +69,8 @@ Sep. 15, 2023
 * <font color = "blue">平时编程练习 ($10$ 分)</font>
 * <font color = "blue">阶段机试 $1$ ($15$ 分)</font>
 * <font color = "blue">阶段机试 $2$ ($20$ 分)</font>
-* <font color = "blue">期末项目 ($25$ 分)</font>
 * <font color = "blue">期末机试 ($30$ 分)</font>
+* <font color = "blue">期末项目 ($25$ 分)</font>
 
 ![bg right 90%](figs/score.jpg)
 
@@ -86,10 +86,10 @@ Sep. 15, 2023
 ![bg w:450](figs/modern-c-ch.png)
 ![bg w:600](figs/modern-c-solution.jpg)
 
----
+<!-- ---
 
 ![bg 70%](figs/c-primer-plus-ch.jpg)
-![bg 72%](figs/c-primer-plus-en.jpg)
+![bg 72%](figs/c-primer-plus-en.jpg) -->
 
 ---
 
@@ -102,7 +102,7 @@ Sep. 15, 2023
 ---
 # A Brief History of C
 
-[History of C @ cppreference](https://en.cppreference.com/w/c/language/history) **[C17; C23]**
+#### [History of C @ cppreference](https://en.cppreference.com/w/c/language/history) **[C17; C23]**
 
 ![w:1000](figs/c-history.jpg)
 
@@ -191,6 +191,10 @@ Watch the WAR between Tabs and Spaces
 ![w:1000](figs/huawei-rand.png)
 
 Writing <mark>Secure</mark> C Code -->
+
+---
+
+![w:800](figs/ask-me-anything.png)
 
 ---
 ![bg 60%](figs/thankyou.png)

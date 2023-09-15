@@ -58,9 +58,10 @@
 - `add, commit, push`
 
 ## Clion Plugin
+- IdeaVim
 - SonarLint
 - tabnine
-- IdeaVim
+- RainbowBrackets
 - wakatime
 
 ## Code Style (Highly Recommended!!!)
