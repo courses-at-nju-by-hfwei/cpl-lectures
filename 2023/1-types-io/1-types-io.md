@@ -110,7 +110,7 @@ $A = 4 \pi r^2\quad V = \frac{4}{3} \pi r^3$
 
 ---
 # mol
-<font size = "7">$6$ 克氧气的物质的量是多少?</font>
+<font size = "7">$6$ 克氧气的分子数是多少?</font>
 
 <br>
 
