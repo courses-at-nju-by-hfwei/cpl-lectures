@@ -17,17 +17,11 @@ size: 16:9
 hfwei@nju.edu.cn
 
 ![w:200](figs/C.png)
-Sep. 23, 2022
+Sep. 15, 2023
 
 ---
-![bg w:300](figs/2022cpl-qq.jpg)
-![bg w:450](figs/2022cpl-square.jpg)
-
----
-## [cpl-docs: docs.cpl.icu, http://47.122.3.40/](http://docs.cpl.icu)</font>
-
-![w:250](figs/cpl-docs.png)
-
+![bg w:450](figs/2023CPL.jpeg)
+![bg w:460](figs/2023CPL-Notice.jpg)
 
 ---
 # Questionnaire (1)
@@ -54,21 +48,29 @@ Sep. 23, 2022
 # From Beginners to Masters
 
 <br>
+<br>
 
 ## Programming
+
+<br>
 
 ## <font color = "red">De-Programming</font>
 
 ---
+## [cpl-docs: docs.cpl.icu](http://docs.cpl.icu)</font>
+
+![w:230](figs/cpl-docs.png)
+
+---
 # Scores
 
-* <font color = "red">~~考勤~~</font>
-* <font color = "red">~~期中测试~~</font>
-* <font color = "red">~~期末笔试~~</font>
-* <font color = "blue">编程练习 ($40$ 分)</font>
-* <font color = "blue">期中项目 ($20$ 分)</font>
-* <font color = "blue">期末项目 ($10$ 分)</font>
+* <font color = "red">~~考勤 (非必要不点名)~~</font>
+
+* <font color = "blue">平时编程练习 ($10$ 分)</font>
+* <font color = "blue">阶段机试 $1$ ($15$ 分)</font>
+* <font color = "blue">阶段机试 $2$ ($20$ 分)</font>
 * <font color = "blue">期末机试 ($30$ 分)</font>
+* <font color = "blue">期末项目 ($25$ 分)</font>
 
 ![bg right 90%](figs/score.jpg)
 
@@ -77,13 +79,17 @@ Sep. 23, 2022
 
 ![w:800](figs/plagiarism.jpg)
 
-前两次<mark>总评</mark>各扣 $10$ 分, 第三次<font color = "red">直接判为不及格</font>
-
+<font color = "red">**编程练习**</font>: 每次扣 $5$ 分, $10$ 分扣完为止; <font color = "red">**期末项目**</font>: 项目分数清零
 
 ---
 
 ![bg w:450](figs/modern-c-ch.png)
 ![bg w:600](figs/modern-c-solution.jpg)
+
+<!-- ---
+
+![bg 70%](figs/c-primer-plus-ch.jpg)
+![bg 72%](figs/c-primer-plus-en.jpg) -->
 
 ---
 
@@ -96,20 +102,16 @@ Sep. 23, 2022
 ---
 # A Brief History of C
 
-[History of C @ cppreference](https://en.cppreference.com/w/c/language/history)
+#### [History of C @ cppreference](https://en.cppreference.com/w/c/language/history) **[C17; C23]**
 
 ![w:1000](figs/c-history.jpg)
 
 Do *NOT* become a **language lawyer**!
 
-<!-- --- -->
-
-<!-- ![bg 70%](figs/c-primer-plus-ch.jpg) -->
-<!-- ![bg 72%](figs/c-primer-plus-en.jpg) -->
 
 ---
 ![w:800](figs/more-books.jpg)
-More Books in the Class $\ldots$
+### <mark>More Books in the Class $\ldots$</mark>
 
 ---
 
@@ -147,9 +149,16 @@ More Books in the Class $\ldots$
 
 <br>
 
-Programming is *NOT* (only) about languages.
+<font size = "10">Programming is *NOT* (only) about languages.</font>
 
-You learn C to express **YOUR IDEAS** with **COMPUTERS**.
+<br>
+
+<font size = "10">You learn C to express <mark>**YOUR IDEAS**</mark> with **COMPUTERS**.</font>
+
+---
+# [c reference](https://en.cppreference.com/w/c)
+
+![w:1100](figs/cpp-random.png)
 
 ---
 # [Game: Guess the Number](https://www.abcya.com/games/guess_the_number)
@@ -162,13 +171,8 @@ You learn C to express **YOUR IDEAS** with **COMPUTERS**.
 
 **<font color = "green">Program</font> = <font color = "purple">Input</font> + <font color = "blue"  size = "8">Data </font> + <font color = "red" size = "8">Operations</font> + <font color = "purple">Output</font>**
 
----
-# [c reference](https://en.cppreference.com/w/c)
-
-![w:1100](figs/cpp-random.png)
-
----
-# Code Style
+<!-- --- -->
+<!-- # Code Style
 
 ![w:300](figs/code-style-braces.png) &nbsp;&nbsp;&nbsp;&nbsp; <video control width = "450"> <source src="videos/tabs-vs-spaces.mp4" type = "video/mp4"> </video>
 
@@ -186,7 +190,11 @@ Watch the WAR between Tabs and Spaces
 
 ![w:1000](figs/huawei-rand.png)
 
-Writing <mark>Secure</mark> C Code
+Writing <mark>Secure</mark> C Code -->
+
+---
+
+![w:800](figs/ask-me-anything.png)
 
 ---
 ![bg 60%](figs/thankyou.png)
