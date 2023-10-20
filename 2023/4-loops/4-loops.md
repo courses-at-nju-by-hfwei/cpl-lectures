@@ -53,10 +53,8 @@ Oct. 20, 2023
 #### John Horton Conway ($1937 \sim 2020$)
 
 ---
-# [Conway's Game of Life @ wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+### [playgameoflife.com (Cellular Automata; 元胞自动机)](https://playgameoflife.com/)
 <br>
-
-#### [playgameoflife.com (Cellular Automata; 元胞自动机)](https://playgameoflife.com/)
 <br>
 
 * Any <font color = blue>**live**</font> cell with two or three live neighbours survives.
@@ -72,12 +70,36 @@ Oct. 20, 2023
 ![left w:500](figs/Gospers-glider-gun.gif) &ensp; ![right w:600](figs/breeder.gif)
 
 ---
-<video control width = "1000"> <source src="videos/Conway-Game-of-Life.mp4" type = "video/mp4"> </video>
+<video control width = "1100"> <source src="videos/Conway-Game-of-Life.mp4" type = "video/mp4"> </video>
 
 ---
 # Merge (<mark>merge.c</mark>)
 
 ![w:1200](figs/merge-arrays.png)
+
+---
+![bg w:700](figs/mergesort.png)
+
+---
+![bg w:1000](figs/mergesort-animation.gif)
+
+---
+# Insertion Sort
+
+![w:600](figs/insertion-sort-poker.png)
+
+---
+![w:520](figs/hushi-poker.png)
+
+---
+# Bubble Sort
+
+![w:900](figs/bubble-sort.png)
+
+---
+# Bubble Sort
+
+![w:900](figs/bubble-sort-wiki.gif)
 
 ---
 ![bg w:600](figs/see-you.jpeg)
