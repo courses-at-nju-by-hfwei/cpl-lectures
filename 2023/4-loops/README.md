@@ -28,12 +28,3 @@
 
 - examples
 - for `merge-sort.c` later
-
-# `bubble-sort.c`
-
-- generating test cases
-- timing
-  - 10, 000: 23s
-  - 100, 000: 2600s
-- `swapped`
-  - TAOCP Vol. 3 (P109)
