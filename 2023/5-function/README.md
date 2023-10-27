@@ -3,8 +3,6 @@
 - `Alt + 6`: Problems on the status bar
 - `SonarLint` on the status bar
 
-> Easy but Complex
-
 ## `game-of-life.c`
 - `SonarLint` 引入函数的用途
 
@@ -28,7 +26,7 @@
   - file scopes
 - variables
   - local variables
-  - global variables
+  - global (external) variables
   - hidden (avoid this!!!)
 - function declaration
 
@@ -51,18 +49,23 @@
   - without the `len` parameter
   - `strlen`
 
-## `merge.c`
-- TODO: Leave to Students
-- `const`
-
 ## `selection-sort.c`
 - function calls functions
-  - TODO: for other simple functions
 - non-`const` int arr[]
   - double return values
+- `GetMinIndex`
 - `Swap`
   - pass by values
   - pointers/addresses
   - explain why modifying an array works
+
+## `merge.c`
+- TODO: Leave to Students
+- `const`
+
 ## `game-of-life.c`
   - 2D-array
+
+## `(void)`
+
+## `static`
