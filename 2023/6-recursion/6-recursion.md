@@ -30,29 +30,27 @@ Nov. 10, 2023
 # Overview
 
 ### <font color = red>Recursive Functions (Recursion)</font>
-![w:520](figs/recursion-stair.jpg)
+![w:500](figs/recursion-stair.jpg)
 
-### A function that calls itself.
-
----
-# <mark>Thinking Recursively</mark>
-
-#### Solving a task by first solving its smaller subtasks
-
-![w:650](figs/think-recursively.jpg)
-
-#### It will be a <font color = red>loooong</font> way to go to master recursion!!!
+### A function that calls itself (<mark>main-re.c</mark>).
 
 ---
-# <mark>Thinking Recursively</mark>
+# <mark> (1) Thinking like a Computer Scientist </mark>
+
+![w:700](figs/think-recursively.jpg)
+
+#### <font color = red>Solving a task by first solving its smaller subtasks</font>
+
+---
+# <mark> (1) Thinking like a Computer Scientist </mark>
 
 You want to solve a task and suppose you have the <mark>Mirror</mark>.
 
 ![w:550](figs/mirror.jpg)
-### <mark>Ask the Mirror Right Questions</mark>
+### <font color = red>Ask the Right Questions</font>
 
 ---
-# <mark>Thinking Recursively</mark>
+# <mark> (1) Thinking like a Computer Scientist </mark>
 <br>
 <br>
 
@@ -63,11 +61,19 @@ You want to solve a task and suppose you have the <mark>Mirror</mark>.
 * What is the smallest task?&ensp; (<font color = red>$\star$</font>)
 
 ---
+# <mark>Thinking Recursively</mark>
 
-# <mark>Thinking like a Computer</mark>
+<br>
+<br>
+<br>
 
-![w:700](figs/think-computer.png)
+## <mark>It will be a <font color = red>loooooooooong</font> way to go to master RECURSION!!!</mark>
 
+---
+
+# <mark> (2) Thinking like a Computer</mark>
+
+![w:750](figs/think-computer.png)
 ## <mark>min.c</mark>
 
 ---
@@ -101,7 +107,7 @@ You want to solve a task and suppose you have the <mark>Mirror</mark>.
 # Fibonacci Sequence (<mark>fib-re.c</mark>)
 <br>
 
-$F_{0} = 1$
+$F_{0} = 0$
 
 $F_{1} = 1$
 
@@ -118,9 +124,9 @@ $\text{gcd}(a, b) = \text{gcd}(b, a \;\%\; b)$
 ---
 # Binary Search (<mark>bsearch-re.c</mark>)
 
-![w:700](figs/binary-search-mario.png)
+![w:750](figs/binary-search-mario.png)
 
-You should do sth. first to obtain the smaller task.
+<!-- You should do sth. first to obtain the smaller task. -->
 
 ---
 # MergeSort (<mark>mergesort.c</mark>)
