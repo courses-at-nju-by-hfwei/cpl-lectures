@@ -30,14 +30,14 @@ Nov. 10, 2023
 # Overview
 
 ### <font color = red>Recursive Functions (Recursion)</font>
-![w:500](figs/recursion-stair.jpg)
+![w:450](figs/recursion-stair.jpg)
 
 ### A function that calls itself (<mark>main-re.c</mark>).
 
 ---
 # <mark> (1) Thinking like a Computer Scientist </mark>
 
-![w:700](figs/think-recursively.jpg)
+![w:650](figs/think-recursively.jpg)
 
 #### <font color = red>Solving a task by first solving its smaller subtasks</font>
 
@@ -47,7 +47,7 @@ Nov. 10, 2023
 You want to solve a task and suppose you have the <mark>Mirror</mark>.
 
 ![w:550](figs/mirror.jpg)
-### <font color = red>Ask the Right Questions</font>
+#### <font color = red>The <mark>Mirror</mark> can solve the smaller task for you magically.</font>
 
 ---
 # <mark> (1) Thinking like a Computer Scientist </mark>
@@ -85,7 +85,6 @@ You want to solve a task and suppose you have the <mark>Mirror</mark>.
 # Min (<mark>min-re.c</mark>)
 
 ![w:700](figs/mirror.jpg)
-### <mark>Ask the Mirror Right Questions</mark>
 
 ---
 # Min (<mark>min-re.c</mark>)
@@ -96,12 +95,11 @@ You want to solve a task and suppose you have the <mark>Mirror</mark>.
 # Sum (<mark>sum-re.c</mark>)
 
 ![w:700](figs/mirror.jpg)
-### <mark>Ask the Mirror Right Questions</mark>
 
 ---
 # Sum (<mark>sum-re.c</mark>)
 
-![w:900](figs/sum.png)
+![w:800](figs/sum.png)
 
 ---
 # Fibonacci Sequence (<mark>fib-re.c</mark>)
@@ -118,7 +116,7 @@ $F_{n} = F_{n-1} + F_{n-2} \quad (n > 1)$
 ---
 # Greatest Common Divisor (<mark>gcd-re.c</mark>)
 
-![w:400](figs/euclid.jpeg)
+![w:350](figs/euclid.jpeg)
 $\text{gcd}(a, b) = \text{gcd}(b, a \;\%\; b)$
 
 ---
