@@ -52,11 +52,15 @@ You want to solve a task and suppose you have the <mark>Mirror</mark>.
 ---
 # <mark> (1) Thinking like a Computer Scientist </mark>
 <br>
-<br>
 
 * What is a smaller task? &ensp; (<font color = red>$\star\star\star\star\star$</font>)
+<br>
+
+* How to reduce the original task into the smaller task? &ensp; (<font color = red>$\star\star\star$</font>)
+<br>
 
 * How to solve the task given the solution to the smaller one? (<font color = red>$\star\star\star$</font>)
+<br>
 
 * What is the smallest task?&ensp; (<font color = red>$\star$</font>)
 
@@ -129,7 +133,7 @@ $\text{gcd}(a, b) = \text{gcd}(b, a \;\%\; b)$
 ---
 # MergeSort (<mark>mergesort.c</mark>)
 
-![w:550](figs/mergesort.png)
+![w:500](figs/mergesort.png)
 
 ---
 # MergeSort (<mark>mergesort.c</mark>)
