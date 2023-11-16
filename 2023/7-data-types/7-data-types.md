@@ -20,42 +20,59 @@ Nov. 17, 2023
 # Review
 
 ### <font color = red>Recursive Functions (Recursion)</font>
-![w:520](figs/recursion-stair.jpg)
-
-### A function that calls itself.
+![w:500](figs/recursion-stair.jpg)
 
 ---
 # Overview
+</br>
 </br>
 
 ### <font color = red>Recursion</font> (<mark>mergesort.c</mark>)
 <br>
 
-### <font color = blue>Data Types</font>
+### <font color = blue> (Basic) Data Types</font>
+
+<!-- ![w:350](figs/c-traps-pitfalls.png) -->
+<!-- ![w:700](figs/trap.jfif) -->
+
+---
+<br>
+<br>
+<br>
+<br>
+
+![w:1100](figs/c-traps-gpt-You.png)
+
+---
+
+![w:600](figs/c-traps-gpt.png)
 
 ---
 ![w:700](figs/lets-code.jpeg)
 
-## <mark>mergesort.c</mark>
+## <mark>mergesort.c</mark> (John von Neumann; 1945)
 
 ---
 # Merge Sort (<mark>mergesort.c</mark>)
 
-![w:550](figs/mergesort.png)
+![w:500](figs/mergesort.png)
 
 ---
 <!-- # Merge Sort (<mark>mergesort.c</mark>) -->
 
-![w:850](figs/chen.png)
-
 ## DO YOU WANNA DANCE TONIGHT?
+
+![w:850](figs/chen.png)
 
 <!-- ![w:800](figs/mergesort-animation.gif) -->
 
 ---
 # Data Types
+<br>
 
 The <mark>**type**</mark> of a variable determines
+
+<br>
 
 - the set of **values** it may take on and
 
@@ -64,45 +81,42 @@ The <mark>**type**</mark> of a variable determines
 ---
 <br>
 <br>
+<br>
 
-## <mark>int &ensp;&ensp; <font color = red>double</font> &ensp;&ensp; char &ensp;&ensp; bool</mark>
+## <mark>int &ensp;&ensp; char &ensp;&ensp; bool</mark>&ensp;&ensp;<font color = red>double</font>
 <br>
 
 ## <mark>[ ]</mark>
 
----
-![w:700](figs/trap.jfif)
 
 ---
 # Integral Types (<mark>int-limits.c</mark>)
+
 <br>
 
+<!-- ### <mark>Of different sizes</mark> -->
 - short (int)
+
 - int
+
 - long (int)
+
 - long long (int)
 
-<mark>signed</mark> *vs.* <mark>unsigned</mark>
-
----
-# Overflow (<mark>int-overflow.c</mark>)
-<br>
-
-- 有符号整数运算中发生溢出, 程序的行为是<font color = red>**未定义的**</font>。
-<br>
-
-- 无符号整数运算中发生溢出, 则发生<font color = blue>**回绕**</font>现象。
+- int8_t &ensp; &int16_t &ensp; int32_t  &ensp; int64_t &ensp; (<mark>inttype.h</mark>)
 
 ---
 # Signed and Unsigned (<mark>unsigned.c</mark>)
 <br>
 <br>
+<br>
 
-### <mark>Be careful when mixing signed and unsigned types.</mark>
+### <mark>Be careful when <font color = red>MIXING</font> signed and unsigned types.</mark>
 <br>
 
 ---
 # Signed and Unsigned (<mark>unsigned.c</mark>)
+<br>
 <br>
 <br>
 
@@ -121,6 +135,7 @@ The <mark>**type**</mark> of a variable determines
 ---
 # char (<mark>char.c</mark>)
 <br>
+<br>
 
 ### Use `char` only for representing characters.
 <br>
@@ -128,24 +143,37 @@ The <mark>**type**</mark> of a variable determines
 ### Do <font color = red>NOT</font> assume `signed char` or `unsigned char`.
 
 ---
+# Overflow (<mark>int-overflow.c</mark>)
+<br>
+<br>
+
+- <mark>有符号整数</mark>运算中发生溢出, 程序的行为是<font color = red>**未定义的**</font>。
+<br>
+
+- <mark>无符号整数</mark>运算中没有溢出, 取而代之的是<font color = blue>**回绕 (wrap)**</font>现象。
+
+---
 # Implicit Conversion
 ### (<mark>implicit-conversion.c</mark>)
 <br>
 
-- 算术表达式、逻辑表达式 (<mark><font color = blue>类型提升; Section 7.4.1</font></mark>)
+- 算术表达式、逻辑表达式 (<mark><font color = blue>先做整值提升; Section 7.4.3</font></mark>)
 
 - 定义初始化、赋值 (<font color = red>类型转换</font>)
 
 - 函数调用时 (<font color = red>类型转换</font>)
 
 - 函数返回时 (<font color = red>类型转换</font>)
-<br>
 
-### <font color = red>Be careful about narrowing conversion!!!</font>
+### <font color = red>Be careful about narrowing conversions!!!</font>
 
 ---
 # Explicit Conversion
 ### (<mark>explicit-conversion.c</mark>)
+<br>
+<br>
+
+#### <mark>(type) expression</mark>
 
 ---
 # Floating-point Numbers
@@ -167,19 +195,26 @@ The <mark>**type**</mark> of a variable determines
 ---
 ### <mark>"Many applications <font color = red>don't</font> need floating-point arithmetic at all."</mark>
 
-![w:300](figs/c-std-book.jpg)
+![w:260](figs/c-std-book.jpg)
 
 ### Use `math.h` (Section 23.3) whenever possible.
 
 ---
 ![w:1100](figs/fp.png)
-<mark>**sum-product.c &ensp; loop.c &ensp; compare.c**</mark>
 
 ---
-![w:450](figs/csapp.jpeg)
+<br>
+<br>
+<br>
+<br>
+
+## <mark>**sum-product.c &ensp; loop.c &ensp; compare.c**</mark>
 
 ---
-![w:450](figs/cert-c.jpeg)
+![w:450](figs/csapp-yingyin.jpg)
+
+---
+![w:450](figs/cert-2016.png)
 
 ---
 ![bg w:600](figs/see-you.jpeg)
