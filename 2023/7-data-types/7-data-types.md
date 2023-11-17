@@ -103,7 +103,7 @@ The <mark>**type**</mark> of a variable determines
 
 - long long (int)
 
-- int8_t &ensp; &int16_t &ensp; int32_t  &ensp; int64_t &ensp; (<mark>inttype.h</mark>)
+<!-- - int8_t &ensp; &int16_t &ensp; int32_t  &ensp; int64_t &ensp; (<mark>inttype.h</mark>) -->
 
 ---
 # Signed and Unsigned (<mark>unsigned.c</mark>)
@@ -130,7 +130,9 @@ The <mark>**type**</mark> of a variable determines
 ### <mark><font color = blue>typedef</font> unsigned long long int <font color = red>size_t</font></mark>
 <br>
 
-### <mark><font color = blue>typedef</font> long <font color = red>clock_t</font></mark>
+### <mark><font color = blue>typedef</font> long <font color = red>time_t</font></mark>
+
+### <mark><font color = blue>#define</font> <font color = red>_ _int64</font> long long</mark>
 
 ---
 # char (<mark>char.c</mark>)
@@ -187,7 +189,7 @@ The <mark>**type**</mark> of a variable determines
 - long double (L)
 
 ---
-![w:350](figs/c-std-book.jpg)
+![w:300](figs/c-std-book.jpg)
 
 ### <mark>"Floating-point Arithmetic is Hard."</mark>
 #### (Section 23.1 `float.h`)
@@ -200,15 +202,23 @@ The <mark>**type**</mark> of a variable determines
 ### Use `math.h` (Section 23.3) whenever possible.
 
 ---
+![w:1200](figs/IEEE_754_Single_Floating_Point_Format.svg.png)
+$\approx 7 \qquad\qquad \approx 16$
+
+![w:1200](figs/IEEE_754_Double_Floating_Point_Format.svg.png)
+
+---
 ![w:1100](figs/fp.png)
 
 ---
 <br>
 <br>
 <br>
+
+## <mark>implicit-conversion.c</mark>
 <br>
 
-## <mark>**sum-product.c &ensp; loop.c &ensp; compare.c**</mark>
+## <mark>sum-product.c &ensp; loop.c &ensp; compare.c**</mark>
 
 ---
 ![w:450](figs/csapp-yingyin.jpg)
