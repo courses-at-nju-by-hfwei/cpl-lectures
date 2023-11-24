@@ -8,7 +8,7 @@ backgroundColor: #FED8B1
 paginate: true
 size: 16:9
 ---
-# <p id = "small-caps">8. &nbsp; Pointers (and Arrays)</p>
+# <p id = "small-caps">8. &nbsp; Pointers and Arrays</p>
 
 [Hengfeng Wei (魏恒峰)](https://hengxin.github.io/)
 hfwei@nju.edu.cn
@@ -16,27 +16,26 @@ hfwei@nju.edu.cn
 ![w:200](figs/C.png)
 Nov. 24, 2023
 
----
+<!-- ---
 # Review
 </br>
 
 ### <font color = red>Recursion</font> (<mark>mergesort.c</mark>)
 <br>
 
-### <font color = blue>Data Types</font>
-
----
-# Overview
-<br>
-
-![w:700](figs/C-Pointers.png)
-
-### <mark>Pointers and Arrays</mark>
+### <font color = blue>Data Types</font> -->
 
 ---
 # Overview
 
-![w:600](figs/C%2B%2B-Pointers.png) &emsp; ![w:450](figs/Java-Pointers.jpg)
+![w:750](figs/C-Pointers.png)
+
+### <mark>Pointers and Arrays (<font color = red>5 = 3 + 2</font>)</mark>
+
+<!-- ---
+# Overview
+
+![w:600](figs/C%2B%2B-Pointers.png) &emsp; ![w:450](figs/Java-Pointers.jpg) -->
 
 ---
 ![w:700](figs/lets-code.jpeg)
@@ -86,7 +85,7 @@ contains the <font color = red>***address***</font> of a variable."
 
 ### [void free(void *ptr);](https://en.cppreference.com/w/c/memory/free)
 
----
+<!-- ---
 # Returning Pointers from Functions (<mark>merge.c</mark>)
 
 ![w:800](figs/merge-arrays.png)
@@ -94,9 +93,11 @@ contains the <font color = red>***address***</font> of a variable."
 ---
 # Returning Multiple Values from Functions (<mark>scanf.c</mark>)
 <br>
+<br>
+<br>
 
 ### <mark>while (<font color = red>scanf</font>("%d", \&numbers[++len]) != EOF);
-</mark>
+</mark> -->
 
 ---
 ![bg w:600](figs/see-you.jpeg)
