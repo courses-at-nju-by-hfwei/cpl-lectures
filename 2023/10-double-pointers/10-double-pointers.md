@@ -29,9 +29,12 @@ Dec. 08, 2023
 <br>
 <br>
 
-## <mark>Pointer Arrays &emsp;(<code>char *table[]</code>)</mark>
+## <mark>Pointer Arrays &emsp;(<code>char *names[]</code>)</mark>
 
-## <mark>Pointers and 2D Arrays &emsp;(<code>int (*table)[]</code>)</mark>
+## <mark>Pointers and 2D Arrays &emsp;(<code>int (*scores)[]</code>)</mark>
+
+---
+![bg w:1250](figs/double-pointers.png)
 
 ---
 ![w:600](figs/lets-code.jpeg)
