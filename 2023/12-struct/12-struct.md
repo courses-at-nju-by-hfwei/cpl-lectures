@@ -28,9 +28,6 @@ Dec. 22, 2023
 ## <mark>musician.c</mark>
 
 ---
-![w:800](figs/luo-cui-zhang.jpeg)
-
----
 ![w:900](figs/nju-rock.jpg)
 
 ---
