@@ -75,4 +75,12 @@ Dec. 22, 2023
 # <mark>我们不知道学生是如何<font color = red>学(~~不~~)会</font>写代码的</mark>
 
 ---
-![bg w:600](figs/see-you.jpeg)
+![w:1000](figs/matters.png)
+
+## <mark>hfwei@nju.edu.cn</mark>
+
+---
+![bg](figs/luo.jfif)
+
+---
+![bg w:500](figs/see-you-2025.jpg)
