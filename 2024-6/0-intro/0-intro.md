@@ -42,7 +42,7 @@ Sep. 19, 2024
 
 ![w:700](figs/know-nothing.webp)
 
-### <mark>The C Beginners ($0\%$)</mark>
+### <mark>The C Beginners (knows $0\%$)</mark>
 
 ---
 # The C Beginners
