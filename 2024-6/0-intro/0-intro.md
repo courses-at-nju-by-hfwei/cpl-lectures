@@ -202,12 +202,10 @@ You do *NOT* need to be a **language lawyer**!
 ![w:400](figs/cert-c-red.png) &nbsp;&nbsp;&nbsp;&nbsp; ![w:550](figs/huawei-c.png)
 
 ---
-# Secure Coding in C
-
-![w:1150](figs/huawei-rand.png)
+![w:800](figs/ask-me-anything.png)
 
 ---
-![w:800](figs/ask-me-anything.png)
+![w:950](figs/chatgpt.jpg)
 
 ---
 ![bg 60%](figs/thankyou.png)
