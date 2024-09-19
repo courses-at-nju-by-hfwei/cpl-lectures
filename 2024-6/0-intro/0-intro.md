@@ -20,8 +20,8 @@ hfwei@nju.edu.cn
 Sep. 19, 2024
 
 ---
-![bg w:450](figs/2024CPL.jpg)
-![bg w:460](figs/2024CPL-Notice.jpg)
+![bg w:500](figs/2024CPL.jpg)
+![bg w:500](figs/2024CPL-Notice.jpg)
 
 ---
 # Questionnaire (1)
@@ -38,9 +38,11 @@ Sep. 19, 2024
 <font color = "red">$10\%$</font> of students attended in some programming contests.
 
 ---
-# The C Beginners
+# Questionnaire (3)
 
-![w:800](figs/know-nothing.webp)
+![w:700](figs/know-nothing.webp)
+
+### <mark>The C Beginners ($0\%$)</mark>
 
 ---
 # The C Beginners
@@ -71,14 +73,20 @@ Sep. 19, 2024
 ![w:230](figs/cpl-docs.png)
 
 ---
+## [CPL Docs @ FeiShu](https://ymv59wdgrr.feishu.cn/wiki/A1HzwviAgiFnQwkfRUWcVjqunLf?from=from_copylink)
+
+![w:280](figs/docs.png)
+
+---
 ## [oj @ public.oj.cpl.icu](https://public.oj.cpl.icu/)
 
 ![w:900](figs/oj-0-intro.png)
 
 ---
-## [CPL Docs @ FeiShu](https://ymv59wdgrr.feishu.cn/wiki/A1HzwviAgiFnQwkfRUWcVjqunLf?from=from_copylink)
+# [2024cpl @ Zulip](https://2024cpl.zulipchat.com/join/t4kpy6uj6ximq7k3qwve5smj/)
 
-![w:280](figs/docs.png)
+![bg w:180](figs/zulip.png)
+![bg w:400](figs/zulip-qrcode.png)
 
 ---
 # Scores
@@ -105,21 +113,15 @@ Sep. 19, 2024
 ### <mark>About the 2024CPL Class</mark>
 
 ---
-### [A Brief History of C @ cppreference](https://en.cppreference.com/w/c/language/history) **[[C17](https://en.cppreference.com/w/c/17); [C23](https://en.cppreference.com/w/c/23)]**
-
-![w:1150](figs/c-history.jpg)
-
-You do *NOT* need to be a **language lawyer**!
-
----
-![bg 75%](figs/recommended.jpg)
-
----
 ![bg w:450](figs/modern-c-ch.png)
 ![bg w:600](figs/modern-c-solution.jpg)
 
 ---
-![bg 60%](figs/not-recommended.jpg)
+![bg 50%](figs/not-recommended.jpg)
+
+---
+![bg 70%](figs/c-primer-plus-ch.jpg)
+![bg 72%](figs/c-primer-plus-en.jpg)
 
 ---
 # K&R C Bible (1978; 1988)
@@ -127,20 +129,22 @@ You do *NOT* need to be a **language lawyer**!
 ![w:350](figs/KR.jpg) ![w:400](figs/KandR.jpg "K&R") ![w:300](figs/KandR-answer.jpg)
 
 ---
-![bg 70%](figs/c-primer-plus-ch.jpg)
-![bg 72%](figs/c-primer-plus-en.jpg)
+### [A Brief History of C @ cppreference](https://en.cppreference.com/w/c/language/history) **[[C17](https://en.cppreference.com/w/c/17); [C23](https://en.cppreference.com/w/c/23)]**
+
+![w:1150](figs/c-history.jpg)
+
+You do *NOT* need to be a **language lawyer**!
 
 ---
 ![bg 85%](figs/poison.jpg)
 ![bg 85%](figs/not-sure-ask.jpg)
 
 ---
-![w:800](figs/more-books.jpg)
+![w:850](figs/more-books.jpg)
 ### <mark>More Books in the Class $\ldots$</mark>
 
 ---
-![bg 75%](figs/soft-skills-1.png)
-![bg 80%](figs/soft-skills-another.webp)
+![bg 40%](figs/soft-skills-1.png)
 
 ---
 ![bg 50%](figs/pilao-book.jpg)
@@ -192,32 +196,18 @@ You do *NOT* need to be a **language lawyer**!
 
 **<font color = "green" size = "7">Program</font> = <font color = "purple" size = "8">Input</font> + <font color = "blue"  size = "20">Data </font> + <font color = "red" size = "20">Operations</font> + <font color = "purple" size = "8">Output</font>**
 
-<!-- --- -->
-<!-- # Code Style
+---
+# Secure Coding in C
 
-![w:300](figs/code-style-braces.png) &nbsp;&nbsp;&nbsp;&nbsp; <video control width = "450"> <source src="videos/tabs-vs-spaces.mp4" type = "video/mp4"> </video>
-
-A "WAR" between Tabs and Spaces
+![w:400](figs/cert-c-red.png) &nbsp;&nbsp;&nbsp;&nbsp; ![w:550](figs/huawei-c.png)
 
 ---
-# Code Style
+# Secure Coding in C
 
-![w:650](figs/google-styleguide.png) &nbsp;&nbsp;&nbsp;&nbsp; ![w:400](figs/huawei-c.png)
-
-[Code Style @ CLion](https://www.jetbrains.com/help/clion/code-style-c-c.html)
-
----
-# Code Style (More Importantly!)
-
-![w:1000](figs/huawei-rand.png)
-
-Writing <mark>Secure</mark> C Code -->
+![w:1150](figs/huawei-rand.png)
 
 ---
 ![w:800](figs/ask-me-anything.png)
-
----
-![w:800](figs/)
 
 ---
 ![bg 60%](figs/thankyou.png)
