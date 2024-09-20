@@ -42,7 +42,7 @@ Sep. 19, 2024
 
 ![w:700](figs/know-nothing.webp)
 
-### <mark>The C Beginners (knows $0\%$)</mark>
+### <mark>The C Beginners (know $0\%$)</mark>
 
 ---
 # The C Beginners
@@ -78,9 +78,9 @@ Sep. 19, 2024
 ![w:280](figs/docs.png)
 
 ---
-## [oj @ public.oj.cpl.icu](https://public.oj.cpl.icu/)
+## [oj @ oj.cpl.icu; oj @ public.oj.cpl.icu](https://public.oj.cpl.icu/)
 
-![w:900](figs/oj-0-intro.png)
+![w:650](figs/oj-0-intro.png) ![w:450](figs/qrcode-public-oj.png)
 
 ---
 # [2024cpl @ Zulip](https://2024cpl.zulipchat.com/join/t4kpy6uj6ximq7k3qwve5smj/)
