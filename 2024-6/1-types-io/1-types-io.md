@@ -14,7 +14,7 @@ size: 16:9
 hfwei@nju.edu.cn
 
 ![w:200](figs/C.png)
-Sep. 22, 2023
+Sep. 26, 2024
 
 ---
 # Review
@@ -189,16 +189,15 @@ String literal: 'T', 'a', 'y', 'u', '\0'
 * <del>char first_name[2] = "Tayu";</del>
 
 ---
+### <mark>Conversion Specification</mark>
 # <!--fit--> <code><font color = yellow><font color = red>%</font>[flags][width][.[precision]]<font color = red>specifier</font></font></code>
 
-<br>
-
-- <code><font color = yellow size = 7>%d</font></code>: decimal `int`
-- <code><font color = yellow size = 7>%f</font></code>: `double`
-- <code><font color = yellow size = 7>%e %E</font></code>: `double` ($-d.ddd \;\text{e} \pm dd$)
-- <code><font color = yellow size = 7>%c</font></code>: `char`
-- <code><font color = yellow size = 7>%s</font></code>: `C string`
-- <code><font color = yellow size = 7>%%</font></code>: `%`
+- <code><font color = red size = 7>%d</font></code>: decimal `int`
+- <code><font color = red size = 7>%f</font></code>: `double`
+- <code><font color = red size = 7>%e %E</font></code>: `double` ($-d.ddd \;\text{e} \pm dd$)
+- <code><font color = red size = 7>%c</font></code>: `char`
+- <code><font color = red size = 7>%s</font></code>: `C string`
+- <code><font color = red size = 7>%%</font></code>: `%`
 
 ---
 ![bg left w:450](figs/ub.jpg)
@@ -235,16 +234,26 @@ It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>m
 <br>
 <br>
 
-* `%d`, `%i`: <mark>minimum number</mark> of digits
+* `%d`: <mark>minimum number</mark> of digits
   - expanded with leading zeros when needed
 * `%f`, `%e`, `%E`: <mark>number</mark> of digits after `.`
   - default is 6
 * `%s`: <mark>maximum number</mark> of characters
 
 ---
-### [https://en.cppreference.com/w/c/io/fprintf](https://en.cppreference.com/w/c/io/fprintf)
+<br>
+<br>
+<br>
+<br>
 
-![w:350](figs/c-lib.webp)
+# <!--fit-->[https://en.cppreference.com/w/c/io/fprintf](https://en.cppreference.com/w/c/io/fprintf)
+
+---
+![w:320](figs/c17.png)
+### Section 7.21: `<stdio.h>`, P225--230
+
+---
+![w:380](figs/c-lib.webp)
 ### Chapter 12: `<stdio.h>`, P257--262
 
 ---
@@ -257,7 +266,7 @@ It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>m
 
 - <code><font color = yellow size = 7>%d</font></code>: skip white-spaces; match a decimal `int`
 - <code><font color = yellow size = 7>%lf</font></code>: skip white-spaces; match a `double`
-- <code><font color = yellow size = 7>%c</font></code>: match a `char` (do not skip white-spaces)
+- <code><font color = yellow size = 7>%c</font></code>: match a `char` (do <mark>NOT</mark> skip white-spaces)
 - <code><font color = yellow size = 7>%s</font></code>: match a sequence of non-white-spaces
 - <code><font color = yellow size = 7>%%</font></code>: mathch a `%`
 
@@ -278,10 +287,32 @@ It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>m
 - <mark>maximum</mark> field width to scan
 
 ---
-### [https://en.cppreference.com/w/c/io/fscanf](https://en.cppreference.com/w/c/io/fscanf)
+<br>
+<br>
+<br>
+<br>
 
-![w:350](figs/c-lib.webp)
+# <!--fit--> [https://en.cppreference.com/w/c/io/fscanf](https://en.cppreference.com/w/c/io/fscanf)
+
+---
+![w:320](figs/c17.png)
+### Section 7.21: `<stdio.h>`, P231--P237
+
+---
+![w:380](figs/c-lib.webp)
 ### Chapter 12: `<stdio.h>`, P263--P268
+
+---
+# <mark>stdin, stdout, stderr</mark>
+
+![w:1200](figs/stdin-stdout.png)
+
+### <mark>Input/Output Redirection</mark>
+
+---
+![w:500](figs/go-wrong.jpg)
+
+### <mark>printf-error.c &ensp; scanf-error.c</mark>
 
 ---
 <br>
@@ -295,6 +326,11 @@ It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>m
 <br>
 
 ### [Why does everyone say not to use `scanf`? What should I use instead?](https://c-faq.com/stdio/scanfprobs.html)
+
+---
+![w:700](figs/practice.jpg)
+
+### <mark>scanf-c17-ex2.c &ensp; scanf-c17-ex3.c</mark>
 
 ---
 ![bg w:600](figs/see-you.jpeg)
