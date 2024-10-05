@@ -292,11 +292,6 @@ It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>m
 - <mark>maximum</mark> field width to scan
 
 ---
-![w:700](figs/practice.jpg)
-
-### <mark>scanf-c17-ex2.c</mark>
-
----
 <br>
 <br>
 <br>
@@ -323,6 +318,11 @@ It is <ins>up to you</ins> to ensure that the type of the actual argument <ins>m
 ![w:1200](figs/stdin-stdout.png)
 
 ### <mark>Input/Output Redirection</mark>
+
+---
+![w:700](figs/practice.jpg)
+
+### <mark>scanf-c17-ex2.c &ensp;scanf-c17-ex3.c</mark>
 
 ---
 <br>
