@@ -48,12 +48,7 @@ Oct. 11, 2024
 ---
 ![w:700](figs/lets-code.jpeg)
 
-## <mark>stars.c &ensp; primes.c &ensp; binary-search.c &ensp; digits.c &ensp; selection-sort.c &ensp; palindrome.c</mark>
-
----
-# Stars Pyramid (`stars.c`)
-
-![w:1000](figs/stars.jpg)
+## <mark>primes.c &ensp; binary-search.c &ensp; digits.c &ensp; selection-sort.c &ensp; palindrome.c</mark>
 
 ---
 # Prime Numbers (`primes.c`)
