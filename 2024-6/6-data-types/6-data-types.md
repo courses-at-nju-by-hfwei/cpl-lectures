@@ -33,20 +33,8 @@ Oct. 31, 2024
 
 # <font color = blue> (Basic) Data Types</font>
 
-<!-- ![w:350](figs/c-traps-pitfalls.png) -->
-<!-- ![w:700](figs/trap.jfif) -->
-
 ---
-<br>
-<br>
-<br>
-<br>
-
-![w:1100](figs/c-traps-gpt-You.png)
-
----
-
-![w:600](figs/c-traps-gpt.png)
+![bg w:750](figs/trap.jfif)
 
 ---
 # Two Major Reasons
@@ -66,7 +54,7 @@ Oct. 31, 2024
 ![bg w:1100](figs/theory-practice.jpg)
 
 ---
-![w:700](figs/lets-code.jpeg)
+![bg w:800](figs/lets-code.jpeg)
 
 ---
 # Object
@@ -276,14 +264,21 @@ The <mark>**type**</mark> of a variable determines
 ### <mark>"Many applications <font color = red>don't</font> need floating-point arithmetic at all."</mark>
 
 ![w:260](figs/c-std-book.jpg)
-
 ### Use `math.h` (Section 23.3) whenever possible.
 
 ---
+![bg w:1000](figs/math-h.png)
+
+---
+# IEEE 754
+
 ![w:1200](figs/IEEE_754_Single_Floating_Point_Format.svg.png)
-$\approx 7 \qquad\qquad \approx 16$
+$24 \; (\approx 6) \qquad\qquad 53 \; (\approx 16)$
 
 ![w:1200](figs/IEEE_754_Double_Floating_Point_Format.svg.png)
+
+---
+![bg w:1100](figs/fp-model.png)
 
 ---
 ![w:1100](figs/fp.png)
@@ -293,16 +288,23 @@ $\approx 7 \qquad\qquad \approx 16$
 <br>
 <br>
 
+# [What is a subnormal floating point number? @ stackoverflow](https://stackoverflow.com/questions/8341395/what-is-a-subnormal-floating-point-number)
+
+---
+<br>
+<br>
+<br>
+
 ## <mark>implicit-conversion.c</mark>
 <br>
 
-## <mark>sum-product.c &ensp; loop.c &ensp; compare.c**</mark>
+## <mark>sum-product.c &ensp; loop.c &ensp; compare.c</mark>
 
 ---
 ![w:450](figs/csapp-yingyin.jpg)
 
 ---
-![w:450](figs/cert-2016.png)
+![w:460](figs/cert-2016.png) &ensp;&ensp; ![w:450](figs/effective-c.jpg)
 
 ---
 ![bg w:600](figs/see-you.jpeg)
