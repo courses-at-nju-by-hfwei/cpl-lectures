@@ -31,7 +31,7 @@ Nov. 04, 2023
 ![w:750](figs/C-Pointers.png)
 
 ### <mark>Pointers and Arrays (<font color = red>7 sentences = 4 + 3</font>)</mark>
-### <mark>Dynamic memory management</mark>
+### <mark>Dynamic Memory Management</mark>
 
 <!-- ---
 # Overview
@@ -42,6 +42,11 @@ Nov. 04, 2023
 ![w:700](figs/lets-code.jpeg)
 
 ### <mark>pointer.c &emsp; selection-sort.c &emsp; pointer-array.c &emsp; pointer-const.c </mark>
+
+---
+## **<font color = red>Pointers**</font> provide an **abstraction** to **<font color = green>memory</font>**.
+
+![w:500](figs/nju-pointer.webp)
 
 ---
 <br>
