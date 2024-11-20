@@ -31,13 +31,14 @@ Nov. 21, 2024
 ## <mark>Pointers and C Strings</mark>
 <br>
 
-#### <mark>(*Null-terminated byte strings* (NTBS))</mark>
+### [<mark>*Null-terminated byte strings* (NTBS)</mark>](https://en.cppreference.com/w/c/string/byte)
 
 ---
 ![w:600](figs/lets-code.jpeg)
-<br>
 
-## <mark>str-literals.c &emsp; strlen.c &emsp; strcmp.c &emsp; strcpy.c</mark>
+## <mark>str-literals.c</mark>
+## <mark>strlen.c &emsp; strcmp.c &emsp; strcpy.c &emsp; strcat.c </mark>
+
 
 ---
 ![bg w:600](figs/see-you.jpeg)
