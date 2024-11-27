@@ -33,11 +33,18 @@ Nov. 28, 2024
 
 ## <mark>Pointers and 2D Arrays &emsp;(<code>int (*scores)[]</code>)</mark>
 
+<br>
+
+## <font color = red>Pointer Types Greatly Matter!!!</font>
+
 ---
 ![w:600](figs/lets-code.jpeg)
 
 ## <mark>selection-sort-strings.c</mark>
 ## <mark>scores.c &emsp; echo.c</mark>
+
+---
+![bg w:1000](figs/luo-cui-zhang.jpeg)
 
 ---
 ![bg w:1250](figs/double-pointers.png)
