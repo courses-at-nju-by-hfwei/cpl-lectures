@@ -14,7 +14,7 @@ size: 16:9
 hfwei@nju.edu.cn
 
 ![w:200](figs/C.png)
-Dec. 06, 2024
+Dec. 05, 2024
 
 ---
 # Review
@@ -35,6 +35,17 @@ Dec. 06, 2024
 # <mark>Function Pointers</mark>
 
 ---
+## <font color = red>Why Function Pointers?</font>
+
+![w:1150](figs/c17-object.png)
+
+
+![w:1150](figs/c17-types.png)
+
+<br>
+
+### <mark>Making Functions as Data (Objects)</mark>
+---
 ![w:800](figs/first-class-citizens.jpg)
 
 ## <mark>args&emsp; return vals &emsp; assignment &emsp; in array</mark>
@@ -53,7 +64,17 @@ Dec. 06, 2024
 ## $x_{i} = a + \frac{b-a}{n} \cdot i$
 
 ---
-<!-- ![w:420](figs/fp-simplied.jpg) -->
+<br>
+<br>
+<br>
+<br>
+
+# <mark>It is an Abstraction!!!</mark>
+
+---
+![w:420](figs/fp-simplied.jpg)
+
+---
 <br>
 
 ![w:560](figs/mma.webp)&emsp;![w:540](figs/Haskell.png)
