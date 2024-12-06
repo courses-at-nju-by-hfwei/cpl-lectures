@@ -65,17 +65,6 @@ Dec. 05, 2024
 
 ---
 <br>
-<br>
-<br>
-<br>
-
-# <mark>It is an Abstraction!!!</mark>
-
----
-![w:420](figs/fp-simplied.jpg)
-
----
-<br>
 
 ![w:560](figs/mma.webp)&emsp;![w:540](figs/Haskell.png)
 
