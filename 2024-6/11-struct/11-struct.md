@@ -28,9 +28,10 @@ Dec. 12, 2024
 ## <mark>musician.c &emsp; offset.c &emsp; sds.c</mark>
 
 ---
-![w:850](figs/luo-cui-zhang.jpeg)
+![bg](figs/nju-rock.jpg)
 
-### <mark>南京大学欢迎你!</mark>
+---
+![w:850](figs/luo-cui-zhang.jpeg)
 
 ---
 ![bg left w:500](figs/Luo.jpeg)
