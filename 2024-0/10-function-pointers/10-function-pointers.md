@@ -34,6 +34,7 @@ Dec. 06, 2024
 
 # <mark>Function Pointers</mark>
 
+<!--
 ---
 ## <font color = red>Why Function Pointers?</font>
 
@@ -45,6 +46,8 @@ Dec. 06, 2024
 <br>
 
 ### <mark>Making Functions as Data (Objects)</mark>
+-->
+
 ---
 ![w:800](figs/first-class-citizens.jpg)
 
