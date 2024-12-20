@@ -68,3 +68,6 @@ Dec. 19, 2024
 ![bg left w:450](figs/ds-alg-in-c.jfif)
 
 ![right w:380](figs/algorithms-in-c.jfif)
+
+---
+![bg w:600](figs/see-you.jpeg)
