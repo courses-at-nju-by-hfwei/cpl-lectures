@@ -87,16 +87,6 @@ You want to solve a task and suppose you have the <mark>Mirror</mark>.
 ![w:900](figs/Min.png)
 
 ---
-# Sum (<mark>sum-re.c</mark>)
-
-![w:700](figs/mirror.jpg)
-
----
-# Sum (<mark>sum-re.c</mark>)
-
-![w:800](figs/sum.png)
-
----
 # Fibonacci Sequence (<mark>fib-re.c</mark>)
 <br>
 
