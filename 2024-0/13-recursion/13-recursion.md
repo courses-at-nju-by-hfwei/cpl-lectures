@@ -108,4 +108,11 @@ $F_{n} = F_{n-1} + F_{n-2} \quad (n > 1)$
 ![bg w:700](figs/happy-end.jpg)
 
 ---
-![bg w:600](figs/see-you.jpeg)
+# <mark>啊, 朋友再见!</mark>
+
+![w:500](figs/see-you.jpeg)
+
+---
+# <mark>啊, 朋友再见!</mark>
+
+![w:450](figs/C.png)
